@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Playground</title>
-    <link>http://seanmoon80.github.io/</link>
+    <link>https://seanmoon80.github.io/</link>
     <description>Recent content on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://seanmoon80.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://seanmoon80.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://seanmoon80.github.io/post/epsilon_delta/</link>
+      <link>https://seanmoon80.github.io/post/epsilon_delta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://seanmoon80.github.io/post/epsilon_delta/</guid>
+      <guid>https://seanmoon80.github.io/post/epsilon_delta/</guid>
       <description>Epsilon-delta Epsilon-delta definition $\lim_{x\to{a}}f(x) = L$
 x가 a에 한없이 가까워질때 함수 f(x)는 L에 수렴한다. 한없이 가까이? 얼마만큼이 한없이 가깝지?
 $x$에 대한 함수 $f(x)$가 있을때,
@@ -27,10 +27,10 @@ Example  $\lim_{x\to{-2}}2x+1 = -3$</description>
     
     <item>
       <title></title>
-      <link>http://seanmoon80.github.io/post/lines_and_planes_in_3_d/</link>
+      <link>https://seanmoon80.github.io/post/lines_and_planes_in_3_d/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://seanmoon80.github.io/post/lines_and_planes_in_3_d/</guid>
+      <guid>https://seanmoon80.github.io/post/lines_and_planes_in_3_d/</guid>
       <description> Lines and Planes in 3-D 요약 주어진 두 벡터 $\vec{v}_1,\vec{v}_2$
  두 벡터의 평행 두 벡터의 교차 두 벡터의 교차점의 내각  </description>
     </item>
