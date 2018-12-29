@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Epsilon_delta // Playground</title>
+
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="Epsilon_delta" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/epsilon_delta/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="https://seanmoon80.github.io/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="https://seanmoon80.github.io/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://seanmoon80.github.io/css/style.css">
+
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    
+    <meta name="generator" content="Hugo 0.52" />
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="https://seanmoon80.github.io/">Playground</a>
+            <nav id="main-nav">
+                
+                <a class="main-nav-link" href="/posts/">Posts</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Epsilon_delta</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/posts/epsilon_delta/" class="article-date">
+                <time datetime='' itemprop="datePublished"></time>
+            </a>
+            
+            
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<h2 id="epsilon-delta-definition">Epsilon-delta definition</h2>
+
+<p>$\lim_{x\to{a}}f(x) = L$</p>
+
+<p>x가 a에 한없이 가까워질때 함수 f(x)는 L에 수렴한다.
+한없이 가까이? 얼마만큼이 한없이 가깝지?</p>
+
+<p>$x$에 대한 함수 $f(x)$가 있을때,<br />
+임의의 양수 $\epsilon$에 적당한 양수 $\delta$가 존재하여 $0 &lt; |x - a| &lt; \delta$이면 $|f(x) - L| &lt; \epsilon$이 될때<br />
+$x \rightarrow a$일때 함수 $f(x)$의 극한값을 L이라고 정의한다.  이때, 함수 $f(x)$는 $x \rightarrow a$에서 L에 수렴한다고 하며<br />
+$\lim_{x\to{a}}f(x) = L$이라고 한다.</p>
+
+<p><img src="https://ds055uzetaobb.cloudfront.net/image_optimizer/ff3edcfc564cc64e74e090606aa07b35aef6660a.png" alt="alt text" title="Epsilon-delta geometric" /></p>
+
+<h2 id="example">Example</h2>
+
+<ol>
+<li>$\lim_{x\to{-2}}2x+1 = -3$<br /></li>
+</ol>
+
+<p>$$\begin{align}|x - a| &lt; \delta &amp;= |x -(-2)| &lt; \delta$ \newline
+&amp;= |x + 2| &lt; \delta
+\end{align}$$</p>
+
+<p>$$\begin{align}|f(x) - L| &lt; \epsilon &amp;= |2x + 1 -(-3)| &lt; \epsilon \newline
+&amp;= |2x + 4| &lt; \epsilon \newline
+&amp;= |2||x + 2| &lt; \epsilon \newline
+&amp;= |x + 2| &lt; \frac{\epsilon}{2}
+\end{align}$$</p>
+
+<p>$$|x+2| &lt; \frac{\epsilon}{2}, \delta = \frac{\epsilon}{2}$$</p>
+
+<ol>
+<li>$\lim_{x\to{2}}x^2 + x - 2 = 4$</li>
+</ol>
+
+<p>$$\begin{align}|f(x) - L| &lt; \epsilon &amp;= |(x^2 + x - 2) - 4| &lt; \epsilon \newline
+&amp;= |(x^2 + x - 6)| &lt; \epsilon \newline
+&amp;= |(x + 3)(x - 2)| &lt; \epsilon \newline
+&amp;= |x + 3||x - 2| &lt; \epsilon \newline
+&amp;= |x - 2| &lt; \frac{\epsilon}{|x + 3|}
+\end{align}$$
+<strong>NOTE: In general $\delta$ must be in terms of $\epsilon$ only without any extra variables.</strong>
+We know that $x$ is close to a. So, let&rsquo;s say $|x - a| &lt; 1$. Then, this means, $1 &lt; x &lt; 3, \text{or}\ 4 &lt; x+3 &lt; 6$
+To get minimum, $x + 3\ \text{is}\ 6$
+$$|x - 2| &lt; \frac{\epsilon}{x + 3} &lt; \frac{\epsilon}{6}$$
+$$|x - 2| &lt; 1\ \text{and}\ |x-2| &lt; \frac{\epsilon}{6}$$
+Given $\epsilon$, let $\delta = min\{1, \frac{\epsilon}{6}\}$</p>
+
+<p>$\delta = 1,\ 1 &lt; \frac{\epsilon}{6} \implies \epsilon &gt; 6$
+$$\begin{align} |x - a| &lt; \delta &amp;= |x - 2| &lt; 1 \newline
+&amp;= |x - 2||x + 3| &lt; |x + 3| \newline
+&amp;= |x^2 + x - 6| &lt; |x + 3| \newline
+&amp;= |x^2+x-6| &lt; |x+3| &lt; 6 &lt; \epsilon \newline
+&amp;= |(x^2+x-2)-4| &lt; \epsilon \newline
+&amp;= |f(x)-L| &lt; \epsilon\end{align}$$</p>
+
+<p>$\delta = \frac{\epsilon}{6}$
+$$\begin{align}|x - 2| &lt; \frac{\epsilon}{6} &amp;= |x-2||x+3| &lt; 6\frac{\epsilon}{6} \newline
+&amp;= |x^2 + x - 6| &lt; \epsilon \newline
+&amp;= |(x^2 + x - 2) - 4| &lt; \epsilon \newline
+&amp;= |f(x) - L| &lt; \epsilon\end{align}$$</p>
+
+<h3 id="infinity">Infinity</h3>
+
+<p>$$\lim_{x\to\infty}\sqrt{x} = \infty$$<br />
+$|f(x) - \infty| = \infty$<br />
+$|x - \infty| = \infty$</p>
+
+<ol>
+<li>극한값이 무한대인 경우<br />
+임의의 M &gt; 0 에 대해, $0 &lt; |x - c| &lt; \delta$이며 f(x) &gt; M을 만족하는 $\delta &gt; 0$이 존재하면 $\lim_{x\to{c}}f(x) = \infty$로 정의한다.</li>
+<li>x가 무한대로 가는경우<br />
+임의의 $\epsilon &gt; 0$에 대해 x &gt; N이면 $|f(x) - L| &lt; \epsilon$을 만족하는 N &gt; 0이 존재하면 $\lim_{x\to\infty}f(x) = L$로 정의한다.
+$$\begin{align} x &gt; N &amp;\implies f(x) &gt; M \newline
+f(x) &gt; M &amp;= \sqrt{x} &gt; M \newline
+&amp;= x &gt; M^2 \newline
+x &gt; N &amp;= x &gt; M^2 \newline &amp;= \sqrt{x} &gt; M \newline
+&amp;= f(x) &gt; M\end{align}$$</li>
+</ol>
+
+        </div>
+
+        
+        
+        <div class="article-toc" >
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#epsilon-delta-definition">Epsilon-delta definition</a></li>
+<li><a href="#example">Example</a>
+<ul>
+<li><a href="#infinity">Infinity</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+
+
+        
+    </div>
+    <nav id="article-nav">
+    
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 Playground&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>
