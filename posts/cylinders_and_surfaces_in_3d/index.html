@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cylinders and surfaces in 3d // Playground</title>
+
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="Cylinders and surfaces in 3d" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/cylinders_and_surfaces_in_3d/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="https://seanmoon80.github.io/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="https://seanmoon80.github.io/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://seanmoon80.github.io/css/style.css">
+
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    
+    <meta name="generator" content="Hugo 0.52" />
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="https://seanmoon80.github.io/">Playground</a>
+            <nav id="main-nav">
+                
+                <a class="main-nav-link" href="/posts/">Posts</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Cylinders and surfaces in 3d</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/posts/cylinders_and_surfaces_in_3d/" class="article-date">
+                <time datetime='' itemprop="datePublished"></time>
+            </a>
+            
+            
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<h2 id="cylinders">Cylinders</h2>
+
+<ol>
+<li>어떤 방정식에서 변수가 2개만 주어졌을 경우 (주어진 변수를 통한 삼차원상의 평면과 그 평면위에서의 궤적을 알수있음)</li>
+<li>주어진 방정식에 의한 평면상의 궤적을 주어지지 않은 변수축(Axis)로 이동.</li>
+<li>이동축으로 이동하더라도 평면상의 궤적이 모양은 변하지 않음</li>
+</ol>
+
+<h3 id="example">Example</h3>
+
+<p>$$z = 4 - x^2$$
+$$z = -x^2 + 4$$
+xy평면에 x축(Axis)로 +4만큼 이동한 $x^2$의 궤적을 y축으로 이동</p>
+
+<div class="embed geogebra">
+<iframe scrolling="no"
+src="https://www.geogebra.org/material/iframe/id/ab22acnp/width/800/height/600/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/false/ld/false/sri/false"
+width="800px"
+height="600px"
+style="border:0px;" fullscreen>
+</iframe>
+</div>
+
+<hr />
+
+<h2 id="surfaces">Surfaces</h2>
+
+<ol>
+<li>어떤 방정식에서 변수가 3개인 경우.</li>
+<li>이동축으로 이동함에 따라 궤적이 변화</li>
+</ol>
+
+<h3 id="steps">Steps</h3>
+
+<ol>
+<li>Surface 형태</li>
+<li>이동축과 평면축</li>
+<li>최소 두개이상의 평면상의 궤적</li>
+</ol>
+
+<h3 id="ellipsoids">Ellipsoids</h3>
+
+<p>$$\frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1$$
+1. All positive<br />
+2. All power &lsquo;2&rsquo;<br />
+3. has constant</p>
+
+<h4 id="intercepts">Intercepts</h4>
+
+<p>표준형을 통한 교차점
+$$\begin{align}x = \pm a \newline y = \pm b\newline z = \pm c\end{align}$$</p>
+
+<h4 id="example-1">Example</h4>
+
+<p>$$\begin{align}9x^2 + 4y^2 + z^2 = 36 \newline
+\frac{x^2}{4} + \frac{y^2}{9} + \frac{z^2}{36} = 1 \newline
+\frac{x^2}{2^2} + \frac{y^2}{3^2} + \frac{z^2}{6^2} = 1 \newline
+x = \pm 2,\ y = \pm 3,\ z = \pm 6 \end{align}$$</p>
+
+<h3 id="1-sheet-hyperboloid">1-Sheet Hyperboloid</h3>
+
+<p>$$\frac{x^2}{a^2} + \frac{y^2}{b^2} - \frac{z^2}{c^2} = 1$$
+1. has 1 negative<br />
+2. All power &lsquo;2&rsquo;<br />
+3. has constant</p>
+
+<h4 id="notes">Notes</h4>
+
+<ul>
+<li>Negative(-) 변수축(Axis)로 이동</li>
+<li>Negative 변수를 0을 대입</li>
+<li>$\sqrt{분모}$를 대입해서 3좌표축의 값의 궤적을 구함</li>
+</ul>
+
+<h4 id="example-2">Example</h4>
+
+<p>$$\begin{align}
+9x^2 + 9z^2 - 4y^2 = 36 \newline\newline
+\frac{x^2}{4} + \frac{z^2}{4} - \frac{y^2}{9} = 1 \newline\newline
+y = 0 \implies \frac{x^2}{4} + \frac{z^2}{4} = 1 \newline
+x = \pm 2,\ y = \pm 2 \newline\newline
+y = \pm 3 \implies \frac{x^2}{4} + \frac{z^2}{4} = 2 \newline
+\frac{x^2}{8} + \frac{z^2}{8} = 1 \newline
+x = \pm 2\sqrt{2},\ y = \pm 2\sqrt{2}
+\end{align}$$</p>
+
+<h3 id="2-sheet-hyperboloid">2-sheet Hyperboloid</h3>
+
+<p>$$\frac{x^2}{a^2} - \frac{y^2}{b^2} - \frac{z^2}{c^2} = 1$$
+1. has 1 positive</p>
+
+<h4 id="notes-1">Notes</h4>
+
+<ul>
+<li>Positive(+) 변수축으로 이동</li>
+<li>Negative(-) 두변수에 0을 대입</li>
+<li>Positive 변수에 분모로 약분가능한 값 대입</li>
+</ul>
+
+<h4 id="example-3">Example</h4>
+
+<p>$$\begin{align}
+-y^2 + x^2 + 9z^2 + 9 = 0 \newline
+-x^2 - 9z^2 + y^2 = 9 \newline
+-\frac{x^2}{9} - z^2 + \frac{y^2}{9} = 1 \newline\newline
+x = z = 0 \implies \frac{y^2}{9} = 1 \newline
+y = \pm 3 \newline\newline
+y = \pm 6 \implies -\frac{x^2}{9} + 4 - z^2 = 1 \newline
+-\frac{x^2}{9} -z^2 = -3 \newline
+\frac{x^2}{27} + \frac{z^2}{3} = 1 \newline
+x = \pm 3\sqrt{3},\ y = \pm\sqrt{3}
+\end{align}$$</p>
+
+<h3 id="cones">Cones</h3>
+
+<p>$$\frac{x^2}{a^2} + \frac{y^2}{b^2} - \frac{z^2}{c^2} = 0$$
+1. Has one Negative<br />
+2. All Power &lsquo;2&rsquo;<br />
+3. No Constant</p>
+
+<h4 id="notes-2">Notes</h4>
+
+<ul>
+<li>Negative(-) 변수축으로 이동</li>
+<li>Negative 변수에 0 대입해서 원점표시</li>
+<li>Negative 변수에 분모로 약분가능한 값 대입해서 원이나 타원의 방정식으로 변형</li>
+</ul>
+
+<h4 id="example-4">Example</h4>
+
+<p>$$\begin{align}
+z^2 - 9x^2 - 4y^2 = 0 \ newline
+9x^2 + 4y^2 - z^2 = 0 \newline
+z = x = y = 0 \newline
+z = \pm6 \implies 9x^2 + 4y^2 = 36 \newline
+\frac{x^2}{4} + \frac{y^2}{9} = 1 \newline
+x = \pm2,\ y = \pm3
+\end{align}$$</p>
+
+<h3 id="paraboloid">Paraboloid</h3>
+
+<p>$$\frac{x^2}{a^2} + \frac{y^2}{b^2} = CZ$$
+1. 변수 3개 그중 거듭제곱 2개<br />
+2. 거듭제곱으로 표현된 변수는 반드시 양의 기호(Positive)</p>
+
+<h4 id="notes-3">Notes</h4>
+
+<ul>
+<li>차수가 낮은 변수축으로 열린 형태 (+,-에 따라 방향 결정)</li>
+<li>낮은차수 변수에 0 대입</li>
+</ul>
+
+<h4 id="example-5">Example</h4>
+
+<p>$$\begin{align}
+z = x^2 + 4y^2 - 4 \newline
+x^2 + 4y^2 = z + 4 \newline\newline
+z = 0 \implies x^2 + 4y^2 = 4 \newline
+\frac{x^2}{4} + y^2 = 1 \newline
+x = \pm2,\ y = \pm1
+\end{align}$$</p>
+
+<h3 id="hyperbolic-paraboloid">Hyperbolic Paraboloid</h3>
+
+<p>$$\frac{x^2}{a^2} - \frac{y^2}{b^2} = CZ$$
+1. 거듭제곱으로 표현된 변수중 하나가 음의 기호</p>
+
+<h4 id="notes-4">Notes</h4>
+
+<ul>
+<li>낮은차수 변수 방향축</li>
+<li>양수와 음수를 낮은차수 변수에 대입(쌍곡선에서의 대칭축의 변화)</li>
+</ul>
+
+<h4 id="example-6">Example</h4>
+
+<p>$$\begin{align}
+x^2 - y^2 - z = 0 \newline
+x^2 - y^2 = z \newline\newline
+z = 1 \implies x^2 - y^2 = 1 \newline\newline
+z = -1 \implies y^2 - x^2 = 1
+\end{align}$$</p>
+
+<div class="embed geogebra">
+<iframe scrolling="no"
+src="https://www.geogebra.org/material/iframe/id/spzcwtr2/width/800/height/600/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/false/ld/false/sri/false"
+width="800px"
+height="600px"
+style="border:0px;" fullscreen>
+</iframe>
+</div>
+
+        </div>
+
+        
+        
+        <div class="article-toc" >
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#cylinders">Cylinders</a>
+<ul>
+<li><a href="#example">Example</a></li>
+</ul></li>
+<li><a href="#surfaces">Surfaces</a>
+<ul>
+<li><a href="#steps">Steps</a></li>
+<li><a href="#ellipsoids">Ellipsoids</a>
+<ul>
+<li><a href="#intercepts">Intercepts</a></li>
+<li><a href="#example-1">Example</a></li>
+</ul></li>
+<li><a href="#1-sheet-hyperboloid">1-Sheet Hyperboloid</a>
+<ul>
+<li><a href="#notes">Notes</a></li>
+<li><a href="#example-2">Example</a></li>
+</ul></li>
+<li><a href="#2-sheet-hyperboloid">2-sheet Hyperboloid</a>
+<ul>
+<li><a href="#notes-1">Notes</a></li>
+<li><a href="#example-3">Example</a></li>
+</ul></li>
+<li><a href="#cones">Cones</a>
+<ul>
+<li><a href="#notes-2">Notes</a></li>
+<li><a href="#example-4">Example</a></li>
+</ul></li>
+<li><a href="#paraboloid">Paraboloid</a>
+<ul>
+<li><a href="#notes-3">Notes</a></li>
+<li><a href="#example-5">Example</a></li>
+</ul></li>
+<li><a href="#hyperbolic-paraboloid">Hyperbolic Paraboloid</a>
+<ul>
+<li><a href="#notes-4">Notes</a></li>
+<li><a href="#example-6">Example</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+
+
+        
+    </div>
+    <nav id="article-nav">
+    
+    
+    <a href="/posts/lines_and_planes_in_3d/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Lines and planes in 3d&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2019 Playground&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>
