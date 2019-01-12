@@ -6,10 +6,23 @@
     <description>Recent content in Posts on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Jan 2019 15:33:31 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 08 Jan 2019 17:12:06 -0500</lastBuildDate>
     
 	<atom:link href="https://seanmoon80.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cylindrical and Spherical coordinates</title>
+      <link>https://seanmoon80.github.io/posts/cylindrical_and_spherical_coordinates/</link>
+      <pubDate>Tue, 08 Jan 2019 17:12:06 -0500</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/cylindrical_and_spherical_coordinates/</guid>
+      <description>Polar coordinate system(극좌표계) * 평면위의 위치를 각도($\theta$)와 거리($r$)로 표현
+Cylindrical coordinate system(원통좌표계) $$(x, y, z) \implies (r, \theta, z)$$ * &amp;lsquo;r&amp;rsquo;은 3차원 공간상에서 원점에서부터 점까지의 거리가 아님.
+* &amp;lsquo;r&amp;rsquo;은 xy 평면에 투사된 점까지의 거리
+* xy평면에 투영시 팔분면에서의 위치를 사분면의 위치로 투영.
+Rectangular coordinate system(직교좌표계)과의 관계 $$\begin{align} Cyl \xrightarrow\ Rec\ &amp;amp;\begin{cases} \cos\theta = \frac{x}{r} \implies x = r\cos\theta \newline \sin\theta = \frac{y}{r} \implies y = r\sin\theta \newline z = z \end{cases} \newline Rec \xrightarrow\ Cyl\ &amp;amp;\begin{cases} r^2 = x^2 + y^2 \implies r = \sqrt{x^2 + y^2} \newline \tan\theta = \frac{y}{x} \newline z = z \end{cases} \end{align}$$</description>
+    </item>
     
     <item>
       <title>Cylinders and surfaces in 3d</title>
