@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vector Function // Playground</title>
+
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="Vector Function" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/vector_function/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="https://seanmoon80.github.io/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="https://seanmoon80.github.io/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://seanmoon80.github.io/css/style.css">
+
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    
+    <meta name="generator" content="Hugo 0.52" />
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="https://seanmoon80.github.io/">Playground</a>
+            <nav id="main-nav">
+                
+                <a class="main-nav-link" href="/posts/">Posts</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Vector Function</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/posts/vector_function/" class="article-date">
+                <time datetime='' itemprop="datePublished"></time>
+            </a>
+            
+            
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<h2 id="definition">Definition</h2>
+
+<ol>
+<li>실수 집합을 정의역으로 가지며 벡터의 집합을 치역으로 가지는 함수</li>
+<li>그러한 함수를 $r$이라하고 $r$의 정의역의 어떤 수 $t$에 대한 유일한 벡터 $V_3$가 있을 경우 $r(t)$로 표기할수 있다.
+$$\begin{align}
+&amp;A = \{ t \mid t \in \mathbb{R} \}, B = \{\left&lt; x,y,z \right&gt; \mid x,y,z \in \mathbb{R} \} \newline
+&amp;\vec r : A\rightarrow B
+\end{align}$$</li>
+<li>$r(t)$의 component가 $f(t),\ g(t), h(t)$로 표현될 경우 $f, g, h$는 $r$의 component functions이라 부를수 있고
+$$r(t) = \left&lt; f(t),g(t),h(t) \right&gt; = f(t)i + g(t)j + h(t)k$$</li>
+<li>$t$는 독립변수로서 일반적으로 시간을 나타냄</li>
+<li>치역의 벡터들의 종점은 삼차원상에서 Curve의 자취를 나타냄</li>
+</ol>
+
+<h3 id="example">Example</h3>
+
+<p>$$\begin{align}
+\vec r(t) = \left&lt;\sqrt{t}, \frac{1}{t-1},\ln{t}\right&gt; \newline
+\underbrace{x = \sqrt{t}}_{t \ge 0},\ \underbrace{y = \frac{1}{t-1}}_{t \ne 1},\ \underbrace{z = \ln{t}}_{t \gt 0} \newline
+\text{Common Domain}: 0 \lt t \lt 1, 1 \lt t \newline\newline
+t = 2: \vec r(2) = \left&lt;\sqrt{2},1,\ln2\right&gt;\newline
+t = 4: \vec r(4) = \left<2, \frac{1}{3}, \ln4\right>
+\end{align}$$</p>
+
+<h3 id="sketching">Sketching</h3>
+
+<ol>
+<li>&lsquo;x&rsquo;, &lsquo;y&rsquo;, &lsquo;z&rsquo; component를 구함</li>
+<li>하나이상의 component 함수를 이용(식을 t에 대해 정리) curve나 surface를 구함
+
+<ul>
+<li>component 함수 2개 이용시 평면에<br /></li>
+<li>component 함수 3개 이용시 surface를 따라 curve</li>
+</ul></li>
+<li>&rsquo;t&rsquo;에 어떤값을 대입해서 방향과 점을 찾음.</li>
+</ol>
+
+<div class="embed geogebra">
+<iframe scrolling="no"
+src="https://www.geogebra.org/material/iframe/id/ntgmyyt4/width/800/height/600/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/false/ld/false/sri/false"
+width="800px"
+height="600px"
+style="border:0px;" fullscreen>
+</iframe>
+</div>
+
+<h4 id="example-1">Example 1</h4>
+
+<p>$$\begin{align}
+&amp;\vec r(t) = \underbrace{\sqrt{t}\hat\imath}_{x} + \underbrace{(4 - t)\hat\jmath}_{y},\ t \ge 0 \newline
+&amp;x^2  = t \newline
+&amp;y = 4 - x^2 \newline
+&amp;t = 0: \vec r(0) = 4\hat\jmath \newline
+&amp;t = 4: \vec r(4) = 2\hat\imath
+\end{align}$$</p>
+
+<h4 id="example-2">Example 2</h4>
+
+<p>$$\begin{align}
+&amp;\vec r(t) = \left&lt; t, t^2, t^3 \right&gt;,\ t \ge 0 \newline
+&amp;x = t, y = t^2, z = t^3 \newline
+\end{align}$$</p>
+
+<h3 id="limit">Limit</h3>
+
+<p>$$\begin{align}
+\lim_{t \to a} \vec r(t) = \left&lt;\lim_{t \to a}f(t), \lim_{t \to a}g(t), \lim_{t \to a}h(t)\right&gt;
+\end{align}$$</p>
+
+<h4 id="example-1-1">Example 1</h4>
+
+<p>$$\begin{align}
+&amp;\lim_{t \to 2} \Big[\sqrt{t}\hat\imath + (\frac{t^2-4}{t-2})\hat\jmath + (\frac{t}{t^2+1})\hat k\Big] \newline\newline
+&amp;\lim_{t \to 2}\sqrt{2} = sqrt{2} \newline\newline
+&amp;\lim_{t \to 2}\frac{t^2-4}{t-2} = \lim_{t \to 2}\frac{(t-2)(t+2)}{t-2} = 4 \newline\newline
+&amp;\lim_{t \to 2}\frac{t}{t^2+1} = \frac{2}{5} \newline\newline
+&amp;= \left&lt;\sqrt{2}, 4, \frac{2}{5} \right&gt;
+\end{align}$$</p>
+
+        </div>
+
+        
+        
+        <div class="article-toc" >
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#definition">Definition</a>
+<ul>
+<li><a href="#example">Example</a></li>
+<li><a href="#sketching">Sketching</a>
+<ul>
+<li><a href="#example-1">Example 1</a></li>
+<li><a href="#example-2">Example 2</a></li>
+</ul></li>
+<li><a href="#limit">Limit</a>
+<ul>
+<li><a href="#example-1-1">Example 1</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+
+
+        
+    </div>
+    <nav id="article-nav">
+    
+    
+    <a href="/posts/cylindrical_and_spherical_coordinates/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Cylindrical and Spherical coordinates&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2019 Playground&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>
