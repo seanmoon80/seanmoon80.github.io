@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Derivatives and Integrals of Vector Functions // Playground</title>
+
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="Derivatives and Integrals of Vector Functions" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/derivatives_and_integrals_of_vector_functions/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="https://seanmoon80.github.io/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="https://seanmoon80.github.io/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://seanmoon80.github.io/css/style.css">
+
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    
+    <meta name="generator" content="Hugo 0.52" />
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="https://seanmoon80.github.io/">Playground</a>
+            <nav id="main-nav">
+                
+                <a class="main-nav-link" href="/posts/">Posts</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Derivatives and Integrals of Vector Functions</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/posts/derivatives_and_integrals_of_vector_functions/" class="article-date">
+                <time datetime='' itemprop="datePublished"></time>
+            </a>
+            
+            
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<h2 id="derivatives">Derivatives</h2>
+
+<p>$$\begin{align}
+f\prime(x) &amp;= \lim_{\Delta x \to 0}\frac{f(x + \Delta x) - f(x)}{\Delta x} \newline\newline
+\vec{r}\prime(t) &amp;= \lim_{\Delta t \to 0}\frac{\vec{r}(t + \Delta t) - \vec{r}(t)}{\Delta t} \newline
+&amp;= \lim_{\Delta t \to 0}\frac{(f(t + \Delta t)\hat i + g(t + \Delta t)\hat j + h(t + \Delta t)\hat k) - (f(t)\hat i + g(t)\hat j + h(t)\hat k)}{\Delta t} \newline
+&amp;= \lim_{\Delta t \to 0}\frac{f(t + \Delta t) - f(t)}{\Delta t}\hat i + \lim_{\Delta t \to 0}\frac{g(t + \Delta t) - g(t)}{\Delta t}\hat j + \lim_{\Delta t \to 0}\frac{h(t + \Delta t) - h(t)}{\Delta t}\hat k \newline
+&amp;= f\prime(t)\hat i + g\prime(t)\hat j + h\prime(t)\hat k
+\end{align}$$</p>
+
+<ul>
+<li>접선벡터(Tagent vector) - 접선(Tangent line)의 방향벡터</li>
+<li>주어진 t에 대한 접선벡터</li>
+<li>주어진 t에 대한 접선(Tangent Line)</li>
+<li>접선벡터를 통해 곡선(Curve)의 방향</li>
+</ul>
+
+<h3 id="example-1">Example 1.</h3>
+
+<p><div class="embed geogebra">
+<iframe scrolling="no"
+src="https://www.geogebra.org/material/iframe/id/qr4v4xxa/width/800/height/600/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/false/ld/false/sri/false"
+width="800px"
+height="600px"
+style="border:0px;" fullscreen>
+</iframe>
+</div>
+$$\begin{align}
+&amp;\vec{r}(t) = \left&lt; 4\cos{t}, 2\sin{t} \right&gt;\ 0 \lt t \lt 2\pi \newline\newline
+&amp;\text{Find Point of tangency(P.O.T) at } t = \frac{\pi}{3} \newline
+&amp;\text{Find Tangent Vector at P.O.T} \newline
+&amp;x = 4\cos t \rightarrow \cos t = \frac{x}{4} \newline
+&amp;y = 2\sin t \rightarrow \sin t = \frac{x}{2} \newline
+&amp;\frac{x^2}{16} + \frac{y^2}{4} = 1 \newline
+&amp;\vec{r}(\frac{\pi}{3}) = (4\frac{1}{2})\hat i + (2\frac{\sqrt{3}}{2})\hat j = 2\hat i + \sqrt{3}\hat j \newline
+&amp;P.O.T\ (2, \sqrt{3}) \newline\newline
+&amp;\vec{r}\prime(t) = \left&lt;-4\sin t, 2\cos t \right&gt; \newline\newline
+&amp;\text{Tangent Vector at P.O.T }\newline
+&amp;\vec{r}\prime(\frac{\pi}{3}) = \left&lt;-2\sqrt{3}, 1 \right&gt;
+\end{align}$$</p>
+
+<h3 id="unit-tangent-vectors">Unit Tangent Vectors</h3>
+
+<p>$$ \vec{T}(t) = \frac{\vec{r}\prime(t)}{|| \vec{r}\prime(t) ||} $$
+$$\begin{align}
+\vec{T}(t) &amp;= \frac{-4\sin t\hat i + 2\cos t\hat j}{\sqrt{(-4\sin{t})^2 + (2\cos{t})^2}} \newline
+\vec{T}(\frac{\pi}{3}) &amp;= \frac{-2\sqrt{3}\hat i + \hat j}{\sqrt{13}}
+\end{align}$$</p>
+
+<h3 id="tangent-lines">Tangent Lines</h3>
+
+<p>$$\begin{align}
+&amp;\text{Point} = (x_0,y_0,z_0),\ \text{Direction Vector } \vec{v} = \left&lt; a, b, c \right&gt; \newline\newline
+&amp;x = x_0 + at,\ y = y_0 + bt,\ z = z_0 + ct \newline\newline
+&amp;x = 2 - 2\sqrt{3}t,\ y = \sqrt{3} + t
+\end{align}$$</p>
+
+<hr />
+
+<h2 id="integrals">Integrals</h2>
+
+<p>$$\begin{align}
+&amp;\displaystyle\int_0^1(t\hat i + t^2\hat j + t^3\hat k) \, dt \newline
+&amp;= \left. \frac{1}{2}t^2\hat i + \frac{1}{3}t^3\hat j + \frac{1}{4}t^4\hat k\ \right|_0^1 \newline
+&amp;= \frac{1}{2}(1-0)^2\hat i + \frac{1}{3}(1-0)^3\hat j + \frac{1}{4}(1-0)^4\hat k \newline
+&amp;= \frac{1}{2}\hat i + \frac{1}{3}\hat j + \frac{1}{4}\hat k
+\end{align}$$</p>
+
+<h3 id="indefinite-integral-of-vector-function">Indefinite Integral of vector function</h3>
+
+<p>$$\begin{align}
+&amp;\displaystyle\int (t\hat i + t^2\hat j + t^3\hat k) \, dt \newline
+&amp;\displaystyle\int t \, dt = \frac{1}{2}t^2\hat i + C_1\hat i \newline
+&amp;\displaystyle\int t^2 \, dt = \frac{1}{3}t^3\hat j + C_2\hat j \newline
+&amp;\displaystyle\int t^2 \, dt = \frac{1}{4}t^4\hat k + C_3\hat k \newline
+&amp;= \frac{1}{2}t^2\hat i + \frac{1}{3}t^3\hat j + \frac{1}{4}\hat k + \underbrace{C_1\hat i + C_2\hat j + C_3\hat k}_{C\text{(Constant Vector)}}
+\end{align}$$</p>
+
+<h3 id="example">Example</h3>
+
+<p>$$\begin{align}
+&amp;\vec{r}\prime(t) = 2\hat i + 4t\hat j + 6t^2\hat k \newline
+&amp;\vec{r}(0) = \hat i + \hat k \newline
+&amp;\vec{r}(t) = \int 2\hat i + 4t\hat j + 6t^2\hat k \, dt \newline
+&amp;= 2t\hat i + 2t^2\hat j + 2t^3\hat k + C \newline\newline
+&amp;\vec{r}(0) = C = \hat i + \hat k
+\end{align}$$</p>
+
+        </div>
+
+        
+        
+        <div class="article-toc" >
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#derivatives">Derivatives</a>
+<ul>
+<li><a href="#example-1">Example 1.</a></li>
+<li><a href="#unit-tangent-vectors">Unit Tangent Vectors</a></li>
+<li><a href="#tangent-lines">Tangent Lines</a></li>
+</ul></li>
+<li><a href="#integrals">Integrals</a>
+<ul>
+<li><a href="#indefinite-integral-of-vector-function">Indefinite Integral of vector function</a></li>
+<li><a href="#example">Example</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+
+
+        
+    </div>
+    <nav id="article-nav">
+    
+    
+    <a href="/posts/vector_function/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Vector Function&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2019 Playground&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>

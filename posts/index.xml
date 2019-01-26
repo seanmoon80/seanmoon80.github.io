@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Jan 2019 21:45:14 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 23 Jan 2019 14:22:59 -0500</lastBuildDate>
     
 	<atom:link href="https://seanmoon80.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Derivatives and Integrals of Vector Functions</title>
+      <link>https://seanmoon80.github.io/posts/derivatives_and_integrals_of_vector_functions/</link>
+      <pubDate>Wed, 23 Jan 2019 14:22:59 -0500</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/derivatives_and_integrals_of_vector_functions/</guid>
+      <description>Derivatives $$\begin{align} f\prime(x) &amp;amp;= \lim_{\Delta x \to 0}\frac{f(x + \Delta x) - f(x)}{\Delta x} \newline\newline \vec{r}\prime(t) &amp;amp;= \lim_{\Delta t \to 0}\frac{\vec{r}(t + \Delta t) - \vec{r}(t)}{\Delta t} \newline &amp;amp;= \lim_{\Delta t \to 0}\frac{(f(t + \Delta t)\hat i + g(t + \Delta t)\hat j + h(t + \Delta t)\hat k) - (f(t)\hat i + g(t)\hat j + h(t)\hat k)}{\Delta t} \newline &amp;amp;= \lim_{\Delta t \to 0}\frac{f(t + \Delta t) - f(t)}{\Delta t}\hat i + \lim_{\Delta t \to 0}\frac{g(t + \Delta t) - g(t)}{\Delta t}\hat j + \lim_{\Delta t \to 0}\frac{h(t + \Delta t) - h(t)}{\Delta t}\hat k \newline &amp;amp;= f\prime(t)\hat i + g\prime(t)\hat j + h\prime(t)\hat k \end{align}$$</description>
+    </item>
     
     <item>
       <title>Vector Function</title>
