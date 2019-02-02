@@ -6,35 +6,56 @@
     <description>Recent content on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Jan 2019 14:22:59 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 02 Feb 2019 09:38:47 -0500</lastBuildDate>
     
 	<atom:link href="https://seanmoon80.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Tnb Frame(Frenet-Sernet Frame)</title>
+      <link>https://seanmoon80.github.io/posts/math/tnb_frame/</link>
+      <pubDate>Sat, 02 Feb 2019 09:38:47 -0500</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/math/tnb_frame/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arc Length and Parameterlization</title>
+      <link>https://seanmoon80.github.io/posts/math/arc_length_and_parameterlization_tnb/</link>
+      <pubDate>Wed, 30 Jan 2019 22:19:46 -0500</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/math/arc_length_and_parameterlization_tnb/</guid>
+      <description>Arc Length $$\begin{align} L = \int_a^b \sqrt{(f&amp;rsquo;(t))^2 + (g&amp;rsquo;(t))^2}\, dt \end{align}$$ Lectur 5.4
+Reference
+For 3-D $$\begin{align} L &amp;amp;= \int_a^b \sqrt{(f&amp;rsquo;(t))^2 + (g&amp;rsquo;(t))^2 + (h&amp;rsquo;(t))^2}\, dt \newline\newline \vec{r}(t) &amp;amp;= f(t)\hat i + g(t)\hat j + h(t)\hat k \newline\newline \vec{r}&amp;lsquo;(t) &amp;amp;= f&amp;rsquo;(t)\hat i + g&amp;rsquo;(t)\hat j + h&amp;rsquo;(t)\hat k \newline\newline |\vec{r}&amp;lsquo;(t)| &amp;amp;= \sqrt{(f&amp;rsquo;(t))^2 + (g&amp;rsquo;(t))^2 + (h&amp;rsquo;(t))^2} \newline\newline L &amp;amp;= \int_a^b |\vec{r}&amp;lsquo;(t)|\, dt \end{align}$$
+ This formula will give one of two things.</description>
+    </item>
+    
+    <item>
       <title>Derivatives and Integrals of Vector Functions</title>
-      <link>https://seanmoon80.github.io/posts/derivatives_and_integrals_of_vector_functions/</link>
+      <link>https://seanmoon80.github.io/posts/math/derivatives_and_integrals_of_vector_functions/</link>
       <pubDate>Fri, 25 Jan 2019 14:22:59 -0500</pubDate>
       
-      <guid>https://seanmoon80.github.io/posts/derivatives_and_integrals_of_vector_functions/</guid>
+      <guid>https://seanmoon80.github.io/posts/math/derivatives_and_integrals_of_vector_functions/</guid>
       <description>Derivatives $$\begin{align} f\prime(x) &amp;amp;= \lim_{\Delta x \to 0}\frac{f(x + \Delta x) - f(x)}{\Delta x} \newline\newline \vec{r}\prime(t) &amp;amp;= \lim_{\Delta t \to 0}\frac{\vec{r}(t + \Delta t) - \vec{r}(t)}{\Delta t} \newline &amp;amp;= \lim_{\Delta t \to 0}\frac{(f(t + \Delta t)\hat i + g(t + \Delta t)\hat j + h(t + \Delta t)\hat k) - (f(t)\hat i + g(t)\hat j + h(t)\hat k)}{\Delta t} \newline &amp;amp;= \lim_{\Delta t \to 0}\frac{f(t + \Delta t) - f(t)}{\Delta t}\hat i + \lim_{\Delta t \to 0}\frac{g(t + \Delta t) - g(t)}{\Delta t}\hat j + \lim_{\Delta t \to 0}\frac{h(t + \Delta t) - h(t)}{\Delta t}\hat k \newline &amp;amp;= f\prime(t)\hat i + g\prime(t)\hat j + h\prime(t)\hat k \end{align}$$</description>
     </item>
     
     <item>
       <title>Vector Function</title>
-      <link>https://seanmoon80.github.io/posts/vector_function/</link>
+      <link>https://seanmoon80.github.io/posts/math/vector_function/</link>
       <pubDate>Wed, 16 Jan 2019 21:45:14 -0500</pubDate>
       
-      <guid>https://seanmoon80.github.io/posts/vector_function/</guid>
+      <guid>https://seanmoon80.github.io/posts/math/vector_function/</guid>
       <description>Definition  실수 집합을 정의역으로 가지며 벡터의 집합을 치역으로 가지는 함수 그러한 함수를 $r$이라하고 $r$의 정의역의 어떤 수 $t$에 대한 유일한 벡터 $V_3$가 있을 경우 $r(t)$로 표기할수 있다. $$\begin{align} &amp;amp;A = \{ t \mid t \in \mathbb{R} \}, B = \{\left&amp;lt; x,y,z \right&amp;gt; \mid x,y,z \in \mathbb{R} \} \newline &amp;amp;\vec r : A\rightarrow B \end{align}$$ $r(t)$의 component가 $f(t),\ g(t), h(t)$로 표현될 경우 $f, g, h$는 $r$의 component functions이라 부를수 있고 $$r(t) = \left&amp;lt; f(t),g(t),h(t) \right&amp;gt; = f(t)i + g(t)j + h(t)k$$ $t$는 독립변수로서 일반적으로 시간을 나타냄 치역의 벡터들의 종점은 삼차원상에서 Curve의 자취를 나타냄  Example $$\begin{align} \vec r(t) = \left&amp;lt;\sqrt{t}, \frac{1}{t-1},\ln{t}\right&amp;gt; \newline \underbrace{x = \sqrt{t}}_{t \ge 0},\ \underbrace{y = \frac{1}{t-1}}_{t \ne 1},\ \underbrace{z = \ln{t}}_{t \gt 0} \newline \text{Common Domain}: 0 \lt t \lt 1, 1 \lt t \newline\newline t = 2: \vec r(2) = \left&amp;lt;\sqrt{2},1,\ln2\right&amp;gt;\newline t = 4: \vec r(4) = \left\end{align}$$</description>
     </item>
     
     <item>
       <title>Cylindrical and Spherical coordinates</title>
-      <link>https://seanmoon80.github.io/posts/cylindrical_and_spherical_coordinates/</link>
+      <link>https://seanmoon80.github.io/posts/math/cylindrical_and_spherical_coordinates/</link>
       <pubDate>Tue, 08 Jan 2019 17:12:06 -0500</pubDate>
       
-      <guid>https://seanmoon80.github.io/posts/cylindrical_and_spherical_coordinates/</guid>
+      <guid>https://seanmoon80.github.io/posts/math/cylindrical_and_spherical_coordinates/</guid>
       <description>Polar coordinate system(극좌표계) * 평면위의 위치를 각도($\theta$)와 거리($r$)로 표현
 Cylindrical coordinate system(원통좌표계) $$(x, y, z) \implies (r, \theta, z)$$ * &amp;lsquo;r&amp;rsquo;은 3차원 공간상에서 원점에서부터 점까지의 거리가 아님.
 * &amp;lsquo;r&amp;rsquo;은 xy 평면에 투사된 점까지의 거리
@@ -44,30 +65,30 @@ Rectangular coordinate system(직교좌표계)과의 관계 $$\begin{align} Cyl 
     
     <item>
       <title>Cylinders and surfaces in 3d</title>
-      <link>https://seanmoon80.github.io/posts/cylinders_and_surfaces_in_3d/</link>
+      <link>https://seanmoon80.github.io/posts/math/cylinders_and_surfaces_in_3d/</link>
       <pubDate>Fri, 04 Jan 2019 15:33:31 -0500</pubDate>
       
-      <guid>https://seanmoon80.github.io/posts/cylinders_and_surfaces_in_3d/</guid>
+      <guid>https://seanmoon80.github.io/posts/math/cylinders_and_surfaces_in_3d/</guid>
       <description>Cylinders  어떤 방정식에서 변수가 2개만 주어졌을 경우 (주어진 변수를 통한 삼차원상의 평면과 그 평면위에서의 궤적을 알수있음) 주어진 방정식에 의한 평면상의 궤적을 주어지지 않은 변수축(Axis)로 이동. 이동축으로 이동하더라도 평면상의 궤적이 모양은 변하지 않음  Example $$z = 4 - x^2$$ $$z = -x^2 + 4$$ xz평면에 z축(Axis)로 +4만큼 이동한 $x^2$의 궤적을 y축으로 이동
   Surfaces  어떤 방정식에서 변수가 3개인 경우. 이동축으로 이동함에 따라 궤적이 변화  Steps  Surface 형태 이동축과 평면축 최소 두개이상의 평면상의 궤적  Ellipsoids $$\frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1$$ 1.</description>
     </item>
     
     <item>
       <title>Lines and planes in 3d</title>
-      <link>https://seanmoon80.github.io/posts/lines_and_planes_in_3d/</link>
+      <link>https://seanmoon80.github.io/posts/math/lines_and_planes_in_3d/</link>
       <pubDate>Sun, 30 Dec 2018 16:53:41 -0500</pubDate>
       
-      <guid>https://seanmoon80.github.io/posts/lines_and_planes_in_3d/</guid>
+      <guid>https://seanmoon80.github.io/posts/math/lines_and_planes_in_3d/</guid>
       <description>Lines and Direction vector 선 L이 주어진 점 P1 $&amp;lt;x_1, y_1, z_1&amp;gt;$을 지나고 방향벡터 $\vec v &amp;lt;a,b,c&amp;gt;$와 평행시 L의 좌표
 $$\begin{align} L = t\cdot\vec v \newline$$</description>
     </item>
     
     <item>
       <title>Epsilon Delta</title>
-      <link>https://seanmoon80.github.io/posts/epsilon_delta/</link>
+      <link>https://seanmoon80.github.io/posts/math/epsilon_delta/</link>
       <pubDate>Sat, 29 Dec 2018 16:58:16 -0500</pubDate>
       
-      <guid>https://seanmoon80.github.io/posts/epsilon_delta/</guid>
+      <guid>https://seanmoon80.github.io/posts/math/epsilon_delta/</guid>
       <description>Epsilon-delta definition $\lim_{x\to{a}}f(x) = L$
 x가 a에 한없이 가까워질때 함수 f(x)는 L에 수렴한다. 한없이 가까이? 얼마만큼이 한없이 가깝지?
 $x$에 대한 함수 $f(x)$가 있을때,

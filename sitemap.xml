@@ -3,32 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://seanmoon80.github.io/posts/derivatives_and_integrals_of_vector_functions/</loc>
+    <loc>https://seanmoon80.github.io/posts/math/tnb_frame/</loc>
+    <lastmod>2019-02-02T09:38:47-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://seanmoon80.github.io/posts/math/arc_length_and_parameterlization_tnb/</loc>
+    <lastmod>2019-01-30T22:19:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://seanmoon80.github.io/posts/math/derivatives_and_integrals_of_vector_functions/</loc>
     <lastmod>2019-01-25T14:22:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://seanmoon80.github.io/posts/vector_function/</loc>
+    <loc>https://seanmoon80.github.io/posts/math/vector_function/</loc>
     <lastmod>2019-01-16T21:45:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://seanmoon80.github.io/posts/cylindrical_and_spherical_coordinates/</loc>
+    <loc>https://seanmoon80.github.io/posts/math/cylindrical_and_spherical_coordinates/</loc>
     <lastmod>2019-01-08T17:12:06-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://seanmoon80.github.io/posts/cylinders_and_surfaces_in_3d/</loc>
+    <loc>https://seanmoon80.github.io/posts/math/cylinders_and_surfaces_in_3d/</loc>
     <lastmod>2019-01-04T15:33:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://seanmoon80.github.io/posts/lines_and_planes_in_3d/</loc>
+    <loc>https://seanmoon80.github.io/posts/math/lines_and_planes_in_3d/</loc>
     <lastmod>2018-12-30T16:53:41-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://seanmoon80.github.io/posts/epsilon_delta/</loc>
+    <loc>https://seanmoon80.github.io/posts/math/epsilon_delta/</loc>
     <lastmod>2018-12-29T16:58:16-05:00</lastmod>
   </url>
   
@@ -39,13 +49,13 @@
   
   <url>
     <loc>https://seanmoon80.github.io/</loc>
-    <lastmod>2019-01-25T14:22:59-05:00</lastmod>
+    <lastmod>2019-02-02T09:38:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seanmoon80.github.io/posts/</loc>
-    <lastmod>2019-01-25T14:22:59-05:00</lastmod>
+    <lastmod>2019-02-02T09:38:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   

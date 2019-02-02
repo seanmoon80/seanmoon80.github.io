@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cylindrical and Spherical coordinates // Playground</title>
+
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="Cylindrical and Spherical coordinates" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/cylindrical_and_spherical_coordinates/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="https://seanmoon80.github.io/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="https://seanmoon80.github.io/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://seanmoon80.github.io/css/style.css">
+
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    
+    <meta name="generator" content="Hugo 0.52" />
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="https://seanmoon80.github.io/">Playground</a>
+            <nav id="main-nav">
+                
+                <a class="main-nav-link" href="/posts/">Posts</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Cylindrical and Spherical coordinates</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/posts/math/cylindrical_and_spherical_coordinates/" class="article-date">
+                <time datetime='' itemprop="datePublished"></time>
+            </a>
+            
+            
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<h2 id="polar-coordinate-system-극좌표계">Polar coordinate system(극좌표계)</h2>
+
+<p><img src="/CircularCoordinates.png" alt="polar coordinate" />
+* 평면위의 위치를 각도($\theta$)와 거리($r$)로 표현</p>
+
+<hr />
+
+<h2 id="cylindrical-coordinate-system-원통좌표계">Cylindrical coordinate system(원통좌표계)</h2>
+
+<p>$$(x, y, z) \implies (r, \theta, z)$$
+<img src="/Cylindrical_coordinate.gif" alt="cylindrical coordinate" /><br />
+* &lsquo;r&rsquo;은 3차원 공간상에서 원점에서부터 점까지의 거리가 아님.<br />
+* &lsquo;r&rsquo;은 xy 평면에 투사된 점까지의 거리<br />
+* xy평면에 투영시 팔분면에서의 위치를 사분면의 위치로 투영.</p>
+
+<h3 id="rectangular-coordinate-system-직교좌표계-과의-관계">Rectangular coordinate system(직교좌표계)과의 관계</h3>
+
+<p>$$\begin{align}
+Cyl \xrightarrow\ Rec\ &amp;\begin{cases}
+\cos\theta = \frac{x}{r} \implies x = r\cos\theta \newline
+\sin\theta = \frac{y}{r} \implies y = r\sin\theta \newline
+z = z
+\end{cases} \newline
+Rec \xrightarrow\ Cyl\ &amp;\begin{cases}
+r^2 = x^2 + y^2 \implies r = \sqrt{x^2 + y^2} \newline
+\tan\theta = \frac{y}{x} \newline
+z = z
+\end{cases}
+\end{align}$$</p>
+
+<h3 id="example">Example</h3>
+
+<h4 id="cylindrical-to-rectagular">Cylindrical to Rectagular</h4>
+
+<p>$$\begin{align}
+&amp;(3, -\frac\pi{6},2) \implies \text{Rectangular coordinate} \newline
+&amp;Oct = 4,\ Quad = 4 \newline
+&amp;r = 3,\ \theta = -\frac\pi{6},\ z = 2 \newline
+&amp;x = r\cos\theta \implies 3\cos({-\frac\pi{6}}) = \frac{3\sqrt{3}}{2} \newline
+&amp;y = r\sin\theta \implies 3\sin({-\frac\pi{6}}) = -\frac{3}{2} \newline
+&amp;(\frac{3\sqrt{3}}{2}, -\frac{3}{2}, 2)
+\end{align}$$</p>
+
+<h4 id="rectangular-to-cylindrical">Rectangular to Cylindrical</h4>
+
+<p>$$\begin{align}
+&amp;(\sqrt{2}, -\sqrt{2}, 4) \newline
+&amp;Oct = 4,\ Quad = 4 \newline
+&amp;z = 4 \newline
+&amp;r = \sqrt{x^2 + y^2} \implies r = \sqrt{(\sqrt{2})^2 + (-\sqrt{2})^2} = \pm 2 \newline
+&amp;\tan\theta = \frac{y}{x} \implies \tan\theta = -1 \newline
+&amp;\theta = \frac{3\pi}{4}\ or\ \frac{7\pi}{4}
+\end{align}$$</p>
+
+<hr />
+
+<h2 id="spherical-coordinate-system-구면좌표계">Spherical coordinate system(구면좌표계)</h2>
+
+<p><div class="embed geogebra">
+<iframe scrolling="no"
+src="https://www.geogebra.org/material/iframe/id/usjmrzwq/width/800/height/600/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/false/ld/false/sri/false/sfsb/true"
+width="800px"
+height="600px"
+style="border:0px;" fullscreen>
+</iframe>
+</div>
+$$(x, y, z) \implies (\rho, \theta, \phi)$$
+* $\rho$ 원점에서부터 어떤 점 P까지의 거리<br />
+* $\theta$ 원통좌표계와 동일<br />
+* $\phi$  Z축으로부터 어떤 점 P까지의 양의 각도($0 &lt;= \phi &lt;= \pi$)
+$$\begin{align}
+&amp;\sin\phi = \frac{r}{\rho} \implies r = \rho\sin\phi \newline
+&amp;\cos\phi = \frac{z}{\rho} \implies z = \rho\cos\phi \newline
+Sph \xrightarrow\ Rec\ &amp;\begin{cases}
+x = r\cos\theta \implies x = \rho\sin\phi\cos\theta \newline
+y = r\sin\theta \implies y = \rho\sin\phi\sin\theta \newline
+z = \rho\cos\phi
+\end{cases} \newline
+Rec \xrightarrow\ Sph\ &amp;\begin{cases}
+\rho^2 = r^2 + z^2 \implies \rho = \sqrt{x^2 + y^2 + z^2} \newline
+\tan\theta = \frac{y}{x} \newline
+\cos\phi = \frac{z}{\rho}
+\end{cases}
+\end{align}$$</p>
+
+<h3 id="example-1">Example</h3>
+
+<h4 id="spherical-to-rectangular">Spherical to Rectangular</h4>
+
+<p>$$ <br />
+Sph: (3, \frac{\pi}{4}, \frac{3\pi}{4})
+$$
+$$
+\begin{align} \newline
+x &amp;= \rho\sin\phi\cos\theta = 3\sin\frac{3\pi}{4}\cos\frac{\pi}{4} = 3 \cdot \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{2}}{2} \newline
+&amp;= \frac{3}{2} \newline\newline
+y &amp;= \rho\sin\phi\sin\theta = 3\sin\frac{3\pi}{4}\sin\frac{\pi}{4} = 3 \cdot \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{2}}{2} \newline
+&amp;= \frac{3}{2} \newline\newline
+z &amp;= \rho\cos\phi = 3\cos\frac{3\pi}{4} = 3 \cdot (-\frac{\sqrt{2}}{2}) \newline
+&amp;= \frac{-3\sqrt{2}}{2}
+\end{align}
+$$</p>
+
+<h4 id="rectangular-to-spherical">Rectangular to Spherical</h4>
+
+<p>$$ <br />
+Rec: (-2,2\sqrt{3},4)
+$$
+$$
+\begin{align}
+&amp;Quad = 2,\ Oct = 2 \newline
+\rho &amp;= \sqrt{x^2 + y^2 + z^2} = \sqrt{(-2)^2 + (2\sqrt{3})^2 + 4^2} = \sqrt{32} \newline
+&amp;= 4\sqrt{2} \newline\newline
+\tan\theta &amp;= \frac{y}{x} = \frac{2\sqrt{3}}{-2} \newline
+\theta &amp;= \tan^{-1}-\sqrt{3} = \frac{2\pi}{3}\, \frac{5\pi}{3} \newline
+\cos\phi &amp;= \frac{z}{\rho} = \frac{4}{4\sqrt{2}} = \frac{\sqrt{2}}{2}
+\phi = \frac{\pi}{4}
+\end{align}
+$$</p>
+
+        </div>
+
+        
+        
+        <div class="article-toc" >
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#polar-coordinate-system-극좌표계">Polar coordinate system(극좌표계)</a></li>
+<li><a href="#cylindrical-coordinate-system-원통좌표계">Cylindrical coordinate system(원통좌표계)</a>
+<ul>
+<li><a href="#rectangular-coordinate-system-직교좌표계-과의-관계">Rectangular coordinate system(직교좌표계)과의 관계</a></li>
+<li><a href="#example">Example</a>
+<ul>
+<li><a href="#cylindrical-to-rectagular">Cylindrical to Rectagular</a></li>
+<li><a href="#rectangular-to-cylindrical">Rectangular to Cylindrical</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#spherical-coordinate-system-구면좌표계">Spherical coordinate system(구면좌표계)</a>
+<ul>
+<li><a href="#example-1">Example</a>
+<ul>
+<li><a href="#spherical-to-rectangular">Spherical to Rectangular</a></li>
+<li><a href="#rectangular-to-spherical">Rectangular to Spherical</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+
+
+        
+    </div>
+    <nav id="article-nav">
+    
+    <a href="/posts/math/vector_function/" id="article-nav-newer" class="article-nav-link-wrap">
+        <div class="article-nav-title"><span>&lt;</span>&nbsp;
+            Vector Function
+        </div>
+    </a>
+    
+    
+    <a href="/posts/math/cylinders_and_surfaces_in_3d/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Cylinders and surfaces in 3d&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2019 Playground&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>

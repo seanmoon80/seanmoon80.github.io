@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arc Length and Parameterlization // Playground</title>
+
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="Arc Length and Parameterlization" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/arc_length_and_parameterlization_tnb/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="https://seanmoon80.github.io/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="https://seanmoon80.github.io/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://seanmoon80.github.io/css/style.css">
+
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    
+    <meta name="generator" content="Hugo 0.52" />
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="https://seanmoon80.github.io/">Playground</a>
+            <nav id="main-nav">
+                
+                <a class="main-nav-link" href="/posts/">Posts</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Arc Length and Parameterlization</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/posts/math/arc_length_and_parameterlization_tnb/" class="article-date">
+                <time datetime='' itemprop="datePublished"></time>
+            </a>
+            
+            
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<h2 id="arc-length">Arc Length</h2>
+
+<p>$$\begin{align}
+L = \int_a^b \sqrt{(f&rsquo;(t))^2 + (g&rsquo;(t))^2}\, dt
+\end{align}$$
+<a href="https://www.youtube.com/watch?v=5Yuw1jCBq-0&amp;list=PLF797E961509B4EB5&amp;index=32">Lectur 5.4</a><br />
+<a href="http://tutorial.math.lamar.edu/Classes/CalcII/ArcLength.aspx">Reference</a></p>
+
+<h3 id="for-3-d">For 3-D</h3>
+
+<p>$$\begin{align}
+L &amp;= \int_a^b \sqrt{(f&rsquo;(t))^2 + (g&rsquo;(t))^2 + (h&rsquo;(t))^2}\, dt \newline\newline
+\vec{r}(t) &amp;= f(t)\hat i + g(t)\hat j + h(t)\hat k \newline\newline
+\vec{r}&lsquo;(t) &amp;= f&rsquo;(t)\hat i + g&rsquo;(t)\hat j + h&rsquo;(t)\hat k \newline\newline
+|\vec{r}&lsquo;(t)| &amp;= \sqrt{(f&rsquo;(t))^2 + (g&rsquo;(t))^2 + (h&rsquo;(t))^2} \newline\newline
+L &amp;= \int_a^b |\vec{r}&lsquo;(t)|\, dt
+\end{align}$$</p>
+
+<ul>
+<li>This formula will give one of two things.<br /></li>
+<li>Actual arc length(definite integral) when $t \in [a, b]$ We call it &lsquo;L&rsquo;</li>
+<li>Arc length function(indefinite integral). Still has &rsquo;t&rsquo;. We call it $S(t)$</li>
+</ul>
+
+<h3 id="example-1">Example 1</h3>
+
+<p>$$\begin{align}
+\text{Find Arc Length }: \vec{r}(t) &amp;= 4\sin{t}\hat i + 3t\hat j + 4\cos{t}\hat k\ (0 \le t \le 2\pi) \newline
+\vec{r&rsquo;}(t) &amp;= 4\cos{t}\hat i + 3\hat j - 4\sin{t}\hat k \newline
+||\vec{r&rsquo;}(t)|| &amp;= \sqrt{16\cos^2{t} + 9 + 16\sin^2{t}} \newline
+&amp;= \sqrt{16(\cos^2{t} + \sin^2{t}) + 9} = 5 \newline
+L &amp;= \int_0^{2\pi}5\, dt = 10\pi \newline\newline
+\end{align}$$</p>
+
+<h4 id="arc-length-function">Arc Length Function</h4>
+
+<ul>
+<li>Replace &rsquo;t&rsquo; to &lsquo;u&rsquo;(u-sub)</li>
+<li>Set interval from start point of &rsquo;t&rsquo; and to &rsquo;t&rsquo;
+$$\begin{align}
+S(t) &amp;= \int_0^t 5\, du = \left| 5u \right|_0^t = 5t \newline
+t &amp;= \frac{S}{5} \newline
+\end{align}$$</li>
+</ul>
+
+<h4 id="reparameterize">Reparameterize</h4>
+
+<ul>
+<li>Replate &rsquo;t&rsquo; in vector function to arc length function
+$$\begin{align}
+\vec{r}(s) &amp;= 4\sin{\frac{s}{5}}\hat i + 3{\frac{s}{5}}\hat j + 4\cos{\frac{s}{5}}\hat k
+\end{align}$$</li>
+<li>can walk through the curve.</li>
+<li>could simplify the formular.</li>
+<li>Easy to get Unit Tangent Vector</li>
+</ul>
+
+<div class="embed geogebra">
+<iframe scrolling="no"
+src="https://www.geogebra.org/material/iframe/id/wem2skrd/width/800/height/600/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/false/ld/false/sri/false/sfsb/true"
+width="800px"
+height="600px"
+style="border:0px;" fullscreen>
+</iframe>
+</div>
+
+        </div>
+
+        
+        
+        <div class="article-toc" >
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#arc-length">Arc Length</a>
+<ul>
+<li><a href="#for-3-d">For 3-D</a></li>
+<li><a href="#example-1">Example 1</a>
+<ul>
+<li><a href="#arc-length-function">Arc Length Function</a></li>
+<li><a href="#reparameterize">Reparameterize</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+
+
+        
+    </div>
+    <nav id="article-nav">
+    
+    <a href="/posts/math/tnb_frame/" id="article-nav-newer" class="article-nav-link-wrap">
+        <div class="article-nav-title"><span>&lt;</span>&nbsp;
+            Tnb Frame(Frenet-Sernet Frame)
+        </div>
+    </a>
+    
+    
+    <a href="/posts/math/derivatives_and_integrals_of_vector_functions/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Derivatives and Integrals of Vector Functions&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2019 Playground&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>
