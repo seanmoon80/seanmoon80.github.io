@@ -26,10 +26,10 @@
       <pubDate>Wed, 30 Jan 2019 22:19:46 -0500</pubDate>
       
       <guid>https://seanmoon80.github.io/posts/math/arc_length_and_parameterlization_tnb/</guid>
-      <description>Arc Length $$\begin{align} L = \int_a^b \sqrt{(f&amp;rsquo;(t))^2 + (g&amp;rsquo;(t))^2}\, dt \end{align}$$ * Lectur 5.4
-* Reference
-* Stewart Calculus 7th Edition Chapter 10.2(P645)
-For 3-D $$\begin{align} L &amp;amp;= \int_a^b \sqrt{(f&amp;rsquo;(t))^2 + (g&amp;rsquo;(t))^2 + (h&amp;rsquo;(t))^2}\, dt \newline\newline \vec{r}(t) &amp;amp;= f(t)\hat i + g(t)\hat j + h(t)\hat k \newline\newline \vec{r}&amp;lsquo;(t) &amp;amp;= f&amp;rsquo;(t)\hat i + g&amp;rsquo;(t)\hat j + h&amp;rsquo;(t)\hat k \newline\newline |\vec{r}&amp;lsquo;(t)| &amp;amp;= \sqrt{(f&amp;rsquo;(t))^2 + (g&amp;rsquo;(t))^2 + (h&amp;rsquo;(t))^2} \newline\newline L &amp;amp;= \int_a^b |\vec{r}&amp;lsquo;(t)|\, dt \end{align}$$</description>
+      <description>Arc Length $$\begin{align} L = \int_a^b \sqrt{(f&amp;rsquo;(t))^2 + (g&amp;rsquo;(t))^2}\, dt \end{align}$$
+ Lectur 5.4
+ Reference
+ Stewart Calculus 7th Edition Chapter 10.2(P645)  For 3-D $$\begin{align} L &amp;amp;= \int_a^b \sqrt{(f&amp;rsquo;(t))^2 + (g&amp;rsquo;(t))^2 + (h&amp;rsquo;(t))^2}\, dt \newline\newline \vec{r}(t) &amp;amp;= f(t)\hat i + g(t)\hat j + h(t)\hat k \newline\newline \vec{r}&amp;lsquo;(t) &amp;amp;= f&amp;rsquo;(t)\hat i + g&amp;rsquo;(t)\hat j + h&amp;rsquo;(t)\hat k \newline\newline |\vec{r}&amp;lsquo;(t)| &amp;amp;= \sqrt{(f&amp;rsquo;(t))^2 + (g&amp;rsquo;(t))^2 + (h&amp;rsquo;(t))^2} \newline\newline L &amp;amp;= \int_a^b |\vec{r}&amp;lsquo;(t)|\, dt \end{align}$$</description>
     </item>
     
     <item>
