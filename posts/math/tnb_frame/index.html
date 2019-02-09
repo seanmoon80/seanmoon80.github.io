@@ -82,9 +82,90 @@
         </div>
         <div class="article-entry" itemprop="articleBody">
             
+
+<h2 id="definition">Definition</h2>
+
+<p>Unlikely IJK frame, it is moving through the curve.<br />
+To descirbe motion of particles travling along the curve<br />
+T - $\vec{T}$ Unit Tangent Vector. Direction particle is heading.<br />
+N - $\vec{N}$ Normal Vector. Direction particle is turning.<br />
+B - $\vec{B}$ Binormal Vector. Direction of particle&rsquo;s twisting</p>
+
+<h2 id="how-to-find-tnb">How to find TNB</h2>
+
+<p>$\vec{T}$: Unit Tangent
+$$\begin{align}&amp;\vec{T}(s) = \vec{r}\prime(s) \text{ or } \vec{T}(t) = \frac{\vec{r}\prime(t)}{||\vec{r}\prime(t)||}\end{align}$$
+$\vec{N}$: Unit Normal
+$$\begin{align}
+&amp;\vec{N}(t) = \frac{\vec{T}\prime(t)}{||\vec{T}\prime(t)||} \newline
+&amp;\text{Every vector with a constant length is perpendicular to it&rsquo;s Tangent vector} \newline
+&amp;\text{Proof: Let } \vec{v} \text{ have constant length} \newline
+&amp;\vec{v}\cdot\vec{v} = |\vec{v}|^2 = C^2 \newline
+&amp;\dfrac{d}{dt}(\vec{v}\cdot\vec{v}) = \dfrac{d}{dt}(C^2) \newline
+&amp;\vec{v}\prime\cdot\vec{v} + \vec{v}\cdot\vec{v}\prime = 2(\vec{v}\prime\cdot\vec{v}) = 0 \newline
+&amp;\text{So } \vec{T}(t) \perp \vec{T}\prime(t)
+\end{align}$$
+$\vec{B}$: Unit Binormal
+$$\vec{B} = \vec{T} \times \vec{N}$$</p>
+
+<h2 id="curvature-곡률">Curvature(곡률)</h2>
+
+<p>Curvature is Arc Length compared to Heading($\vec{T}$).<br />
+How $\vec{T}$ is changing with respect to arc length.</p>
+
+<h3 id="arc-length-reparameterized-vector-function">Arc length reparameterized vector function</h3>
+
+<p>$$
+\vec{r}\prime(s) = \vec{T}(s)<br />
+$$
+$$
+\kappa = \left|\left|\dfrac{d\vec{T}}{ds}\right|\right| = \left|\left|\vec{T}\prime(s)\right|\right|$$</p>
+
+<h3 id="original-vector-function">Original vector function</h3>
+
+<p>$$\begin{align}
+\vec{T}\prime(t) = \dfrac{d\vec{T}}{dt} \rightarrow &amp;\dfrac{d\vec{T}}{dt} = \dfrac{d\vec{T}}{ds}\cdot\dfrac{ds}{dt} \newline
+&amp;\dfrac{d\vec{T}}{ds} = \frac{\dfrac{d\vec{T}}{dt}}{\dfrac{ds}{dt}} \rightarrow ||\dfrac{d\vec{T}}{ds}|| = \frac{||\dfrac{d\vec{T}}{dt}||}{||\dfrac{ds}{dt}||}\tag 1 \newline
+S(t) = \int ||r\prime||\, dt \rightarrow &amp; \dfrac{d}{dt}(S(t)) = \dfrac{d}{dt}\int ||r\prime(t)||\, dt \newline
+&amp;\dfrac{ds}{dt} = ||r\prime(t)|| \tag 2 \newline
+&amp;\kappa = \frac{||\vec{T}\prime(t)||}{||\vec{r}\prime(t)||}
+\end{align}$$</p>
+
+<h3 id="with-polynomial">With Polynomial</h3>
+
+<p>$$
+\kappa = \frac{||\vec{r}\prime\times\vec{r}\prime\prime||}{||\vec{r}\prime||^3}
+$$</p>
+
+<h2 id="torsion-곡선-비틀림">Torsion(곡선 비틀림)</h2>
+
+<p>$$
+\tau = \frac{(\vec{r}\prime\times\vec{r}\prime\prime)\cdot\vec{r}\prime\prime\prime}{||\vec{r}\prime\times\vec{r}\prime\prime||^2}
+$$</p>
+
         </div>
 
         
+        
+        <div class="article-toc" >
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#definition">Definition</a></li>
+<li><a href="#how-to-find-tnb">How to find TNB</a></li>
+<li><a href="#curvature-곡률">Curvature(곡률)</a>
+<ul>
+<li><a href="#arc-length-reparameterized-vector-function">Arc length reparameterized vector function</a></li>
+<li><a href="#original-vector-function">Original vector function</a></li>
+<li><a href="#with-polynomial">With Polynomial</a></li>
+</ul></li>
+<li><a href="#torsion-곡선-비틀림">Torsion(곡선 비틀림)</a></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
         
         
 

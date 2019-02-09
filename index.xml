@@ -17,7 +17,12 @@
       <pubDate>Sat, 02 Feb 2019 09:38:47 -0500</pubDate>
       
       <guid>https://seanmoon80.github.io/posts/math/tnb_frame/</guid>
-      <description></description>
+      <description>Definition Unlikely IJK frame, it is moving through the curve.
+To descirbe motion of particles travling along the curve
+T - $\vec{T}$ Unit Tangent Vector. Direction particle is heading.
+N - $\vec{N}$ Normal Vector. Direction particle is turning.
+B - $\vec{B}$ Binormal Vector. Direction of particle&amp;rsquo;s twisting
+How to find TNB $\vec{T}$: Unit Tangent $$\begin{align}&amp;amp;\vec{T}(s) = \vec{r}\prime(s) \text{ or } \vec{T}(t) = \frac{\vec{r}\prime(t)}{||\vec{r}\prime(t)||}\end{align}$$ $\vec{N}$: Unit Normal $$\begin{align} &amp;amp;\vec{N}(t) = \frac{\vec{T}\prime(t)}{||\vec{T}\prime(t)||} \newline &amp;amp;\text{Every vector with a constant length is perpendicular to it&amp;rsquo;s Tangent vector} \newline &amp;amp;\text{Proof: Let } \vec{v} \text{ have constant length} \newline &amp;amp;\vec{v}\cdot\vec{v} = |\vec{v}|^2 = C^2 \newline &amp;amp;\dfrac{d}{dt}(\vec{v}\cdot\vec{v}) = \dfrac{d}{dt}(C^2) \newline &amp;amp;\vec{v}\prime\cdot\vec{v} + \vec{v}\cdot\vec{v}\prime = 2(\vec{v}\prime\cdot\vec{v}) = 0 \newline &amp;amp;\text{So } \vec{T}(t) \perp \vec{T}\prime(t) \end{align}$$ $\vec{B}$: Unit Binormal $$\vec{B} = \vec{T} \times \vec{N}$$</description>
     </item>
     
     <item>
