@@ -139,9 +139,115 @@ $$</p>
 
 <h2 id="torsion-곡선-비틀림">Torsion(곡선 비틀림)</h2>
 
-<p>$$
-\tau = \frac{(\vec{r}\prime\times\vec{r}\prime\prime)\cdot\vec{r}\prime\prime\prime}{||\vec{r}\prime\times\vec{r}\prime\prime||^2}
+<p>A measure of a curves &ldquo;Failure to be contained in plane&rdquo;
+$$\begin{align}
+\tau &amp;= \frac{(\vec{r}\prime\times\vec{r}\prime\prime)\cdot\vec{r}\prime\prime\prime}{||\vec{r}\prime\times\vec{r}\prime\prime||^2} \newline
+\tau &amp;= \dfrac{-d\vec{B}}{ds}\cdot\vec{N}
+\end{align}$$</p>
+
+<h2 id="osculating-circle">Osculating Circle</h2>
+
+<p>At any point on a curve, There will be a circle that fits that curve &ldquo;BEST&rdquo;<br />
+At the ponit, A circle and a curve have Same tangent, Same curvature.<br />
+Unit Normal($\vec{N}$) will pass throuogh or point center of circle.<br />
+The Plane that contains circle(osculating plane) must contain $\vec{T}\text{ and }\vec{N}$<br />
+The radius of osc circle is called &ldquo;Radius of Curvature&rdquo; and<br />
+$$
+\rho = \frac{1}{\kappa}
 $$</p>
+
+<h2 id="example-1">Example 1</h2>
+
+<p>Find $\vec{T}\, \vec{N}\, \vec{B}\, \kappa\, \rho$, EQ of OSC plane and EQ of Normal plane at $t = \frac{\pi}{2}$<br />
+For $\vec{r}(t) = \cos{t}\hat i + \sin{t}\hat j + t\hat k$</p>
+
+<h3 id="tangent-vector">Tangent vector</h3>
+
+<p>$$\begin{align}
+\vec{r}\prime(t) &amp;= -\sin{t}\hat i + \cos{t}\hat j + \hat k \tag 1 \newline
+||\vec{r}\prime(t)|| &amp;= \sqrt{\sin^2 t + \cos^2 t + 1} \newline &amp;= \sqrt{2} \tag 2 \newline
+\vec{T}(t) &amp;= \frac{-\sin{t}\hat i + \cos{t}\hat j + \hat k}{\sqrt{2}} \newline
+&amp;= \frac{2}{\sqrt{2}}(-\sin{t}\hat i + \cos{t}\hat j + \hat k) \tag 3 \newline
+\end{align}$$</p>
+
+<h3 id="normal-vector">Normal vector</h3>
+
+<p>$$\begin{align}
+\vec{T}\prime(t) &amp;= \frac{\sqrt{2}}{2}(-\cos{t}\hat i + -\sin{t}\hat j) \tag 4 \newline
+||\vec{T}\prime(t)|| &amp;= \frac{\sqrt{2}}{2}\sqrt{\cos^2 t + \sin^2 t} \newline
+&amp;= \frac{\sqrt{2}}{2} \tag 5 \newline
+\vec{N}(t) &amp;= \frac{\vec{T}\prime(t)}{||\vec{T}\prime(t)||} \newline
+&amp;= \frac{\frac{\sqrt{2}}{2}(-\cos{t}\hat i + -\sin{t}\hat j)}{\frac{\sqrt{2}}{2}} \newline
+&amp;= -\cos{t}\hat i - \sin{t}\hat j \tag 6 \newline
+\end{align}$$</p>
+
+<h3 id="binormal-vector">Binormal vector</h3>
+
+<p>$$\begin{align}
+\vec{N} &amp;= \vec{T}\times\vec{N} \newline
+&amp;= \frac{\sqrt{2}}{2}\begin{bmatrix}-\sin{t} &amp; \cos{t} &amp; 1 \newline -\cos{t} &amp; -\sin{t} &amp; 0\end{bmatrix} \newline
+&amp;= \frac{\sqrt{2}}{2}(\sin{t}\hat i + \cos{t}\hat j + \hat k) \newline
+\end{align}$$</p>
+
+<h3 id="curvature">Curvature</h3>
+
+<p>$$\begin{align}
+\kappa &amp;= \frac{||\vec{T}\prime(t)||}{||\vec{r}\prime(t)||} \newline
+&amp;= \frac{\frac{\sqrt{2}}{2}}{\sqrt{2}} = \frac{1}{2} \tag 7 \newline
+\end{align}$$</p>
+
+<h3 id="radius-of-curvature">Radius of curvature</h3>
+
+<p>$$\begin{align}
+\rho &amp;= \frac{1}{\kappa}  = 2 \tag 8
+\end{align}$$</p>
+
+<h3 id="point-at-given-t">Point at given t</h3>
+
+<p>$$\begin{align}
+\vec{r}(\frac{\pi}{2}) &amp;= 0\hat i + 1\hat j + \frac{\pi}{2}\hat k \newline
+\vec{T}(\frac{\pi}{2}) &amp;= \frac{\sqrt{2}}{2}(-\hat i + 0\hat j + \hat k) \newline
+\vec{N}(\frac{\pi}{2}) &amp;= -\hat j \newline
+\vec{B}(\frac{\pi}{2}) &amp;= \frac{\sqrt{2}}{2}(\hat i + \hat k)
+\end{align}$$</p>
+
+<h3 id="osculating-plane">Osculating Plane</h3>
+
+<p>Contains $\vec{T} \text{ and } \vec{N}\, \vec{B}$ is the normal vector
+$$\begin{align}
+P(0,1,\frac{\pi}{2}),\  \vec{B} = \frac{\sqrt{2}}{2}(\hat i + \hat k),\ \vec{n} = \hat i + \hat k \newline
+\text{Plane} \rightarrow 1(x-0)+0(y-1)+1(z-\frac{\pi}{2}) = 0 \newline
+x + z = \frac{\pi}{2}
+\end{align}$$</p>
+
+<h3 id="normal-plane">Normal Plane</h3>
+
+<p>Contains $\vec{N} \text{ and } \vec{B},\ \vec{T}$ is the normal
+$$\begin{align}
+P(0,1,\frac{\pi}{2}), \ \vec{T} = \frac{\sqrt{2}}{2}(-\hat i + \hat k),\ \vec{n} = -\hat i + \hat k \newline
+\text{Plane} \rightarrow -1(x - 0)+0(y-1)+1(z-\frac{\pi}{2}) = 0  \newline
+-x + z = \frac{\pi}{2}
+\end{align}$$</p>
+
+<h2 id="encapsulation">Encapsulation</h2>
+
+<p>Find curvature of $y = x^3 + 1$<br />
+Apply one of below formulars for given polinomial</p>
+
+<p>$$\begin{align}
+y = f(x) &amp;\rightarrow \left&lt; t, f(t), 0\right&gt;,\ t\hat i + f(t)\hat j\newline
+x = g(y) &amp;\rightarrow \left&lt; g(t), t, 0\right&gt;,\ g(t)\hat i + t\hat j\newline
+x = f(t), y=g(t) &amp;\rightarrow \left&lt; f(t), g(t), 0\right&gt;, f(t)\hat i + g(t)\hat j \newline
+r = f(\theta) &amp;\rightarrow \left&lt; f(t)\cos{t}, f(t)\sin{t},0\right&gt;
+\end{align}$$</p>
+
+<p>$$\begin{align}
+y = x^3 + 1 &amp;\rightarrow t\hat i + (t^3 + 1)\hat j \newline
+\vec{r}\prime(t) &amp;= \hat i + 3t^2\hat j \newline
+||\vec{r}\prime(t)|| = \sqrt{1 + 9t^4} \newline
+\vec{r}\prime\prime(t) = 6t\hat j \newline
+\kappa = \frac{6t}{(\sqrt{1+9t^4})^3}
+\end{align}$$</p>
 
         </div>
 
@@ -162,6 +268,19 @@ $$</p>
 <li><a href="#with-polynomial">With Polynomial</a></li>
 </ul></li>
 <li><a href="#torsion-곡선-비틀림">Torsion(곡선 비틀림)</a></li>
+<li><a href="#osculating-circle">Osculating Circle</a></li>
+<li><a href="#example-1">Example 1</a>
+<ul>
+<li><a href="#tangent-vector">Tangent vector</a></li>
+<li><a href="#normal-vector">Normal vector</a></li>
+<li><a href="#binormal-vector">Binormal vector</a></li>
+<li><a href="#curvature">Curvature</a></li>
+<li><a href="#radius-of-curvature">Radius of curvature</a></li>
+<li><a href="#point-at-given-t">Point at given t</a></li>
+<li><a href="#osculating-plane">Osculating Plane</a></li>
+<li><a href="#normal-plane">Normal Plane</a></li>
+</ul></li>
+<li><a href="#encapsulation">Encapsulation</a></li>
 </ul></li>
 </ul>
 </nav>
