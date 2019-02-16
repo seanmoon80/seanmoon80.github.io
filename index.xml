@@ -6,10 +6,20 @@
     <description>Recent content on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Feb 2019 09:38:47 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 12 Feb 2019 22:45:44 -0500</lastBuildDate>
     
 	<atom:link href="https://seanmoon80.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Velocity and Acceleration of Vector functions</title>
+      <link>https://seanmoon80.github.io/posts/math/velocity_and_acceleration_of_vector_functions/</link>
+      <pubDate>Tue, 12 Feb 2019 22:45:44 -0500</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/math/velocity_and_acceleration_of_vector_functions/</guid>
+      <description>Velocity and Acceleration $$\begin{align} \text{Given vector funciton }&amp;amp;\vec{r}(t) \newline \text{Velocity: }&amp;amp;\vec{v}(t) = \vec{r}\prime(t) \newline \text{Acceleration: }&amp;amp;\vec{a}(t) = \vec{v}\prime(t) = \vec{r}\prime\prime(t) \newline \text{Speed: }&amp;amp;||\vec{v}(t)|| \end{align}$$
+Example 1 Find Velocity, Accel and speed of a particle described by $\vec{r}(t) = \left&amp;lt; t, t^2, t^3 \right&amp;gt;$ at t = 1 $$\begin{align} \text{Velocity: } &amp;amp;\vec{r}\prime(t) = \left&amp;lt; 1, 2t, 3t^2 \right&amp;gt; \rightarrow \vec{v}(1) = \left&amp;lt; 1, 2, 3 \right&amp;gt; \newline \text{Speed: } &amp;amp;||\vec{v}(1)|| = \sqrt{1+4+9} = \sqrt{14} \newline \text{Acceleration: } &amp;amp;\vec{r}\prime\prime(t) = \left&amp;lt; 0, 2, 6t \right&amp;gt; \rightarrow \vec{a}(1) = \left&amp;lt; 0, 2, 6 \right&amp;gt; \newline \end{align}$$</description>
+    </item>
     
     <item>
       <title>TNB Frame(Frenet-Serret Frame)</title>

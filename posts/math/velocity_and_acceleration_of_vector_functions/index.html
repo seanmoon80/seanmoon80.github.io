@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Velocity and Acceleration of Vector functions // Playground</title>
+
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="Velocity and Acceleration of Vector functions" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/velocity_and_acceleration_of_vector_functions/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="https://seanmoon80.github.io/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="https://seanmoon80.github.io/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://seanmoon80.github.io/css/style.css">
+
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    
+    <meta name="generator" content="Hugo 0.52" />
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="https://seanmoon80.github.io/">Playground</a>
+            <nav id="main-nav">
+                
+                <a class="main-nav-link" href="/posts/">Posts</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Velocity and Acceleration of Vector functions</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/posts/math/velocity_and_acceleration_of_vector_functions/" class="article-date">
+                <time datetime='' itemprop="datePublished"></time>
+            </a>
+            
+            
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<h2 id="velocity-and-acceleration">Velocity and Acceleration</h2>
+
+<p>$$\begin{align}
+\text{Given vector funciton }&amp;\vec{r}(t) \newline
+\text{Velocity: }&amp;\vec{v}(t) = \vec{r}\prime(t) \newline
+\text{Acceleration: }&amp;\vec{a}(t) = \vec{v}\prime(t) = \vec{r}\prime\prime(t) \newline
+\text{Speed: }&amp;||\vec{v}(t)||
+\end{align}$$</p>
+
+<h3 id="example-1">Example 1</h3>
+
+<p>Find Velocity, Accel and speed of a particle described by $\vec{r}(t) = \left&lt; t, t^2, t^3 \right&gt;$ at t = 1
+$$\begin{align}
+\text{Velocity: } &amp;\vec{r}\prime(t) = \left&lt; 1, 2t, 3t^2 \right&gt; \rightarrow \vec{v}(1) = \left&lt; 1, 2, 3 \right&gt; \newline
+\text{Speed: } &amp;||\vec{v}(1)|| = \sqrt{1+4+9} = \sqrt{14} \newline
+\text{Acceleration: } &amp;\vec{r}\prime\prime(t) = \left&lt; 0, 2, 6t \right&gt; \rightarrow \vec{a}(1) = \left&lt; 0, 2, 6 \right&gt; \newline
+\end{align}$$</p>
+
+<h3 id="example-2-integral">Example 2 (Integral)</h3>
+
+<p>$\underbrace{\vec{a}(t) = e^t\hat i + e^{-t}\hat k}_{\vec{r}\prime\prime(t)},\ \ \underbrace{\vec{v}(0) = \hat i + 2\hat j}_{\vec{r}\prime(0)},\ \ \vec{r}(0) = 3\hat i + \hat j + 2\hat k$
+$$\begin{align}
+&amp;\vec{v}(t) = \int{\vec{a}(t)}\, dt \rightarrow \int{e^t\hat i + e^{-t}\hat k}\, dt = e^t\hat i - e^t\hat k + C_{1} \newline
+&amp;\vec{v}(0) = \hat i + 2\hat j = \hat i - \hat k + C_{1} \newline
+&amp;C_{1} = 2\hat j + \hat k \newline
+&amp;\vec{v}(t) = e^t\hat i - e^{-t}\hat k + 2\hat j + \hat k = e^t\hat i - 2\hat j +(1 - e^{-t})\hat k \newline
+&amp;\int{\vec{v}(t)}\, dt = e^t\hat i + 2t\hat j + (t + e^{-t})\hat k + C_{2} \newline
+&amp;\vec{r}(0) = \hat i + \hat k + C_{2} = 3\hat i + \hat j + 2\hat k \newline
+&amp;C_{2} = 2\hat i + \hat j + \hat k \newline
+&amp;\vec{r}(t) = (e^t + 2)\hat i + (1 + 2t)\hat j + (1 + t + e^{-t})\hat k
+\end{align}$$</p>
+
+<h3 id="note">Note</h3>
+
+<p>We can define Accel as a vector with $\vec{T} and \vec{N}$ (Let $||\vec{v}(t)|| = v$ Speed)<br />
+$$\begin{align}
+\vec{a} = v\prime\vec{T} + \kappa v^2\vec{N} \text{ or } \newline
+\vec{a} = \frac{\vec{r}\prime \cdot \vec{r}\prime\prime}{||\vec{r}\prime||}\vec{T} + \frac{||\vec{r}\prime \times \vec{r}\prime\prime||}{||\vec{r}\prime||}\vec{N}
+\end{align}$$</p>
+
+<h3 id="example-3">Example 3</h3>
+
+<p>$$\begin{align}
+&amp;\vec{r}(t) = (\vec{v}_{0}\cos\alpha)t\hat i + \left[ h + (\vec{v}_{0}\sin\alpha)t - \frac{1}{2}gt^2 \right]\hat j \newline
+&amp;\vec{v}_{0} = \text{Initial Velocity} \newline
+&amp;\alpha = \text{Angle of horizontal inclination} \newline
+&amp;h = \text{Height} \newline
+&amp;g = \text{Acceleration Gravity}
+\end{align}$$</p>
+
+<p>Qestion: You shoot a rifle from a 200 FT cliff with angle of 30 degrees form parallel and muzzle velocity of 1500 ft/sec</p>
+
+<p>$$\begin{align}
+&amp;\vec{v}_{0} = 1500 FT/sec \newline
+&amp;\alpha = \frac{\pi}{6} \newline
+&amp;h = 200 FT \newline
+&amp;g = 32 FT/s^2 \newline
+\end{align}$$
+$$\begin{align}
+\vec{r}(t) &amp;= (1500\cdot\cos(\frac{\pi}{6}))t\hat i + \left[200 + (1500\cdot\sin(\frac{\pi}{6}))t - 16t^2\right]\hat j \newline
+&amp;= \underbrace{750\sqrt{3}t\hat i}_{x: Range} + \underbrace{(200 + 750t - 16t^2)\hat j}_{y: Height} \newline
+\end{align}$$
+Q1 When Bullet Hit ground?<br />
+$$\begin{align}
+&amp;y = 0 \rightarrow 200+750t-16t^2 = 0 \rightarrow t = 47.1 sec \newline
+\end{align}$$
+Q2 Max Range?<br />
+$$
+x = 750\sqrt{3}(47.1)
+$$</p>
+
+        </div>
+
+        
+        
+        <div class="article-toc" >
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#velocity-and-acceleration">Velocity and Acceleration</a>
+<ul>
+<li><a href="#example-1">Example 1</a></li>
+<li><a href="#example-2-integral">Example 2 (Integral)</a></li>
+<li><a href="#note">Note</a></li>
+<li><a href="#example-3">Example 3</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+
+
+        
+    </div>
+    <nav id="article-nav">
+    
+    
+    <a href="/posts/math/tnb_frame/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">TNB Frame(Frenet-Serret Frame)&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2019 Playground&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>
