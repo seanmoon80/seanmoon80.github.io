@@ -6,10 +6,22 @@
     <description>Recent content on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Feb 2019 22:45:44 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 20 Feb 2019 13:54:16 -0500</lastBuildDate>
     
 	<atom:link href="https://seanmoon80.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Intro to Multivariable Functions</title>
+      <link>https://seanmoon80.github.io/posts/math/intro_to_multivariable_functions/</link>
+      <pubDate>Wed, 20 Feb 2019 13:54:16 -0500</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/math/intro_to_multivariable_functions/</guid>
+      <description>You must have 1 dimension more than the number of independent variables.(Number of independent variables + 1)
+ $f(x) = x + 1 \rightarrow y = x + 1 \rightarrow \text{2-D}$
+ $g(x,y) = x^2 + y^2 \rightarrow z = x^2 + y^2 \rightarrow \text{3-D}$
+ $h(x,y,z) = \frac{x^2 + y^2}{z - 3} \rightarrow w = \frac{x^2 + y^2}{z - 3}$  You must have the same dimension as number of independent variables.</description>
+    </item>
     
     <item>
       <title>Velocity and Acceleration of Vector functions</title>
