@@ -158,6 +158,58 @@ $$
 $$</li>
 </ol>
 
+<h3 id="continuity">Continuity</h3>
+
+<p>a Function continuous at any point inside its domain<br />
+1. Polynomial continuous everywhere<br />
+2. Rational function continuous everywhere where denom $\ne 0$<br />
+3. Continuity holds for compositions.</p>
+
+<h4 id="continuity-example">Continuity Example</h4>
+
+<h5 id="ex1">EX1</h5>
+
+<p>$$
+f(x,y) = \frac{x^3+xy+y^3}{x^2+y^2} \\<br />
+\text{Doman :}\{ (x,y)|(x,y) \ne (0,0) \} \\<br />
+$$</p>
+
+<h5 id="ex2">EX2</h5>
+
+<p>$$
+f(x,y,z) = \frac{xyz}{x^2+y^2+z^2+4} \\<br />
+\text{Domain :}\{ (x,y,z) | x^2+y^2+z^2 \ne 4 \}
+$$</p>
+
+<h5 id="ex3">EX3</h5>
+
+<p>$$\begin{align}
+f(x,y) &amp;= x^2 + xy + y^2 \\<br />
+g(t) &amp;= t\cos{t} + \sin{t} \\<br />
+f(x) &amp;\rightarrow \text{Continuous on All }(x,y) \\<br />
+g(t) &amp;\rightarrow \text{Continuous on All }&rsquo;t&rsquo; \\<br />
+h(x,y) = g(f(x,y)) &amp;\rightarrow \text{Continuous on everywhere}
+\end{align}$$</p>
+
+<h5 id="ex4">EX4</h5>
+
+<p>$$\begin{align}
+f(x,y) &amp;= x-2y+3 \\<br />
+g(t) &amp;= \sqrt{t} + \frac{1}{t} \\<br />
+f(x,y) &amp;\rightarrow \text{Continuous on All }(x,y) \\<br />
+g(t) &amp;\rightarrow \text{Continuous on }\{t|t &gt; 0\} \\<br />
+h(x,y) = g(f(x,y)) &amp;\rightarrow \text{Continuous on }\{(x,y)|x-2y &gt; -3\}
+\end{align}$$</p>
+
+<h3 id="squeeze-theorem">Squeeze theorem</h3>
+
+<p>$$\begin{align}
+&amp;\lim_{(x,y) \to (0,0)}\frac{5x^2y}{x^2+y^2} \\<br />
+\frac{5x^2y}{x^2+y^2} &amp;\rightarrow \left|\frac{5x^2y}{x^2+y^2}\right| = \frac{5x^2|y|}{x^2+y^2}\\<br />
+\frac{5x^2}{x^2} = 5 &amp;\rightarrow \frac{5x^2}{x^2+y^2} \le 5 \rightarrow \frac{5x^2|y|}{x^2+y^2} \le 5|y| \\<br />
+0 \le \frac{5x^2|y|}{x^2+y^2} \le 5|y| &amp;\rightarrow \lim_{(x,y)\to (0,0)} 0 = 0 \le \lim_{(x,y)\to (0,0)}\frac{5x^2|y|}{x^2+y^2} \le \lim_{(x,y) \to (0,0)}5|y|
+\end{align}$$</p>
+
         </div>
 
         
@@ -176,6 +228,17 @@ $$</li>
 <li><a href="#step-1">Step 1</a></li>
 <li><a href="#step-2">Step 2</a></li>
 </ul></li>
+<li><a href="#continuity">Continuity</a>
+<ul>
+<li><a href="#continuity-example">Continuity Example</a>
+<ul>
+<li><a href="#ex1">EX1</a></li>
+<li><a href="#ex2">EX2</a></li>
+<li><a href="#ex3">EX3</a></li>
+<li><a href="#ex4">EX4</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#squeeze-theorem">Squeeze theorem</a></li>
 </ul></li>
 </ul></li>
 </ul>
