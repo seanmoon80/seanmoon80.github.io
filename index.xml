@@ -6,10 +6,25 @@
     <description>Recent content on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Feb 2019 13:54:16 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 27 Feb 2019 21:35:04 -0500</lastBuildDate>
     
 	<atom:link href="https://seanmoon80.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Limits_and_continuity_of_multivariable_functions</title>
+      <link>https://seanmoon80.github.io/posts/math/limits_and_continuity_of_multivariable_functions/</link>
+      <pubDate>Wed, 27 Feb 2019 21:35:04 -0500</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/math/limits_and_continuity_of_multivariable_functions/</guid>
+      <description>Limits In 2-D, There are only two path to approach to some point &amp;lsquo;a&amp;rsquo;.
+Therefore, Limit does exist if thoes two path approaching to same value
+2차원상에서 특정한 점 &amp;lsquo;a&amp;rsquo;로 접근하는 경로는 2개밖에 없으므로
+좌극한과 우극한의 값이 동일할 경우 극한값 존재
+$$ \lim_{x \to a}f(x) = L \\
+\lim_{a \to a^-}f(x) = \lim_{a \to a^+}f(x) $$
+In 3-D, There are infinity number of path exist to apprach to some point &amp;lsquo;a&amp;rsquo;</description>
+    </item>
     
     <item>
       <title>Intro to Multivariable Functions</title>

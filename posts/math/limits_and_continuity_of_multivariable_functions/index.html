@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lines and planes in 3d // Playground</title>
+    <title>Limits_and_continuity_of_multivariable_functions // Playground</title>
 
         <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -9,11 +9,11 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-        <meta property="og:title" content="Lines and planes in 3d" />
+        <meta property="og:title" content="Limits_and_continuity_of_multivariable_functions" />
     <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/lines_and_planes_in_3d/" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/limits_and_continuity_of_multivariable_functions/" />
     
 
     <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
@@ -69,11 +69,11 @@
     <div class="article-inner">
         
         <header class="article-header">
-            <h1 class="article-title" itemprop="name">Lines and planes in 3d</h1>
+            <h1 class="article-title" itemprop="name">Limits_and_continuity_of_multivariable_functions</h1>
         </header>
         
         <div class="article-meta">
-            <a href="/posts/math/lines_and_planes_in_3d/" class="article-date">
+            <a href="/posts/math/limits_and_continuity_of_multivariable_functions/" class="article-date">
                 <time datetime='' itemprop="datePublished"></time>
             </a>
             
@@ -83,11 +83,80 @@
         <div class="article-entry" itemprop="articleBody">
             
 
-<h2 id="lines-and-direction-vector">Lines and Direction vector</h2>
+<h2 id="limits">Limits</h2>
 
-<p>선 L이 주어진 점 P1 $&lt;x_1, y_1, z_1&gt;$을 지나고 방향벡터 $\vec v &lt;a,b,c&gt;$와 평행시
-L의 좌표<br />
-$$\begin{align} L = t\cdot\vec v \newline$$</p>
+<p>In 2-D, There are only two path to approach to some point &lsquo;a&rsquo;.<br />
+Therefore, Limit does exist if thoes two path approaching to same
+value</p>
+
+<p>2차원상에서 특정한 점 &lsquo;a&rsquo;로 접근하는 경로는 2개밖에 없으므로<br />
+좌극한과 우극한의 값이 동일할 경우 극한값 존재</p>
+
+<p>$$
+\lim_{x \to a}f(x) = L  \\<br />
+\lim_{a \to a^-}f(x) = \lim_{a \to a^+}f(x)
+$$</p>
+
+<p>In 3-D, There are infinity number of path exist
+to apprach to some point &lsquo;a&rsquo;</p>
+
+<p>3차원상에서 특정한 점 &lsquo;a&rsquo; 와 &lsquo;b&rsquo;로 접근하는 경로는 무한개 존재</p>
+
+<h3 id="how-to-find-limit">How to find Limit</h3>
+
+<ol>
+<li>Squeeze Theorem (샌드위치 정리)</li>
+<li>Continuity of function (함수의 연속성)</li>
+<li>Find 2 path to show limit doesn&rsquo;t exist</li>
+</ol>
+
+<h3 id="dne-does-not-exist-example">DNE(Does Not Exist) Example</h3>
+
+<h4 id="step-1">Step 1</h4>
+
+<p>Set $x = 0$. So, we can travel along the surface directly over
+&lsquo;y-Axis&rsquo;
+$$
+\lim_{(x,y) \to (0,0)}\frac{x^2 - y^2}{2x^2+y^2} \\<br />
+\text{when x = 0} \rightarrow \lim_{y \to 0}\frac{0^2 - y^2}{0 + y^2} = -1 \\<br />
+\text{when y = 0} \rightarrow \lim_{x \to 0}\frac{x^2 - 0}{2x^2 - 0} = \frac{1}{2} \\<br />
+-1 \ne \frac{1}{2}\ \text{Therefore, limit does not exist at } (0,0)
+$$</p>
+
+<h4 id="step-2">Step 2</h4>
+
+<p>If Step1 doesn&rsquo;t work.<br />
+1. Pick another path which contains the point (a, b)<br />
+2. Try to substitute so degrees of numer and denom are equal.(분모분자 약분가능)<br />
+3. Always use either x = 0 or y = 0 as 1 Path<br />
+$$
+\lim_{(x,y) \to (0,0)}\frac{3xy}{3x^2+y^2} \\<br />
+x = 0 \rightarrow 0,\ y = 0 \rightarrow 0
+$$</p>
+
+<p>Set $y = f(x)$ or $x = f(y)$ Make it sure path contains the point (a,b)<br />
+$$
+y = x \rightarrow \lim_{x \to 0}\frac{3x^2}{4x^2} = \frac{3}{4} \\<br />
+0 \ne \frac{3}{4}\, \text{Therefore, Limit does not exist.}
+$$</p>
+
+<p>$$
+\lim_{(x,y) \to (1,0)}\frac{2xy - 2y}{x^2+y^2-2x+1} \\<br />
+y = 0 \rightarrow \lim_{x \to 1}\frac{0}{x^2-2x+1} = 0 \\<br />
+x = 1 \rightarrow \lim_{y \to 0}\frac{2y-2y}{y^2} = 0 \\<br />
+\lim_{(x,y) \to (1,0)}\frac{2y(x-1)}{y^2+(x-1)^2} \<br />
+x-1 = y \rightarrow \lim_{y \to 0}\frac{2y\cdot y}{y^2+y^2} = 1
+$$</p>
+
+<ol>
+<li>For 3-var, Paths are now Parametric &ldquo;t&rdquo;<br /></li>
+<li>Always choose an AXIS as 1st path
+$$
+\lim_{(x,y,z) \to (0,0,0)}\frac{xy+yz+xz}{x^2+y^2+z^2} \\<br />
+\text{Along X-Axis} (y = 0, z = 0) \rightarrow \lim_{x \to 0}\frac{0}{x^2} = 0 \\<br />
+\text{Along C:} x = t, y = t, z = t \rightarrow \frac{3t^2}{3t^2} = 1
+$$</li>
+</ol>
 
         </div>
 
@@ -99,7 +168,15 @@ $$\begin{align} L = t\cdot\vec v \newline$$</p>
 <ul>
 <li>
 <ul>
-<li><a href="#lines-and-direction-vector">Lines and Direction vector</a></li>
+<li><a href="#limits">Limits</a>
+<ul>
+<li><a href="#how-to-find-limit">How to find Limit</a></li>
+<li><a href="#dne-does-not-exist-example">DNE(Does Not Exist) Example</a>
+<ul>
+<li><a href="#step-1">Step 1</a></li>
+<li><a href="#step-2">Step 2</a></li>
+</ul></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -114,15 +191,9 @@ $$\begin{align} L = t\cdot\vec v \newline$$</p>
     </div>
     <nav id="article-nav">
     
-    <a href="/posts/math/cylinders_and_surfaces_in_3d/" id="article-nav-newer" class="article-nav-link-wrap">
-        <div class="article-nav-title"><span>&lt;</span>&nbsp;
-            Cylinders and surfaces in 3d
-        </div>
-    </a>
     
-    
-    <a href="/posts/math/epsilon_delta/" id="article-nav-older" class="article-nav-link-wrap">
-        <div class="article-nav-title">Epsilon Delta&nbsp;<span>&gt;</span></div>
+    <a href="/posts/math/intro_to_multivariable_functions/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Intro to Multivariable Functions&nbsp;<span>&gt;</span></div>
     </a>
     
 </nav>
