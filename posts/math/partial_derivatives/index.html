@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Partial Derivatives(Derivatives of Multivariable Functions) // Playground</title>
+
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="Partial Derivatives(Derivatives of Multivariable Functions)" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/partial_derivatives/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="https://seanmoon80.github.io/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="https://seanmoon80.github.io/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://seanmoon80.github.io/css/style.css">
+
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    
+    <meta name="generator" content="Hugo 0.52" />
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="https://seanmoon80.github.io/">Playground</a>
+            <nav id="main-nav">
+                
+                <a class="main-nav-link" href="/posts/">Posts</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Partial Derivatives(Derivatives of Multivariable Functions)</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/posts/math/partial_derivatives/" class="article-date">
+                <time datetime='' itemprop="datePublished"></time>
+            </a>
+            
+            
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<h2 id="derivative">Derivative</h2>
+
+<p>$f(x,y)$ is a surface in $\mathbb{R}- 3$</p>
+
+<ul>
+<li>it is the slope of surface at a point -&gt; $\infty$ number of lines</li>
+<li>Find the slope of the tangent line to a surface at a point. we
+must give the tangent line a Direction
+
+<ul>
+<li>For now, we restrict our direction to in the &lsquo;X-Direction(Axis)&rsquo; or
+in the &lsquo;y-Direction&rsquo;</li>
+</ul></li>
+<li>To find the slope of tangent line in &lsquo;X-Direction&rsquo;, we must contain the tangent line in a plane parallel to teh xz-Plane</li>
+<li>Requires &ldquo;y&rdquo; to be constant</li>
+</ul>
+
+<h3 id="notation">Notation</h3>
+
+<p>$$\begin{align}
+f(x,y) =&amp; z \newline
+\frac{\partial f}{\partial x}, \frac{\partial z}{\partial x}, f_{x}, z_{x}:\ &amp;\text{Holds &lsquo;y&rsquo; constant} \newline
+&amp;\text{Slope of tangent line ot the surface at a point in x-direction} \newline
+\frac{\partial f}{\partial y}, \frac{\partial z}{\partial y}, f_{y}, z_{y}:\ &amp;\text{Holds &lsquo;x&rsquo; constant} \newline
+&amp;\text{Slope of tangent line of the surface at apoint in y-direction}
+\end{align}$$</p>
+
+<h3 id="ex1">Ex1</h3>
+
+<p>$$\begin{align}
+f(x,y) &amp;= 2x^2y^3-3x^2y+2x^2+3y^2+1 \newline
+\frac{\partial f}{\partial x} &amp;= 4xy^3 - 6xy + 4x \newline
+\frac{\partial f}{\partial y} &amp;= 6x^2y^2-3x^2+6y
+\end{align}$$</p>
+
+<h3 id="ex2">Ex2</h3>
+
+<p>$$\begin{align}
+f(x,y) &amp;= xe^{xy^2} \newline
+f_{x} &amp;= \frac{\partial}{\partial x}[x]e^{xy^2} + x\cdot\frac{\partial}{\partial x}\left[e^{xy^2}\right] \newline
+&amp;= e^{xy^2} + x\cdot e^{xy^2}\cdot\frac{\partial}{\partial x}[xy^2] \newline
+&amp;= e^{xy^2} + x\cdot e^{xy^2}\cdot y^2 \newline
+&amp;= e^{xy^2}(1+xy^2) \newline
+f_{y} &amp;= x\cdot\frac{\partial}{\partial y}\left[e^{xy^2}\right] \newline
+&amp;= x\cdot e^{xy^2}\cdot\frac{\partial}{\partial y}\left[xy^2\right] \newline
+&amp;= x\cdot e^{xy^2}\cdot 2xy \newline
+&amp;= 2x^2ye^{xy^2}
+\end{align}$$</p>
+
+<h3 id="ex3">Ex3</h3>
+
+<p>$$\begin{align}
+g(x,y) &amp;= x^2 \cosh{\frac{x}{y}} \newline
+g_{x} &amp;= 2x\cosh{\frac{x}{y}}+x^2\sinh{\frac{x}{y}}\cdot\frac{1}{y} \newline
+g_{y} &amp;= x^2\sinh{\frac{x}{y}}\cdot(-\frac{x}{y^2})
+\end{align}$$</p>
+
+<h3 id="ex4">Ex4</h3>
+
+<p><a href="http://tutorial.math.lamar.edu/Classes/CalcI/ProductQuotientRule.aspx">Quotient Rule</a>
+$$
+\left(\frac{f}{g}\right)\prime = \frac{f\prime{g} - fg\prime}{g^2}
+$$
+$$\begin{align}
+f(x,y,z,w) &amp;= \frac{xw^2}{y+\sin{(zw)}} \newline
+f_{x} &amp;= \frac{w^2}{y+\sin{zw}} \newline
+f_{w} &amp;= \frac{2xw\cdot(y+\sin{zw}) - xw^2\cdot\cos{(zw)}\cdot{z}}{(y+sin{(zw)})^2}
+\end{align}$$</p>
+
+<h2 id="implicit-derivatives-음함수의-미분">Implicit Derivatives(음함수의 미분)</h2>
+
+<ul>
+<li>Take derivative for both sides</li>
+<li>$x\cdot{z}, y\cdot{z}$ - apply product rule</li>
+</ul>
+
+<p>$$\begin{align}
+x^2+xz+yz^2 &amp;= 8 \newline
+\frac{\partial}{\partial x}\left[x^2y+xz+yz^2\right] &amp;= \frac{\partial}{\partial x}\left[8\right] \newline
+2xy + \frac{\partial}{\partial x}[x]\cdot{z} + x\cdot\frac{\partial}{\partial x}[z] + 2y\cdot{z}\cdot\frac{\partial}{\partial x}[z] &amp;= 0 \newline
+2xy+z+x\cdot\frac{\partial z}{\partial x} + 2y\cdot z\cdot \frac{\partial z}{\partial x} &amp;= 0 \newline
+\frac{\partial z}{\partial x}(x + 2yz) &amp;= -2xy - z \newline
+\frac{\partial z}{\partial x} &amp;= \frac{-2xy - z}{x+2yz}
+\end{align}$$</p>
+
+<h2 id="higher-derivative">Higher Derivative</h2>
+
+<p>$$
+f(x,y)
+\begin{cases} \displaystyle
+\frac{\partial z}{\partial x}
+\begin{cases} \displaystyle
+\frac{\partial ^2 f}{\partial x^2},\ f_{xx},\ z_{xx} \\  \\<br />
+\displaystyle
+\frac{\partial ^2 f}{\partial y \partial x},\ f_{xy}, z_{xy}
+\end{cases} \\ \\<br />
+\displaystyle
+\frac{\partial z}{\partial y}
+\begin{cases} \displaystyle
+\frac{\partial ^2 f}{\partial y^2},\ f_{yy},\ z_{yy} \\ \\<br />
+\displaystyle
+\frac{\partial ^2 f}{\partial x \partial y},\ f_{yx},\ z_{yx}
+\end{cases} \<br />
+\end{cases}$$</p>
+
+<h3 id="ex-1">Ex 1</h3>
+
+<p>$$\begin{align}
+f(x,y) &amp;= x\sin^2 y+y^2\cos{x}\ f_{xy},f_{yx} \newline
+f_{x} &amp;= \sin^2 y - y^2\sin{x} \newline
+f_{xy} &amp;= 2\sin{y}\cdot\cos{y} - 2y\sin{x} \newline
+f_{y} &amp;= 2x\sin{y}\cdot\cos{y}+2y\cos{x} \newline
+f_{yx} &amp;= 2\sin{y}\cdot\cos{y} - 2y\sin{x}
+\end{align}$$</p>
+
+<ul>
+<li>Any function that is continuous on a region, Mixed partial derivatives are Equal</li>
+</ul>
+
+<h2 id="laplace-equation">Laplace Equation</h2>
+
+<p>$$\begin{align}
+h(x,y) \rightarrow h_{xx} + h_{yy} = 0
+\end{align}$$</p>
+
+        </div>
+
+        
+        
+        <div class="article-toc" >
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#derivative">Derivative</a>
+<ul>
+<li><a href="#notation">Notation</a></li>
+<li><a href="#ex1">Ex1</a></li>
+<li><a href="#ex2">Ex2</a></li>
+<li><a href="#ex3">Ex3</a></li>
+<li><a href="#ex4">Ex4</a></li>
+</ul></li>
+<li><a href="#implicit-derivatives-음함수의-미분">Implicit Derivatives(음함수의 미분)</a></li>
+<li><a href="#higher-derivative">Higher Derivative</a>
+<ul>
+<li><a href="#ex-1">Ex 1</a></li>
+</ul></li>
+<li><a href="#laplace-equation">Laplace Equation</a></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+
+
+        
+    </div>
+    <nav id="article-nav">
+    
+    <a href="/posts/data-science/titanic/" id="article-nav-newer" class="article-nav-link-wrap">
+        <div class="article-nav-title"><span>&lt;</span>&nbsp;
+            Titanic
+        </div>
+    </a>
+    
+    
+    <a href="/posts/math/limits_and_continuity_of_multivariable_functions/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Limits and continuity of multivariable functions&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2019 Playground&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>

@@ -6,10 +6,29 @@
     <description>Recent content in Posts on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Feb 2019 21:35:04 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 06 Mar 2019 22:59:52 -0500</lastBuildDate>
     
 	<atom:link href="https://seanmoon80.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Titanic</title>
+      <link>https://seanmoon80.github.io/posts/data-science/titanic/</link>
+      <pubDate>Wed, 06 Mar 2019 22:59:52 -0500</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/data-science/titanic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Partial Derivatives(Derivatives of Multivariable Functions)</title>
+      <link>https://seanmoon80.github.io/posts/math/partial_derivatives/</link>
+      <pubDate>Sun, 03 Mar 2019 22:24:53 -0500</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/math/partial_derivatives/</guid>
+      <description>Derivative $f(x,y)$ is a surface in $\mathbb{R}- 3$
+ it is the slope of surface at a point -&amp;gt; $\infty$ number of lines Find the slope of the tangent line to a surface at a point. we must give the tangent line a Direction  For now, we restrict our direction to in the &amp;lsquo;X-Direction(Axis)&amp;rsquo; or in the &amp;lsquo;y-Direction&amp;rsquo;  To find the slope of tangent line in &amp;lsquo;X-Direction&amp;rsquo;, we must contain the tangent line in a plane parallel to teh xz-Plane Requires &amp;ldquo;y&amp;rdquo; to be constant  Notation $$\begin{align} f(x,y) =&amp;amp; z \newline \frac{\partial f}{\partial x}, \frac{\partial z}{\partial x}, f_{x}, z_{x}:\ &amp;amp;\text{Holds &amp;lsquo;y&amp;rsquo; constant} \newline &amp;amp;\text{Slope of tangent line ot the surface at a point in x-direction} \newline \frac{\partial f}{\partial y}, \frac{\partial z}{\partial y}, f_{y}, z_{y}:\ &amp;amp;\text{Holds &amp;lsquo;x&amp;rsquo; constant} \newline &amp;amp;\text{Slope of tangent line of the surface at apoint in y-direction} \end{align}$$</description>
+    </item>
     
     <item>
       <title>Limits and continuity of multivariable functions</title>
