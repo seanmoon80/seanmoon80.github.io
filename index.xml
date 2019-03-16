@@ -6,10 +6,22 @@
     <description>Recent content on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Mar 2019 22:59:52 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 15 Mar 2019 22:03:19 -0400</lastBuildDate>
     
 	<atom:link href="https://seanmoon80.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Finding differentials of multivariable functions</title>
+      <link>https://seanmoon80.github.io/posts/math/finding_differentials_of_multivariable_functions/</link>
+      <pubDate>Fri, 15 Mar 2019 22:03:19 -0400</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/math/finding_differentials_of_multivariable_functions/</guid>
+      <description>Differentials  $\Delta y$ Gives the total change in height from $x$ to $x + \Delta x$ $dy$ Gives the change in height from &amp;ldquo;p&amp;rdquo; to a point on the tangent line at $ x + \Delta x$
+ $\Delta y \ne dy$ But As $\Delta x$ Gets really small($\Delta x$ to 0) then $\Delta y \approx dy$  $\Delta{y} = $ Increment
+$dy = $ Differential
+$\Delta{x} = dx,\ \Delta{y} \ne dy$</description>
+    </item>
     
     <item>
       <title>Titanic</title>
