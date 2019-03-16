@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Finding differentials of multivariable functions // Playground</title>
+
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="Finding differentials of multivariable functions" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/finding_differentials_of_multivariable_functions/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="https://seanmoon80.github.io/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="https://seanmoon80.github.io/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://seanmoon80.github.io/css/style.css">
+
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    
+    <meta name="generator" content="Hugo 0.52" />
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="https://seanmoon80.github.io/">Playground</a>
+            <nav id="main-nav">
+                
+                <a class="main-nav-link" href="/posts/">Posts</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Finding differentials of multivariable functions</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/posts/math/finding_differentials_of_multivariable_functions/" class="article-date">
+                <time datetime='' itemprop="datePublished"></time>
+            </a>
+            
+            
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<h2 id="differentials">Differentials</h2>
+
+<ul>
+<li>$\Delta y$ Gives the total change in height from $x$ to $x + \Delta x$</li>
+<li>$dy$ Gives the change in height from &ldquo;p&rdquo; to a point on the tangent line at $ x + \Delta x$<br /></li>
+<li>$\Delta y \ne dy$ But As $\Delta x$ Gets really small($\Delta x$ to 0) then $\Delta y \approx dy$</li>
+</ul>
+
+<p>$\Delta{y} = $ Increment<br />
+$dy = $ Differential<br />
+$\Delta{x} = dx,\ \Delta{y} \ne dy$<br />
+$f\prime(x) = \frac{dy}{dx}$<br />
+$dy = f\prime(x)dx$</p>
+
+<h3 id="for-r-3-surface">For R-3 Surface</h3>
+
+<ul>
+<li>Given a surface from &ldquo;P&rdquo; to &ldquo;Q&rdquo; and a Tangent Plane at &ldquo;p&rdquo;</li>
+<li>$\Delta z$ is the Actual change from &ldquo;P&rdquo; to &ldquo;Q&rdquo; (x,y) to ($x + \Delta{x},\ y + \Delta{y}$)</li>
+<li>$dz$ is the change in height from &ldquo;P&rdquo; to a point on the tangent plane at ($x + \Delta{x},\ y + \Delta{y}$)</li>
+</ul>
+
+<p>$\Delta{z} = \Delta{z_x} + \Delta{z_y}$<br />
+$\Delta{z_x} \approx dz_x = f_xdx$<br />
+$\Delta{z_y} \approx dz_y = f_ydy$<br />
+$\Delta{z} \approx dz_x + dz_y = f_xdx + f_ydy$<br />
+$\Delta{z} \approx dz = f_xdx + f_ydy</p>
+
+<h3 id="example-1">Example 1</h3>
+
+<p>Find diff of $z = ye^{x^2-y^2}$<br />
+$f_x = 2xye^{x^2-y^2}$<br />
+$f_y = e^{x^2-y^2} - 2y^2e^{x^2-y^2} = (1-2y^2)e^{x^2-y^2}$<br />
+$dz = 2xye^{x^2-y^2}dx + (1-2y^2)e^{x^2-y^2}dy$</p>
+
+<h3 id="example-2">Example 2</h3>
+
+<p>$f(x,y,z) = \ln(2x-y)+e^{2xz}$, Find df<br />
+$f_x = \frac{2}{2x-y} + 2ze^{2xz}$<br />
+$f_y = \frac{-1}{2x-y}$<br />
+$f_z = 2xe^{2xz}$<br />
+$df = (\frac{2}{2x-y} + 2ze^{2xz})dx - \frac{1}{2x-y}dy + 2xe^{2xz}dz$</p>
+
+<p>Approx  change from (2,3,0) -&gt; (2.01,2.97,0.04)</p>
+
+<p>$df = (\frac{2}{2\cdot2 - 3} + 2\cdot0e^{2x0})(0.01) - \frac{1}{2\cdot2 - 3}(-0.03) + 2\cdot2e^{2\cdot2\cdot0}(0.04)$<br />
+$\Delta{f} \approx 0.21$</p>
+
+        </div>
+
+        
+        
+        <div class="article-toc" >
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#differentials">Differentials</a>
+<ul>
+<li><a href="#for-r-3-surface">For R-3 Surface</a></li>
+<li><a href="#example-1">Example 1</a></li>
+<li><a href="#example-2">Example 2</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+
+
+        
+    </div>
+    <nav id="article-nav">
+    
+    
+    <a href="/posts/data-science/titanic/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Titanic&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2019 Playground&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>
