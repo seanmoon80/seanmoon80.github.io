@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Chain Rule for Multivariable Functions // Playground</title>
+
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="The Chain Rule for Multivariable Functions" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/the_chain_rule_for_multivariable_functions/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="https://seanmoon80.github.io/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="https://seanmoon80.github.io/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://seanmoon80.github.io/css/style.css">
+
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    
+    <meta name="generator" content="Hugo 0.52" />
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="https://seanmoon80.github.io/">Playground</a>
+            <nav id="main-nav">
+                
+                <a class="main-nav-link" href="/posts/">Posts</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">The Chain Rule for Multivariable Functions</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/posts/math/the_chain_rule_for_multivariable_functions/" class="article-date">
+                <time datetime='' itemprop="datePublished"></time>
+            </a>
+            
+            
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<h2 id="chain-rule-for-singlevariable-function">Chain rule for singlevariable function</h2>
+
+<p>$$\begin{align}
+\frac{dy}{dt} &amp;= \frac{dy}{dx}\cdot\frac{dx}{dt} \newline
+(f \circ g)\prime &amp;= (f\prime \circ g)\cdot g\prime \newline
+f(g(x)) &amp;= f\prime(g(x))\cdot g\prime(x) \newline\newline
+\end{align}$$
+$$\begin{align}
+y &amp;= (3x)^4,\ u = 3x,\ y = u^4 \newline
+y &amp;= f(u),\ f(u) = u^4,\ u = g(x) = 3x \newline
+\frac{dy}{dx} &amp;= 4u^3\cdot 3 = 12\cdot(3x)^3 = 324x^3
+\end{align}$$
+* Even though there are 3-variables (x,y,t), only <strong>1 Independent variable</strong> exist.<br />
+* In above example, Variable <strong>$u$</strong> is <strong>Intermediate Variable</strong></p>
+
+<h2 id="multivariable-function">Multivariable function</h2>
+
+<p>$$\begin{align}
+w = x^2 - y^2,\ x = t^2+1,\ y = t^3 + t \newline
+\end{align}$$
+* &ldquo;x&rdquo; and &ldquo;y&rdquo; are <strong>Intermediate variables</strong> &ldquo;t&rdquo; is the <strong>Independant variable</strong><br />
+* Therefore, It has two paths from &ldquo;w&rdquo; to &ldquo;t&rdquo; to find $\frac{dw}{dt}$<br />
+* $\Delta{t} \rightarrow \Delta{x},\ \Delta{y} \rightarrow \Delta{w}$
+$$\begin{align}
+\Delta{w} &amp;= \text{The amount &ldquo;x&rdquo; changes &ldquo;w&rdquo;} + \text{The amount &ldquo;y&rdquo; changes &ldquo;w&rdquo;}\newline
+&amp;= \underbrace{\text{Rate of change in x-direction}}_{\frac{\partial{w}}{\partial{x}}}\cdot\Delta{x} + \underbrace{\text{Rate of change in y-direction}}_{\frac{\partial{w}}{\partial{y}}}\cdot\Delta{y} \newline
+\Delta{w} &amp;= \frac{\partial w}{\partial x}\cdot\Delta x + \frac{\partial w}{\partial y}\cdot\Delta y \newline
+\frac{\Delta w}{\Delta t} &amp;= \frac{\partial w}{\partial x}\cdot\frac{\Delta x}{\Delta t} + \frac{\partial w}{\partial y}\cdot\frac{\Delta y}{\Delta t} \newline
+\underbrace{\lim_{\Delta{t} \to 0}\frac{\Delta w}{\Delta t}}_{\frac{dw}{dt}} &amp;= \frac{\partial w}{\partial x}\cdot\underbrace{\lim_{\Delta{t} \to 0}\frac{\Delta x}{\Delta t}}_{\frac{dx}{dt}} + \frac{\partial w}{\partial y}\cdot\underbrace{\lim_{\Delta{t} \to 0}\frac{\Delta y}{\Delta t}}_{\frac{dy}{dt}} \newline
+\frac{dw}{dt} &amp;= \frac{\partial w}{\partial x}\cdot\frac{dx}{dt} + \frac{\partial w}{\partial y}\cdot\frac{dy}{dt}
+\end{align}$$</p>
+
+<h3 id="example-1">Example 1</h3>
+
+<p>$$\begin{align}
+w = x^2y - xy^3,\ x = \cos t,\ y = e^t \newline
+\frac{dw}{dt} &amp;= \frac{\partial w}{\partial x}\cdot\frac{dx}{dt} + \frac{\partial w}{\partial y}\cdot\frac{dy}{dt} \newline
+&amp;= (2xy - y^3)\cdot(-\sin t) + (x^2 - 3xy^2)\cdot e^t
+\end{align}$$</p>
+
+<h2 id="multi-independent-variables">Multi Independent variables</h2>
+
+<ul>
+<li>It has to be partial derivative for each Independent variables.<br />
+$$\begin{align}
+w
+\begin{cases}
+x
+\begin{cases}
+u \newline
+v
+\end{cases}
+\newline
+y
+\begin{cases}
+u \newline
+v
+\end{cases}
+\end{cases}
+\frac{\partial w}{\partial u},\ \frac{\partial w}{\partial v} \newline
+\frac{\partial w}{\partial u} = \frac{\partial w}{\partial x}\cdot\frac{\partial x}{\partial u} + \frac{\partial w}{\partial y}\cdot\frac{\partial y}{\partial u} \newline
+\frac{\partial w}{\partial v} = \frac{\partial w}{\partial x}\cdot\frac{\partial x}{\partial v} + \frac{\partial w}{\partial y}\cdot\frac{\partial y}{\partial v}
+\end{align}$$</li>
+</ul>
+
+<h3 id="example-2">Example 2</h3>
+
+<p>$$
+w = x^3 + y^3,\ x = u^2 + v^2,\ y = 2uv \\<br />
+\begin{align}
+\frac{\partial w}{\partial u} &amp;= 3x^2\cdot 2u + 3y^2\cdot 2v \newline
+\frac{\partial w}{\partial v} &amp;= 3x^2\cdot 2v + 3y^2\cdot 2u \newline
+\end{align}$$</p>
+
+<h3 id="example-3">Example 3</h3>
+
+<p>$$
+w = x\tan^{-1}(yz),\ x = u^{\frac{1}{2}},\ y = e^{-2v},\ z = v\cos{u}\\<br />
+\begin{align}
+\frac{\partial w}{\partial u} &amp;= \frac{\partial w}{\partial x}\cdot\frac{\partial x}{\partial u} + \frac{\partial w}{\partial z}\cdot\frac{\partial z}{\partial u} \newline
+\frac{\partial w}{\partial v} &amp;= \frac{\partial w}{\partial y}\cdot\frac{\partial y}{\partial v} + \frac{\partial w}{\partial z}\cdot\frac{\partial z}{\partial v} \newline
+\frac{\partial w}{\partial u} &amp;= \tan^{-1}(yz)\cdot\frac{1}{2\sqrt{u}} + x\cdot\frac{1}{1 + y^2z^2}\cdot{y}\cdot (-v\sin u) \newline
+\frac{\partial w}{\partial v} &amp;= x\cdot\frac{1}{1 + y^2z^2}\cdot{z}\cdot(-2e^{-2v}) + x\cdot\frac{1}{1+y^2z^2}\cdot{y}\cdot\cos{u}
+\end{align}$$</p>
+
+<h2 id="implicit-form">Implicit Form</h2>
+
+<p>$$
+w = f(x,y)\, y = g(x)\\<br />
+\begin{align}
+\frac{\partial w}{\partial x} &amp;= \frac{\partial w}{\partial x} + \frac{\partial w}{\partial y}\cdot\frac{dy}{dx} = 0 \newline
+\frac{\partial w}{\partial y}\cdot\frac{dy}{dx} &amp;= -\frac{\partial w}{\partial x} \newline
+\frac{dy}{dx} &amp;= -\frac{f_x}{f_y}
+\end{align}
+$$</p>
+
+<h3 id="example-4">Example 4</h3>
+
+<p>$$
+2x^2 + 3(xy)^{\frac{1}{2}} - 2y - 4 = 0,\ y = g(x)\ \text{Find } \frac{dy}{dx}\\<br />
+\frac{dy}{dx} = -\frac{4x + \frac{3}{2}(xy)^{-\frac{1}{2}}\cdot y}{\frac{3}{2}(xy)^{-\frac{1}{2}}\cdot x - 2}
+$$</p>
+
+        </div>
+
+        
+        
+        <div class="article-toc" >
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#chain-rule-for-singlevariable-function">Chain rule for singlevariable function</a></li>
+<li><a href="#multivariable-function">Multivariable function</a>
+<ul>
+<li><a href="#example-1">Example 1</a></li>
+</ul></li>
+<li><a href="#multi-independent-variables">Multi Independent variables</a>
+<ul>
+<li><a href="#example-2">Example 2</a></li>
+<li><a href="#example-3">Example 3</a></li>
+</ul></li>
+<li><a href="#implicit-form">Implicit Form</a>
+<ul>
+<li><a href="#example-4">Example 4</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+
+
+        
+    </div>
+    <nav id="article-nav">
+    
+    
+    <a href="/posts/math/finding_differentials_of_multivariable_functions/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Finding differentials of multivariable functions&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2019 Playground&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>

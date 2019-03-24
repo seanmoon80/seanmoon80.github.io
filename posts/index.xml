@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Mar 2019 22:03:19 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 22 Mar 2019 19:30:55 -0400</lastBuildDate>
     
 	<atom:link href="https://seanmoon80.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Chain Rule for Multivariable Functions</title>
+      <link>https://seanmoon80.github.io/posts/math/the_chain_rule_for_multivariable_functions/</link>
+      <pubDate>Fri, 22 Mar 2019 19:30:55 -0400</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/math/the_chain_rule_for_multivariable_functions/</guid>
+      <description>Chain rule for singlevariable function $$\begin{align} \frac{dy}{dt} &amp;amp;= \frac{dy}{dx}\cdot\frac{dx}{dt} \newline (f \circ g)\prime &amp;amp;= (f\prime \circ g)\cdot g\prime \newline f(g(x)) &amp;amp;= f\prime(g(x))\cdot g\prime(x) \newline\newline \end{align}$$ $$\begin{align} y &amp;amp;= (3x)^4,\ u = 3x,\ y = u^4 \newline y &amp;amp;= f(u),\ f(u) = u^4,\ u = g(x) = 3x \newline \frac{dy}{dx} &amp;amp;= 4u^3\cdot 3 = 12\cdot(3x)^3 = 324x^3 \end{align}$$ * Even though there are 3-variables (x,y,t), only 1 Independent variable exist.</description>
+    </item>
     
     <item>
       <title>Finding differentials of multivariable functions</title>
