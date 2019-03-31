@@ -6,10 +6,26 @@
     <description>Recent content on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Mar 2019 19:30:55 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 29 Mar 2019 21:28:27 -0400</lastBuildDate>
     
 	<atom:link href="https://seanmoon80.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Finding Directional Derivatives And Gradients</title>
+      <link>https://seanmoon80.github.io/posts/math/finding_directional_derivatives_and_gradients/</link>
+      <pubDate>Fri, 29 Mar 2019 21:28:27 -0400</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/math/finding_directional_derivatives_and_gradients/</guid>
+      <description>Graph https://www.geogebra.org/m/gwajt8rk
+Directional Derivatives  To give a direction, There must be a Vector(Unit Vector $\vec u$) on the
+Plane of the Independent Variables.
+ Need Point &amp;ldquo;P&amp;rdquo; on XY-Plane for specific Rate Of Change
+ Make line through &amp;ldquo;P&amp;rdquo; parallel to $\vec u$
+ Create a plane parallel to $\vec u$z-plane
+ Move $\Delta x$ and $\Delta y$ to 0
+ $\vec{PQ}$ parallel $\vec u \rightarrow \vec{PQ} = h\cdot\vec u \rightarrow h\cdot(u_1\hat i + u_2\hat j)$</description>
+    </item>
     
     <item>
       <title>The Chain Rule for Multivariable Functions</title>

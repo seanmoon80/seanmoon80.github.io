@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://seanmoon80.github.io/posts/math/finding_directional_derivatives_and_gradients/</loc>
+    <lastmod>2019-03-29T21:28:27-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://seanmoon80.github.io/posts/math/the_chain_rule_for_multivariable_functions/</loc>
     <lastmod>2019-03-22T19:30:55-04:00</lastmod>
   </url>
@@ -84,13 +89,13 @@
   
   <url>
     <loc>https://seanmoon80.github.io/</loc>
-    <lastmod>2019-03-22T19:30:55-04:00</lastmod>
+    <lastmod>2019-03-29T21:28:27-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seanmoon80.github.io/posts/</loc>
-    <lastmod>2019-03-22T19:30:55-04:00</lastmod>
+    <lastmod>2019-03-29T21:28:27-04:00</lastmod>
     <priority>0</priority>
   </url>
   
