@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://seanmoon80.github.io/posts/math/finding_tangent_planes_and_normal_lines_to_surfaces/</loc>
+    <lastmod>2019-04-05T22:32:08-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://seanmoon80.github.io/posts/math/finding_directional_derivatives_and_gradients/</loc>
     <lastmod>2019-03-29T21:28:27-04:00</lastmod>
   </url>
@@ -89,13 +94,13 @@
   
   <url>
     <loc>https://seanmoon80.github.io/</loc>
-    <lastmod>2019-03-29T21:28:27-04:00</lastmod>
+    <lastmod>2019-04-05T22:32:08-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seanmoon80.github.io/posts/</loc>
-    <lastmod>2019-03-29T21:28:27-04:00</lastmod>
+    <lastmod>2019-04-05T22:32:08-04:00</lastmod>
     <priority>0</priority>
   </url>
   

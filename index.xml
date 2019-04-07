@@ -6,10 +6,19 @@
     <description>Recent content on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Mar 2019 21:28:27 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 05 Apr 2019 22:32:08 -0400</lastBuildDate>
     
 	<atom:link href="https://seanmoon80.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Finding Tangent Planes and Normal Lines to Surfaces</title>
+      <link>https://seanmoon80.github.io/posts/math/finding_tangent_planes_and_normal_lines_to_surfaces/</link>
+      <pubDate>Fri, 05 Apr 2019 22:32:08 -0400</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/math/finding_tangent_planes_and_normal_lines_to_surfaces/</guid>
+      <description>Tangent Plane  GeoGebra - https://www.geogebra.org/classic/f2u7jjsb In 2-d, We can find tangent line at a point In 3-d, We can find tangent plane at a point Let&amp;rsquo;s say we have $f(x,y) = z$ surface. It will have a level curve at $f(x,y) = C Level curve is always 1 dimension less (3D -&amp;gt; 2D, 4D -&amp;gt; 3D) It can redefine to vector function $\vec r(t) = x(t)\hat i + y(t)\hat j \rightarrow$ Level curve Function for level curve is $f(x(t),y(t)) = C Take derivative with respect to variable &amp;ldquo;t&amp;rdquo; $\rightarrow f\prime(x(t),y(t)) = 0$ $$\begin{align} \frac{\partial f}{\partial y}\cdot\frac{dy}{dt} + \frac{\partial f}{\partial x}\cdot\frac{dx}{dt} &amp;amp;= 0\\</description>
+    </item>
     
     <item>
       <title>Finding Directional Derivatives And Gradients</title>
