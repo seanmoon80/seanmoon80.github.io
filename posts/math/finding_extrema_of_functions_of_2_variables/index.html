@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Finding Extrema of Functions of 2 Variables // Playground</title>
+
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="Finding Extrema of Functions of 2 Variables" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/finding_extrema_of_functions_of_2_variables/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="https://seanmoon80.github.io/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="https://seanmoon80.github.io/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://seanmoon80.github.io/css/style.css">
+
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    
+    <meta name="generator" content="Hugo 0.52" />
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="https://seanmoon80.github.io/">Playground</a>
+            <nav id="main-nav">
+                
+                <a class="main-nav-link" href="/posts/">Posts</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Finding Extrema of Functions of 2 Variables</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/posts/math/finding_extrema_of_functions_of_2_variables/" class="article-date">
+                <time datetime='' itemprop="datePublished"></time>
+            </a>
+            
+            
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<h2 id="extrema-of-function">Extrema of function</h2>
+
+<ul>
+<li>Relative Max is a peak of a <em>Curve</em></li>
+<li>Relative Max is a Pek of a <em>Surface</em></li>
+<li>Relative Max, Relative Min &gt;= 1</li>
+</ul>
+
+<h2 id="single-variable">Single variable</h2>
+
+<ul>
+<li>$f\prime(x) = 0\text{ or undefined}$ gives critical points</li>
+<li>Critical points could be inflection points</li>
+</ul>
+
+<h2 id="2-variables">2 Variables</h2>
+
+<ul>
+<li>Both partial derivatives $f_x, f_y = 0$ <em>AT THE SAME POINT</em></li>
+<li>Cricital points could be <em>undefined(within domain of the function)</em> or <em>saddle point</em></li>
+<li>Relative Max - Both $f_x, f_y$ goes to positive to negative (Increasing to Decreasing)</li>
+<li>Relative Min - Both $f_x, f_y$ goes to negative to positive (Decreasing to Increasing)</li>
+<li>Saddle point - One is decreasing to increasing, other one is increasing to decreasing</li>
+</ul>
+
+<h2 id="second-derivative-test">Second Derivative Test</h2>
+
+<ul>
+<li>$ D(x,y) = f_{xx}(x,y) \cdot f_{yy} - (f_{xy})^2$</li>
+<li>$f_{xx}$ is giving concavity in x-direction</li>
+<li>$f_{yy}$ is giving concavity in y-direction</li>
+<li>$f_{xx} \cdot f_{yy}$ is only positive when $x$ and $y$ directions agree on concavity direction.</li>
+<li>$f_{xy}^2$ is always positive.</li>
+<li>$D(a,b) &gt; 0,\ f_{xx}(a,b) &gt; 0 \rightarrow Relative Min$</li>
+<li>$D(a,b) &gt; 0,\ f_{xx}(a,b) &lt; 0 \rightarrow Relative Max$</li>
+<li>$D(a,b) &lt; 0 \rightarrow \text{Saddle point}$</li>
+<li>$D(a,b) = 0 \rightarrow \text{Inconclusive}$</li>
+<li>$f_x = 0, f_y = 0 \rightarrow \text{Find critical point} \rightarrow D(x,y) \rightarrow \text{Pulg in critical point}$</li>
+</ul>
+
+<h3 id="example-1">Example 1</h3>
+
+<p>$$\begin{align}
+f(x,y) &amp;= 2x^2+y^2-2xy-8x-2y+2 \newline
+f_x &amp;= 4x - 2y - 8 = 0 \newline
+f_y &amp;= 2y - 2x - 2 = 0 \newline
+2x &amp;= 10, x = 5, y = 6 \newline
+&amp;\text{Critical Point: } (5,6) \newline
+f_{xx} &amp;= 4,\ f_{yy} = 2,\ f_{xy} = -2 \newline
+D(x,y) = 4 \cdot 2 - 4 = 4
+\end{align}$$</p>
+
+<h3 id="example-2">Example 2</h3>
+
+<p>$$\begin{align}
+f_x = 2x - 6 - \sqrt y = 0,\ f_y = \frac{-x}{2\sqrt{y}} + 1 = 0 \newline
+1 = \frac{x}{2\sqrt{y}} \rightarrow \sqrt{y} = \frac{x}{2} \newline
+f_x = 2x - 6 - \frac{x}{2} \rightarrow x = 4, y = 4 \newline
+\end{align}$$</p>
+
+<h3 id="example-3">Example 3</h3>
+
+<p>$$\begin{align}
+f(x,y) = x^2 + 5y^2 + x^2y + 2y^3 \newline
+f_x = 2x + 2xy, f_y = 10y + x^2 + 6y^2 \newline
+2x(1+y) = 0 \rightarrow x = 0, y = -1 \newline
+\text{When x = 0} \newline
+2y(3y + 5) = 0 \rightarrow y = 0, y = \frac{-5}{3} \newline
+\text{Critical Point: } (0,0), (0, \frac{-5}{3})
+\text{When y = -1} \newline
+x^2 - 4 = 0 \rightarrow x = 2, -2 \newline
+\text{Critical Point: } (2, -1), (-2, -1) \newline
+D(x,y) = (2+2y) \cdot (10+12y) - (2x)^2
+\end{align}$$</p>
+
+<h2 id="absolute-max-and-min">Absolute Max and Min</h2>
+
+<ul>
+<li>Closed Region, Absolute max and min must exist</li>
+<li>They must occur at either a critical point or on the boundary</li>
+</ul>
+
+<h3 id="example-1-1">Example 1</h3>
+
+<p>$$\begin{align}
+f(x,y) = x^2 + xy + y^2,\ R: \{(x,y) | -2 \ge x \ge 2, -1 \ge y \ge 1 \} \newline
+f_x = 2x + y, f_y = x + 2y \newline
+3x = 0 \rightarrow x = 0, y = 0 \newline
+f(0,0) = 0 \newline
+x = -2, y = y \newline
+f(-2,y) = 4 - 2y + y^2 \newline
+f\prime(-2,y) = 2y - 2 = 0 \rightarrow y = 1
+f(-2,1) = 3 \rightarrow \text{Critical point} \newline
+f(-2,-1) = 7 \rightarrow \text{End point} \newline\newline
+x = 2, y = y \newline
+f(2,y) = 4 + 2y + y^2 \newline
+f\prime(2,y) = 2y + 2 = 0 \rightarrow y = -1
+f(2, -1) = 3 \rightarrow \text{Critical point} \newline
+f(2, 1) = 7 \rightarrow \text{End point} \newline\newline
+x = x , y = -1 \newline
+f(x, -1) = x^2 - x + 1 \newline
+f\prime(x, -1) = 2x -1 = 0 \rightarrow x = \frac{1}{2} \newline
+f(\frac{1}{2}, -1) = \frac{3}{4} \newline
+f(-2, -1) = 7, f(2, -1) = 3
+\end{align}$$</p>
+
+        </div>
+
+        
+        
+        <div class="article-toc" >
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#extrema-of-function">Extrema of function</a></li>
+<li><a href="#single-variable">Single variable</a></li>
+<li><a href="#2-variables">2 Variables</a></li>
+<li><a href="#second-derivative-test">Second Derivative Test</a>
+<ul>
+<li><a href="#example-1">Example 1</a></li>
+<li><a href="#example-2">Example 2</a></li>
+<li><a href="#example-3">Example 3</a></li>
+</ul></li>
+<li><a href="#absolute-max-and-min">Absolute Max and Min</a>
+<ul>
+<li><a href="#example-1-1">Example 1</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+
+
+        
+    </div>
+    <nav id="article-nav">
+    
+    
+    <a href="/posts/math/finding_tangent_planes_and_normal_lines_to_surfaces/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Finding Tangent Planes and Normal Lines to Surfaces&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2019 Playground&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>

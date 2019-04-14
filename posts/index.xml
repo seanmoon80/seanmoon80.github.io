@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Apr 2019 22:32:08 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 12 Apr 2019 21:59:28 -0400</lastBuildDate>
     
 	<atom:link href="https://seanmoon80.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Finding Extrema of Functions of 2 Variables</title>
+      <link>https://seanmoon80.github.io/posts/math/finding_extrema_of_functions_of_2_variables/</link>
+      <pubDate>Fri, 12 Apr 2019 21:59:28 -0400</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/math/finding_extrema_of_functions_of_2_variables/</guid>
+      <description>Extrema of function  Relative Max is a peak of a Curve Relative Max is a Pek of a Surface Relative Max, Relative Min &amp;gt;= 1  Single variable  $f\prime(x) = 0\text{ or undefined}$ gives critical points Critical points could be inflection points  2 Variables  Both partial derivatives $f_x, f_y = 0$ AT THE SAME POINT Cricital points could be undefined(within domain of the function) or saddle point Relative Max - Both $f_x, f_y$ goes to positive to negative (Increasing to Decreasing) Relative Min - Both $f_x, f_y$ goes to negative to positive (Decreasing to Increasing) Saddle point - One is decreasing to increasing, other one is increasing to decreasing  Second Derivative Test  $ D(x,y) = f_{xx}(x,y) \cdot f_{yy} - (f_{xy})^2$ $f_{xx}$ is giving concavity in x-direction $f_{yy}$ is giving concavity in y-direction $f_{xx} \cdot f_{yy}$ is only positive when $x$ and $y$ directions agree on concavity direction.</description>
+    </item>
     
     <item>
       <title>Finding Tangent Planes and Normal Lines to Surfaces</title>
