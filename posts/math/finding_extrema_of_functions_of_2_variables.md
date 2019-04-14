@@ -1,7 +1,6 @@
 ---
 title: "Finding Extrema of Functions of 2 Variables"
 date: 2019-04-12T21:59:28-04:00
-draft: true
 ---
 
 ## Extrema of function
