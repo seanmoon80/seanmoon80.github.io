@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://seanmoon80.github.io/posts/math/contrained_optimization_with_lagrange_multipliers/</loc>
+    <lastmod>2019-04-18T13:12:26-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://seanmoon80.github.io/posts/math/finding_extrema_of_functions_of_2_variables/</loc>
     <lastmod>2019-04-12T21:59:28-04:00</lastmod>
   </url>
@@ -99,13 +104,13 @@
   
   <url>
     <loc>https://seanmoon80.github.io/</loc>
-    <lastmod>2019-04-12T21:59:28-04:00</lastmod>
+    <lastmod>2019-04-18T13:12:26-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seanmoon80.github.io/posts/</loc>
-    <lastmod>2019-04-12T21:59:28-04:00</lastmod>
+    <lastmod>2019-04-18T13:12:26-04:00</lastmod>
     <priority>0</priority>
   </url>
   
