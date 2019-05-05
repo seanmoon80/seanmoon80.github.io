@@ -6,10 +6,23 @@
     <description>Recent content on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Apr 2019 13:12:26 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 03 May 2019 21:29:11 -0400</lastBuildDate>
     
 	<atom:link href="https://seanmoon80.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>An Introduction to Vectors</title>
+      <link>https://seanmoon80.github.io/posts/math/an_introduction_to_vectors/</link>
+      <pubDate>Fri, 03 May 2019 21:29:11 -0400</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/math/an_introduction_to_vectors/</guid>
+      <description>Vectors  Vectors have both a Speed (Magnitude) and a Direction
+ Vector from point A to point B $\rightarrow \vec v = \vec{AB}$ Vectors can multifly by Constants(Scalars)
+ Length of vector $\rightarrow 3\vec v$
+ Reverse Direction of vector $\rightarrow -2\vec v$
+ $\vec v \parallel T\vec v \rightarrow T$ is some scalar   Adding &amp;amp; Substracting Vectors  $\vec v + \vec w$ $\vec v - \vec w = \vec v + (-\vec w)$  Position Vector  An initial point at the Origin(0,0) A terminal point at P(v1, v2) Denoted $\left&amp;lt;V_1, V_2\right&amp;gt;$  Vector to Position Vector $$\begin{align} P_1(1,2),\ P_2(6,4) \newline \vec v = \vec{P_1 P_2} = \left&amp;lt; x_2 - x_1, y_2 - y_1\right&amp;gt; = \left&amp;lt;5, 2\right&amp;gt; \newline \end{align}$$</description>
+    </item>
     
     <item>
       <title>Constrained Optimization with LaGrange Multipliers</title>

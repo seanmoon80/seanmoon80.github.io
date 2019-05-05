@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>An Introduction to Vectors // Playground</title>
+
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="An Introduction to Vectors" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/an_introduction_to_vectors/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="https://seanmoon80.github.io/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="https://seanmoon80.github.io/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://seanmoon80.github.io/css/style.css">
+
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    
+    <meta name="generator" content="Hugo 0.52" />
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="https://seanmoon80.github.io/">Playground</a>
+            <nav id="main-nav">
+                
+                <a class="main-nav-link" href="/posts/">Posts</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">An Introduction to Vectors</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/posts/math/an_introduction_to_vectors/" class="article-date">
+                <time datetime='' itemprop="datePublished"></time>
+            </a>
+            
+            
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<h1 id="vectors">Vectors</h1>
+
+<ul>
+<li>Vectors have both a <em>Speed (Magnitude)</em> and a <em>Direction</em><br /></li>
+<li>Vector from point A to point B $\rightarrow \vec v = \vec{AB}$</li>
+<li>Vectors can multifly by Constants(Scalars)<br />
+
+<ul>
+<li>Length of vector $\rightarrow 3\vec v$<br /></li>
+<li>Reverse Direction of vector $\rightarrow -2\vec v$<br /></li>
+<li>$\vec v \parallel T\vec v \rightarrow T$ is some scalar</li>
+</ul></li>
+</ul>
+
+<h2 id="adding-substracting-vectors">Adding &amp; Substracting Vectors</h2>
+
+<ul>
+<li>$\vec v + \vec w$</li>
+<li>$\vec v - \vec w = \vec v + (-\vec w)$</li>
+</ul>
+
+<h2 id="position-vector">Position Vector</h2>
+
+<ul>
+<li>An initial point at the <em>Origin</em>(0,0)</li>
+<li>A terminal point at P(v1, v2)</li>
+<li>Denoted $\left&lt;V_1, V_2\right&gt;$</li>
+</ul>
+
+<h3 id="vector-to-position-vector">Vector to Position Vector</h3>
+
+<p>$$\begin{align}
+P_1(1,2),\ P_2(6,4)  \newline
+\vec v = \vec{P_1 P_2} = \left&lt; x_2 - x_1, y_2 - y_1\right&gt; = \left&lt;5, 2\right&gt;  \newline
+\end{align}$$</p>
+
+<h3 id="slope-of-vector">Slope of vector</h3>
+
+<p>$$
+\frac{y_2 - y_1}{x_2 - x_1}
+$$</p>
+
+<h3 id="length-magnitude">Length(Magnitude)</h3>
+
+<p>$$
+||\vec v|| = \sqrt{(v_1)^2 + (v_2)^2}
+$$</p>
+
+<h3 id="equality-of-vectors">Equality of vectors</h3>
+
+<p>$$
+\text{Slope of }\vec v = \text{Slope of }\vec w  \\<br />
+||\vec v|| = ||\vec w||
+$$</p>
+
+<h3 id="example-1">Example 1</h3>
+
+<p>$$\begin{align}
+\vec a &amp;= \left&lt;-1, 2\right&gt;,\ \vec b = \left&lt;3,1\right&gt;  \newline
+2\vec a &amp;= \left&lt;-2, 4\right&gt; \newline
+\vec a + \vec b &amp;= \left&lt;2, 3\right&gt; \newline
+\vec a - \vec b &amp;= \left&lt;-4, 1\right&gt; \newline
+||2\vec a + \vec b|| &amp;= \sqrt{1^2 + 5^2} = \sqrt{26}
+\end{align}$$</p>
+
+<h2 id="unit-vector">Unit Vector</h2>
+
+<ul>
+<li>A vector with <em>length 1</em><br /></li>
+<li>$\hat u = \frac{\vec v}{||\vec v||} \rightarrow \vec v = ||\vec v||\cdot\hat u$<br /></li>
+<li>A unit vector in <em>opposite direction</em> $\hat u = \frac{-\vec v}{||\vec v||}$</li>
+</ul>
+
+<h2 id="standard-basis-vector">Standard Basis Vector</h2>
+
+<ul>
+<li>$\hat i = \left&lt;1,0\right&gt;$ (X-Direction Unit Vector)<br /></li>
+<li>$\hat j = \left&lt;0,1\right&gt;$ (Y-Direction Unit Vector)<br /></li>
+<li>$\vec v = \left&lt;V_1, V_2\right&gt; = V_1\hat i + V_2\hat j$</li>
+</ul>
+
+<h3 id="example-2">Example 2</h3>
+
+<p>$$\begin{align}
+\vec a = -3\hat i + 4\hat j,\ \vec b = \hat i + 2\hat j  \newline
+\text{Find }\vec v\text{ where } ||\vec v|| = 3\text{ and } \vec v || 2\vec a - 3\vec b  \newline
+2\vec a - 3\vec b = -6\hat i + 8\hat j - (3\hat i + 6\hat j) = -9\hat i + 2\hat j \newline
+\hat u = \frac{-9\hat i + 2\hat j}{\sqrt{85}} = \frac{\sqrt{85}}{85}(-9\hat i + 2\hat j) \newline
+\vec v = ||\vec v||\cdot\hat u = 3\cdot\frac{\sqrt{85}}{85}(-9\hat i + 2\hat j)
+\end{align}$$</p>
+
+<h2 id="unit-vector-and-trigonometry">Unit Vector and Trigonometry</h2>
+
+<ul>
+<li>$\hat u = \cos\theta\hat i + \sin\theta\hat j$</li>
+</ul>
+
+<h3 id="example-3">Example 3</h3>
+
+<p>Find $\vec v$ such that $\vec v$ has a length of &lsquo;9&rsquo;<br />
+and $\vec v$ makes  an angle of $\frac{\pi}{6}$ with X-Axis
+$$\begin{align}
+\hat u &amp;= \cos{\frac{\pi}{6}}\hat i + \sin{\frac{\pi}{6}}\hat j \newline<br />
+&amp;= \frac{\sqrt 3}{2}\hat i + \frac{1}{2}\hat j \newline<br />
+\vec v &amp;= 9\cdot(\frac{\sqrt 3}{2}\hat i + \frac{1}{2}\hat j)
+\end{align}$$</p>
+
+        </div>
+
+        
+        
+        <div class="article-toc" >
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#vectors">Vectors</a>
+<ul>
+<li><a href="#adding-substracting-vectors">Adding &amp; Substracting Vectors</a></li>
+<li><a href="#position-vector">Position Vector</a>
+<ul>
+<li><a href="#vector-to-position-vector">Vector to Position Vector</a></li>
+<li><a href="#slope-of-vector">Slope of vector</a></li>
+<li><a href="#length-magnitude">Length(Magnitude)</a></li>
+<li><a href="#equality-of-vectors">Equality of vectors</a></li>
+<li><a href="#example-1">Example 1</a></li>
+</ul></li>
+<li><a href="#unit-vector">Unit Vector</a></li>
+<li><a href="#standard-basis-vector">Standard Basis Vector</a>
+<ul>
+<li><a href="#example-2">Example 2</a></li>
+</ul></li>
+<li><a href="#unit-vector-and-trigonometry">Unit Vector and Trigonometry</a>
+<ul>
+<li><a href="#example-3">Example 3</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+
+
+        
+    </div>
+    <nav id="article-nav">
+    
+    
+    <a href="/posts/math/constrained_optimization_with_lagrange_multipliers/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Constrained Optimization with LaGrange Multipliers&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2019 Playground&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>
