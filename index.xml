@@ -6,10 +6,22 @@
     <description>Recent content on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 May 2019 21:29:11 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 10 May 2019 21:10:47 -0400</lastBuildDate>
     
 	<atom:link href="https://seanmoon80.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vectors in 3d Coordinate System</title>
+      <link>https://seanmoon80.github.io/posts/math/vectors_in_3d_coordinate_system/</link>
+      <pubDate>Fri, 10 May 2019 21:10:47 -0400</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/math/vectors_in_3d_coordinate_system/</guid>
+      <description>3D Coordinate system  Denoted Point(x, y, z) Quadrant -&amp;gt; Octants  Distance $$\begin{align} \text{Distance: } &amp;amp;P_1(x_1, y_1, z_1),\ P_2(x_2, y_2, z_2) \newline
+d(P_1,P_2) = &amp;amp;\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2} \end{align}$$
+Midpoint $$\begin{align} \text{Midpoint: } (\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2}, \frac{z_1 + z_2}{2}) \end{align}$$
+Shapes  Spheres - $(x - h)^2 + (y - k)^2 + (z-L)^2 = r^2$  Centre: (h,k,L) Radius: r   Example 1 $$\begin{align} 2x^2 + 2y^2 + 2z^2 - 6x - 4y + 2z -1 &amp;amp;= 0 \newline 2x^2 - 6x + 2y^2 - 4y + 2z^2 + 2z &amp;amp;= 1 \newline x^2 - 3x + y^2 - 2y + z^2 + z &amp;amp;= \frac{1}{2} \newline x^2 - 3x + \frac{9}{4} + y^2 - 2y + 1 + z^2 + z + \frac{1}{4} &amp;amp;= \frac{1}{2} + \frac{9}{4} + 1 + \frac{1}{4}\newline (x - \frac{3}{2})^2 + (y - 1)^2 + (z + \frac{1}{2})^2 &amp;amp;= 4 \end{align}$$</description>
+    </item>
     
     <item>
       <title>An Introduction to Vectors</title>
