@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://seanmoon80.github.io/posts/math/dot_product/</loc>
+    <lastmod>2019-05-17T22:29:39-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://seanmoon80.github.io/posts/math/vectors_in_3d_coordinate_system/</loc>
     <lastmod>2019-05-10T21:10:47-04:00</lastmod>
   </url>
@@ -114,13 +119,13 @@
   
   <url>
     <loc>https://seanmoon80.github.io/</loc>
-    <lastmod>2019-05-10T21:10:47-04:00</lastmod>
+    <lastmod>2019-05-17T22:29:39-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seanmoon80.github.io/posts/</loc>
-    <lastmod>2019-05-10T21:10:47-04:00</lastmod>
+    <lastmod>2019-05-17T22:29:39-04:00</lastmod>
     <priority>0</priority>
   </url>
   

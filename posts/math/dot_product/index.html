@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Vectors in 3d Coordinate System // Playground</title>
+    <title>The Dot Product // Playground</title>
 
         <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -9,11 +9,11 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-        <meta property="og:title" content="Vectors in 3d Coordinate System" />
+        <meta property="og:title" content="The Dot Product" />
     <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/vectors_in_3d_coordinate_system/" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/dot_product/" />
     
 
     <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
@@ -70,11 +70,11 @@
     <div class="article-inner">
         
         <header class="article-header">
-            <h1 class="article-title" itemprop="name">Vectors in 3d Coordinate System</h1>
+            <h1 class="article-title" itemprop="name">The Dot Product</h1>
         </header>
         
         <div class="article-meta">
-            <a href="/posts/math/vectors_in_3d_coordinate_system/" class="article-date">
+            <a href="/posts/math/dot_product/" class="article-date">
                 <time datetime='' itemprop="datePublished"></time>
             </a>
             
@@ -84,85 +84,76 @@
         <div class="article-entry" itemprop="articleBody">
             
 
-<h2 id="3d-coordinate-system">3D Coordinate system</h2>
-
-<ul>
-<li>Denoted Point(x, y, z)</li>
-<li>Quadrant -&gt; Octants</li>
-</ul>
-
-<h3 id="distance">Distance</h3>
-
 <p>$$\begin{align}
-\text{Distance: } &amp;P_1(x_1, y_1, z_1),\ P_2(x_2, y_2, z_2) \newline<br />
-d(P_1,P_2) = &amp;\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}
+\vec a &amp;= &lt; a_1, a_2, a_3 &gt;,\ \vec b = &lt; b_1, b_2, b_3 &gt; \newline
+\vec a \cdot \vec b &amp;= a_1 \cdot b_1 + a_2 \cdot b_2 + a_3 \cdot b_3
 \end{align}$$</p>
-
-<h3 id="midpoint">Midpoint</h3>
-
-<p>$$\begin{align}
-\text{Midpoint: } (\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2}, \frac{z_1 + z_2}{2})
-\end{align}$$</p>
-
-<h3 id="shapes">Shapes</h3>
-
-<ul>
-<li>Spheres - $(x - h)^2 + (y - k)^2 + (z-L)^2 = r^2$
-
-<ul>
-<li>Centre: (h,k,L)</li>
-<li>Radius: r</li>
-</ul></li>
-</ul>
 
 <h3 id="example-1">Example 1</h3>
 
 <p>$$\begin{align}
-2x^2 + 2y^2 + 2z^2 - 6x - 4y + 2z -1 &amp;= 0 \newline
-2x^2 - 6x + 2y^2 - 4y + 2z^2 + 2z &amp;= 1 \newline
-x^2 - 3x + y^2 - 2y + z^2 + z &amp;= \frac{1}{2} \newline
-x^2 - 3x + \frac{9}{4} + y^2 - 2y + 1 + z^2 + z + \frac{1}{4} &amp;= \frac{1}{2} + \frac{9}{4} + 1 + \frac{1}{4}\newline
-(x - \frac{3}{2})^2 + (y - 1)^2 + (z + \frac{1}{2})^2 &amp;= 4
+\vec v &amp;= 2\hat i - 3\hat j + \hat k,\ \vec w = -\hat i + 2\hat j - 2\hat k \newline
+\vec v \cdot \vec w &amp;= -2 - 6 - 2 = -10
 \end{align}$$</p>
 
-<h2 id="vectors-in-r-3">Vectors In R-3</h2>
+<h3 id="properties">Properties</h3>
 
-<h3 id="position-vector">Position vector</h3>
+<ol>
+<li>$\vec v \cdot \vec w = \vec w \cdot \vec v$<br /></li>
+<li>$\vec v\cdot(\vec u + \vec w) = \vec v \cdot \vec u + \vec v \cdot \vec w$<br /></li>
+<li>$(C\vec v)\cdot\vec w = C(\vec v \cdot \vec ) = \vec v\cdot(C\cdot\vec w)$<br /></li>
+<li>$\vec 0\cdot \vec v = 0$<br /></li>
+<li>$\vec v \cdot \vec v = v_1^2 + v_2^2 + v_3^2 = (\sqrt{v_1^2 + v_2^2 + v_3^2})^2 = ||\vec v||^2$<br /></li>
+<li>$||\vec v|| = \sqrt{\vec v \cdot \vec v}$</li>
+</ol>
+
+<h3 id="law-of-cosines">Law of Cosines</h3>
+
+<p><img src="/Triangle_with_notations_2.svg" alt="Law of Consines" /></p>
 
 <ul>
-<li>$\vec v = &lt; v_1, v_2, v_3 &gt; = v_1\hat i + v_2\hat j + v_3\hat k$</li>
-<li>$||\vec v|| = \sqrt{v_1^2 + v_2^2 + v_3^2}$</li>
-<li>Vectors are parallel if they are <em>Scalar Multiples</em>
-
-<ul>
-<li>$\vec a || \vec b \text{ If } \vec a = C\cdot\vec b$</li>
-</ul></li>
+<li>$a^2 = b^2 + c^2 - 2bc\cos\alpha$<br /></li>
+<li>$b^2 = a^2 + c^2 - 2ac\cos\beta$<br /></li>
+<li>$c^2 = a^2 + b^2 - 2ab\cos\gamma$<br /></li>
 </ul>
+
+<p>$$\begin{align}
+||\vec v - \vec w||^2 &amp;= ||\vec v||^2 + ||\vec w||^2 - 2||\vec v||\cdot||\vec w||\cos\theta \newline
+&amp;= (\vec v - \vec w)\cdot(\vec v - \vec w) \newline
+&amp;= \vec v \cdot \vec v - 2\vec v \cdot \vec w + \vec w + \vec w \newline
+&amp;= ||\vec v||^2 - 2\vec v \cdot \vec w + ||\vec w||^2 \newline\newline
+||\vec v||^2 - 2\vec v \cdot \vec w + ||\vec w||^2 &amp;= ||\vec v||^2 + ||\vec w||^2 - 2||\vec v||\cdot||\vec w||\cos\theta \newline
+\vec v\cdot\vec w &amp;= ||\vec v||\cdot||\vec w||\cos\theta \newline
+\cos\theta &amp;= \frac{\vec v\cdot\vec w}{||\vec v||\cdot||\vec w||} \newline
+\theta &amp;= \cos^{-1}(\frac{\vec v\cdot\vec w}{||\vec v||\cdot||\vec w||})
+\end{align}$$</p>
+
+<h3 id="projection">Projection</h3>
+
+<p><img src="/parallelprojection1.jpg" alt="Projection Vector" /></p>
+
+<p>The Magnitude of $Proj_{\vec v}\vec u$ is called <em>Scalar</em> or <em>Component</em> projection $Comp_{\vec v}\vec u$<br />
+$$\begin{align}
+\cos\theta &amp;= \frac{Comp_{\vec v}\vec u}{||\vec u||} \newline
+Comp_{\vec v}\vec u &amp;= ||\vec u||\cos\theta \newline
+\cos\theta &amp;= \frac{\vec v \cdot \vec u}{||\vec v||\cdot||\vec u||} \newline
+Comp_{\vec v}\vec u &amp;= ||\vec u||\cdot\frac{\vec v \cdot \vec u}{||\vec v||\cdot||\vec u||} = \frac{\vec v \cdot \vec u}{||\vec v||}\newline
+\underbrace{Comp_{\vec v}\vec u = ||\vec u||\cos\theta}_{\text{If }\theta\text{ given}}&amp;\text{ OR } \underbrace{Comp_{\vec v}\vec u = \frac{\vec v \cdot \vec u}{||\vec v||}}_{\theta\text{ not given}} \newline\newline
+\text{Vectors } &amp;= \text{Magnitude}\cdot\text{Direction} \newline
+Proj_{\vec v}\vec u &amp;= Comp_{\vec v}\vec u\cdot\underbrace{\frac{\vec v}{||\vec v||}}_{\text{Unit vector of }\vec v} \newline
+&amp;= \frac{\vec v\cdot\vec u}{||\vec v||}\cdot\frac{\vec v}{||\vec v||} = \frac{\vec v \cdot \vec u}{||\vec v||}\cdot\frac{1}{||\vec v||}\cdot(\vec v) \newline
+&amp;= (\frac{\vec v \cdot \vec u}{||\vec v||^2})\cdot\vec v
+\end{align}$$</p>
 
 <h3 id="example-2">Example 2</h3>
 
-<p>Show $\vec a = \hat i - 2\hat j + 5\hat k$ is $|| \vec b$ when $\vec b = <3, -6, 15>$<br />
-$\vec b = 3\cdot\vec a$</p>
-
-<h3 id="example-3">Example 3</h3>
-
 <p>$$\begin{align}
-\vec a &amp;= -\hat i + 2\hat j,\ \vec b = <2,3,-1> \newline
-2\vec a - 3\vec b &amp;= (-2 - 6)\hat i + (4 - 9)\hat j + 3\hat k \newline
-&amp;= -8\hat i - 5\hat j + 3\hat k \newline
-||3\vec a|| &amp;= || -3\hat i + 6\hat j|| \newline
-&amp;= \sqrt{9 + 36} = 3\sqrt{5}
+\vec a &amp;= \hat i + 2\hat j + 3\hat k \newline
+\vec b &amp;= 2\hat i - \hat j + \hat k \newline
+Proj_{\vec a}\vec b &amp;= (\frac{\vec a \cdot \vec b}{||\vec a||^2})\vec a \newline
+&amp;= \frac{3}{14}(\hat i + 2\hat j + 3\hat k) \newline
+Proj_{\vec b}\vec a &amp;= \frac{3}{6}(2\hat i - \hat j + \hat k)
 \end{align}$$</p>
-
-<h3 id="example-4">Example 4</h3>
-
-<p>$A(2,1,0),\ B(1,4,5)$ Find Position vector $\vec{AB}$<br />
-$\vec v = <1-2,4-1,5-0> = &lt;-1,3,5&gt;$</p>
-
-<h3 id="exmaple-5">Exmaple 5</h3>
-
-<p>$\vec v = -\hat i + 3\hat j - \hat k$ Find <em>unit vector</em><br />
-$\hat u = \frac{\vec v}{||\vec v||} = \frac{-\hat i + 3\hat j - \hat k}{\sqrt{11}}$</p>
 
         </div>
 
@@ -174,20 +165,13 @@ $\hat u = \frac{\vec v}{||\vec v||} = \frac{-\hat i + 3\hat j - \hat k}{\sqrt{11
 <ul>
 <li>
 <ul>
-<li><a href="#3d-coordinate-system">3D Coordinate system</a>
+<li>
 <ul>
-<li><a href="#distance">Distance</a></li>
-<li><a href="#midpoint">Midpoint</a></li>
-<li><a href="#shapes">Shapes</a></li>
 <li><a href="#example-1">Example 1</a></li>
-</ul></li>
-<li><a href="#vectors-in-r-3">Vectors In R-3</a>
-<ul>
-<li><a href="#position-vector">Position vector</a></li>
+<li><a href="#properties">Properties</a></li>
+<li><a href="#law-of-cosines">Law of Cosines</a></li>
+<li><a href="#projection">Projection</a></li>
 <li><a href="#example-2">Example 2</a></li>
-<li><a href="#example-3">Example 3</a></li>
-<li><a href="#example-4">Example 4</a></li>
-<li><a href="#exmaple-5">Exmaple 5</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -203,15 +187,9 @@ $\hat u = \frac{\vec v}{||\vec v||} = \frac{-\hat i + 3\hat j - \hat k}{\sqrt{11
     </div>
     <nav id="article-nav">
     
-    <a href="/posts/math/dot_product/" id="article-nav-newer" class="article-nav-link-wrap">
-        <div class="article-nav-title"><span>&lt;</span>&nbsp;
-            The Dot Product
-        </div>
-    </a>
     
-    
-    <a href="/posts/math/an_introduction_to_vectors/" id="article-nav-older" class="article-nav-link-wrap">
-        <div class="article-nav-title">An Introduction to Vectors&nbsp;<span>&gt;</span></div>
+    <a href="/posts/math/vectors_in_3d_coordinate_system/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Vectors in 3d Coordinate System&nbsp;<span>&gt;</span></div>
     </a>
     
 </nav>

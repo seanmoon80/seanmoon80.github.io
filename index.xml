@@ -6,10 +6,20 @@
     <description>Recent content on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 May 2019 21:10:47 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 17 May 2019 22:29:39 -0400</lastBuildDate>
     
 	<atom:link href="https://seanmoon80.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Dot Product</title>
+      <link>https://seanmoon80.github.io/posts/math/dot_product/</link>
+      <pubDate>Fri, 17 May 2019 22:29:39 -0400</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/math/dot_product/</guid>
+      <description>$$\begin{align} \vec a &amp;amp;= &amp;lt; a_1, a_2, a_3 &amp;gt;,\ \vec b = &amp;lt; b_1, b_2, b_3 &amp;gt; \newline \vec a \cdot \vec b &amp;amp;= a_1 \cdot b_1 + a_2 \cdot b_2 + a_3 \cdot b_3 \end{align}$$
+Example 1 $$\begin{align} \vec v &amp;amp;= 2\hat i - 3\hat j + \hat k,\ \vec w = -\hat i + 2\hat j - 2\hat k \newline \vec v \cdot \vec w &amp;amp;= -2 - 6 - 2 = -10 \end{align}$$</description>
+    </item>
     
     <item>
       <title>Vectors in 3d Coordinate System</title>
