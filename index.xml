@@ -239,8 +239,12 @@ Rectangular coordinate system(직교좌표계)과의 관계 $$\begin{align} Cyl 
       <pubDate>Sun, 30 Dec 2018 16:53:41 -0500</pubDate>
       
       <guid>https://seanmoon80.github.io/posts/math/lines_and_planes_in_3d/</guid>
-      <description>Lines and Direction vector 선 L이 주어진 점 P1 $&amp;lt;x_1, y_1, z_1&amp;gt;$을 지나고 방향벡터 $\vec v &amp;lt;a,b,c&amp;gt;$와 평행시 L의 좌표
-$$\begin{align} L = t\cdot\vec v \newline$$</description>
+      <description>Lines and Direction vector 선 L이 주어진 점 P1 $(x_1, y_1, z_1)$을 지나고 방향벡터 $\vec v &amp;lt;a,b,c&amp;gt;$와 평행시 L의 방정식 $$ \vec L = t\cdot\vec v \\
+\text{Other point }P(x,y,z)\text{ on the line}\\
+\vec L = \vec{P_0 P} = &amp;lt; x - x_0, y - y_0, z - z_0 &amp;gt;\\
+\text{Direction Vector }\vec v = &amp;lt; a, b, c &amp;gt;\\
+\vec{P_0 P} = t\cdot\vec v\\
+&amp;lt; x - x_0, y - y_0, z - z_0 &amp;gt; = t\cdot&amp;lt; a,b,c &amp;gt;\\</description>
     </item>
     
     <item>
