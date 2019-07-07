@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mathmatical proofs part 1 // Playground</title>
+
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="Mathmatical proofs part 1" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/mathmatical_proofs_part_1/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="https://seanmoon80.github.io/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="https://seanmoon80.github.io/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://seanmoon80.github.io/css/style.css">
+
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    
+    <meta name="generator" content="Hugo 0.52" />
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="https://seanmoon80.github.io/">Playground</a>
+            <nav id="main-nav">
+                
+                <a class="main-nav-link" href="/posts/">Posts</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Mathmatical proofs part 1</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/posts/math/mathmatical_proofs_part_1/" class="article-date">
+                <time datetime='' itemprop="datePublished"></time>
+            </a>
+            
+            
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<h2 id="statements">Statements</h2>
+
+<p>True 또는 False인 선언적 문장</p>
+
+<ul>
+<li>2 is even - True<br /></li>
+<li>17 is even - False<br /></li>
+<li>x is even - Not a statement.<br /></li>
+</ul>
+
+<p>일반적으로 대문자 P,Q,R등을 사용해서 표기</p>
+
+<ul>
+<li>Tautology - Always True</li>
+<li>Contradiction - Always False</li>
+</ul>
+
+<h3 id="conjunction">Conjunction</h3>
+
+<ul>
+<li>P and Q - $P \land Q$</li>
+</ul>
+
+<h3 id="disjunction">Disjunction</h3>
+
+<ul>
+<li>P or Q - $P \lor Q$</li>
+</ul>
+
+<h3 id="truth-tables">Truth Tables</h3>
+
+<table>
+<thead>
+<tr>
+<th>P</th>
+<th>Q</th>
+<th>$P \land Q$</th>
+<th>$P \lor Q$</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+
+<tr>
+<td>T</td>
+<td>F</td>
+<td>F</td>
+<td>T</td>
+</tr>
+
+<tr>
+<td>F</td>
+<td>T</td>
+<td>F</td>
+<td>T</td>
+</tr>
+
+<tr>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+</tr>
+</tbody>
+</table>
+
+<p>### Negation
+* Opposite truth value
+* ~P</p>
+
+<h3 id="implication-conditional-statement">Implication (Conditional statement)</h3>
+
+<ul>
+<li>If P, then Q<br /></li>
+<li>$P \implies Q$<br /></li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>P</th>
+<th>Q</th>
+<th>$P \implies Q$</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+
+<tr>
+<td>T</td>
+<td>F</td>
+<td>F</td>
+</tr>
+
+<tr>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+</tr>
+
+<tr>
+<td>F</td>
+<td>F</td>
+<td>T</td>
+</tr>
+</tbody>
+</table>
+
+<ul>
+<li>If you study, you will pass</li>
+<li>If you fix my computer, I will pay you $100</li>
+</ul>
+
+<h3 id="bi-implication">Bi-Implication</h3>
+
+<ul>
+<li>$P \iff Q - P \implies Q \text{ and } Q \implies P$<br /></li>
+<li>P if and only if Q<br /></li>
+<li>P iff Q<br /></li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>P</th>
+<th>Q</th>
+<th>$P \implies Q$</th>
+<th>$Q \implies P$</th>
+<th>$P \iff Q$</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+
+<tr>
+<td>T</td>
+<td>F</td>
+<td>F</td>
+<td>T</td>
+<td>F</td>
+</tr>
+
+<tr>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+<td>F</td>
+<td>F</td>
+</tr>
+
+<tr>
+<td>F</td>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+</tbody>
+</table>
+
+<p>If $P \iff Q$ is true, P and Q are &ldquo;equivalent&rdquo;</p>
+
+<ul>
+<li>$P \implies Q \implies R \implies P$</li>
+</ul>
+
+<h3 id="quantifier">Quantifier</h3>
+
+<ul>
+<li>&ldquo;For all&rdquo;, &ldquo;For every&rdquo;, &ldquo;For each&rdquo; - $\forall$</li>
+<li>$\forall{x} \in \mathbb{N}$<br /></li>
+<li>&ldquo;For some&rdquo;, &ldquo;For at least one&rdquo;, &ldquo;There exists&rdquo; - $\exists$<br /></li>
+<li>$\exists{x} \in \mathbb{z}$, x is even</li>
+</ul>
+
+<h3 id="negation-of-quantifiers">Negation of quantifiers</h3>
+
+<ul>
+<li>$\sim(\forall{x}, p(x)) \equiv \exists{x}, \sim{p(x)}$<br /></li>
+<li>$\sim(\exists{x},p(x)) \equiv \forall{x}, \sim{p(x)}$<br /></li>
+<li>$P \implies Q \equiv \sim{p} \lor Q$</li>
+<li>$\sim(P \implies Q) \equiv P \land \sim{Q}$</li>
+</ul>
+
+<h2 id="proving-implications">Proving implications</h2>
+
+<h3 id="direct-proof">Direct Proof</h3>
+
+<ol>
+<li>Assume P is true<br /></li>
+<li>Prove Q is true as consequence<br /></li>
+</ol>
+
+<h3 id="indirect-proof-contrapositive">Indirect proof (Contrapositive)</h3>
+
+<ul>
+<li>$P \implies Q - \sim{Q} \implies \sim{P}$</li>
+</ul>
+
+<ol>
+<li>Assume ~Q is true<br /></li>
+<li>Show ~P is true as a consequence</li>
+</ol>
+
+<h3 id="contradiction">Contradiction</h3>
+
+<p>$R \implies C$ is true where C is false(contradiction)<br />
+R must be false to make $R \implies C$ is true</p>
+
+<ul>
+<li>$\sim{R} \implies $ Contradiction<br /></li>
+</ul>
+
+<ol>
+<li>Assume $P \land \sim{Q}$</li>
+<li>show the leads to a contradiction</li>
+</ol>
+
+<h3 id="induction">Induction</h3>
+
+<p>Let P(n) be a statement that depends on n, where $n \in \mathbb{N}$</p>
+
+<ol>
+<li>P(1) is true. (Base case)<br /></li>
+<li>Assume P(n) is true. (Inductive hypothesis)</li>
+<li>Show $P(n) \implies P(n+1)$</li>
+</ol>
+
+        </div>
+
+        
+        
+        <div class="article-toc" >
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#statements">Statements</a>
+<ul>
+<li><a href="#conjunction">Conjunction</a></li>
+<li><a href="#disjunction">Disjunction</a></li>
+<li><a href="#truth-tables">Truth Tables</a></li>
+<li><a href="#implication-conditional-statement">Implication (Conditional statement)</a></li>
+<li><a href="#bi-implication">Bi-Implication</a></li>
+<li><a href="#quantifier">Quantifier</a></li>
+<li><a href="#negation-of-quantifiers">Negation of quantifiers</a></li>
+</ul></li>
+<li><a href="#proving-implications">Proving implications</a>
+<ul>
+<li><a href="#direct-proof">Direct Proof</a></li>
+<li><a href="#indirect-proof-contrapositive">Indirect proof (Contrapositive)</a></li>
+<li><a href="#contradiction">Contradiction</a></li>
+<li><a href="#induction">Induction</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+
+
+        
+    </div>
+    <nav id="article-nav">
+    
+    <a href="/posts/math/varieties_of_solutions_of_linear_systems_and_the_determinant/" id="article-nav-newer" class="article-nav-link-wrap">
+        <div class="article-nav-title"><span>&lt;</span>&nbsp;
+            Varieties of solutions of linear systems and the determinant
+        </div>
+    </a>
+    
+    
+    <a href="/posts/math/dot_product/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">The Dot Product&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2019 Playground&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>

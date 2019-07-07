@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Varieties of solutions of linear systems and the determinant // Playground</title>
+
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="Varieties of solutions of linear systems and the determinant" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/varieties_of_solutions_of_linear_systems_and_the_determinant/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="https://seanmoon80.github.io/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="https://seanmoon80.github.io/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://seanmoon80.github.io/css/style.css">
+
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    
+    <meta name="generator" content="Hugo 0.52" />
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="https://seanmoon80.github.io/">Playground</a>
+            <nav id="main-nav">
+                
+                <a class="main-nav-link" href="/posts/">Posts</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Varieties of solutions of linear systems and the determinant</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/posts/math/varieties_of_solutions_of_linear_systems_and_the_determinant/" class="article-date">
+                <time datetime='' itemprop="datePublished"></time>
+            </a>
+            
+            
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<h2 id="system">System</h2>
+
+<ul>
+<li>Inconsistent - $(0\ 0\ 0\ ..\ 0\ |\ a)\ a \ne 0$ in REF or RREF</li>
+<li>Infinitely many solutions - $(0\ 0\ 0\ ..\ 0\ |\ 0)$ in REF or RREF</li>
+</ul>
+
+<h3 id="thearem">Thearem</h3>
+
+<p>Let $A\vec x = \vec b$ be any $m \times n$ system of linear equations, $m, n \in \mathbb{Z}$
+Then there are only three possible situation for the solution:</p>
+
+<ol>
+<li>The system will have No solution!</li>
+<li>The system will have a unique solution</li>
+<li>The system will have infinite number of solutions</li>
+</ol>
+
+<h3 id="proof">Proof</h3>
+
+<p>Augment the system to get $(A|\vec b)$ and find its REF or RREF<br />
+we have two cases:</p>
+
+<ol>
+<li>The system is inconsistent</li>
+<li>The system is consistent
+
+<ul>
+<li>Number of pivots = number of columns of A - Unique Solution</li>
+<li>Number of pivots &lt; number of Columns of A - Infinitely many solutions</li>
+</ul></li>
+</ol>
+
+<h3 id="rank">Rank</h3>
+
+<p>The rank of a matrix A is the Number of non-zero rows in its REF or RREF<br />
+This is equal to the number of pivots rank(A)</p>
+
+<p>$A\vec x = \vec b$<br />
+$B = (A|\vec b)$ where A is $m \times n$</p>
+
+<ul>
+<li>rank(B) = rank(A) - Unique or infinite</li>
+<li>rank(B) &lt; rank(A) - Impossible</li>
+<li>rank(B) &gt; rank(A) - Inconsistent</li>
+</ul>
+
+<h3 id="homogeneous-systems">Homogeneous Systems</h3>
+
+<p>The system $A\vec x = \vec b$ is called homogenous if  $\vec b = \vec 0$<br />
+Notation - $A\vec x = \vec 0$</p>
+
+<ul>
+<li>Homogeneous systems are ALWAYS consistent.</li>
+<li>They have either exactly one solution($\vec x = \vec 0$) or infinitely many</li>
+<li>$\vec x = \vec 0$ is called the trivial solution</li>
+</ul>
+
+<h2 id="the-determinant">The Determinant</h2>
+
+<p>The Area of $A = \begin{pmatrix}a &amp; b\\ c &amp; d\end{pmatrix}$ is $(ad - bc)$<br />
+Determinant gave the signed area of the parallelogram formed by the row vectors<br />
+Volume of parallelopiped $ = |\vec a\cdot(\vec b \times \vec c)|$
+Notation - $|A| or \det A$</p>
+
+<h3 id="minor">Minor</h3>
+
+<p>Let A be an $n \times n$ matrix,<br />
+The i, j<sup>th</sup> minor of A, denoted $M_{ij}$<br />
+is the determinant of the matrix obtained by eleminating the i<sup>th</sup> row a j<sup>th</sup> column of A</p>
+
+<p>$A = \begin{pmatrix}a_{11} &amp; a_{12} &amp; a_{13}\\a_{21} &amp; a_{22} &amp; a_{23}\\a_{31} &amp; a_{32} &amp; a_{33}\end{pmatrix}$ $M_{23} = \begin{vmatrix}a_{11} &amp; a_{12}\\a_{31} &amp; a_{32}\end{vmatrix}$</p>
+
+<h3 id="cofactor">Cofactor</h3>
+
+<p>The i,j<sup>th</sup> cofactor of A, denoted C<sub>ij</sub> is given by<br />
+$C_{ij} = (-1)^{i+j}M_{ij}$<br />
+$C_{23} = -\begin{vmatrix}a_{11} &amp; a_{12}\\a_{31} &amp; a_{32}\end{vmatrix}$</p>
+
+<h3 id="general-determinant">General Determinant</h3>
+
+<p>Let $A_{n \times n}$ be a matrix
+$\det(A) = a_{i1}C_{i1} + a_{i2}C_{i2} + &hellip; + a_{in}C_{in}$ for any row i in A $\sum_{k = 1}^n a_{ik}C_{ik}$
+$\det(A) = a_{1j}C_{1j} + a_{2j}C_{2j} + .. + a_{nj}C_{nj}$ for any column j in A $\sum_{k=1}^n a_{kj}C_{kj}$</p>
+
+<h3 id="example">Example</h3>
+
+<p>$A = \begin{pmatrix}1 &amp; 0 &amp; 0 &amp; -1\\3 &amp; 1 &amp; 2 &amp; 2\\1&amp;0&amp;-2&amp;1\\2&amp;0&amp;0&amp;1\end{pmatrix}$</p>
+
+<ol>
+<li>Choose any row or any column.</li>
+<li>find the signs for the cofactors in this row or column.</li>
+<li>Follow the formula<br /></li>
+</ol>
+
+<p>$\det A = -0\cdot\begin{vmatrix}3&amp;2&amp;2\\1&amp;-2&amp;2\\2&amp;0&amp;1\end{vmatrix} + 1\cdot\begin{vmatrix}1&amp;0&amp;-1\\1&amp;-2&amp;1\\2&amp;0&amp;1\end{vmatrix}&hellip;\<br />
+= 1(-2\cdot\begin{vmatrix}1&amp;-1\\2&amp;1\end{vmatrix})$</p>
+
+        </div>
+
+        
+        
+        <div class="article-toc" >
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#system">System</a>
+<ul>
+<li><a href="#thearem">Thearem</a></li>
+<li><a href="#proof">Proof</a></li>
+<li><a href="#rank">Rank</a></li>
+<li><a href="#homogeneous-systems">Homogeneous Systems</a></li>
+</ul></li>
+<li><a href="#the-determinant">The Determinant</a>
+<ul>
+<li><a href="#minor">Minor</a></li>
+<li><a href="#cofactor">Cofactor</a></li>
+<li><a href="#general-determinant">General Determinant</a></li>
+<li><a href="#example">Example</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+
+
+        
+    </div>
+    <nav id="article-nav">
+    
+    
+    <a href="/posts/math/mathmatical_proofs_part_1/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Mathmatical proofs part 1&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2019 Playground&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>

@@ -6,10 +6,34 @@
     <description>Recent content on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 May 2019 22:29:39 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jul 2019 10:06:16 -0400</lastBuildDate>
     
 	<atom:link href="https://seanmoon80.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Varieties of solutions of linear systems and the determinant</title>
+      <link>https://seanmoon80.github.io/posts/math/varieties_of_solutions_of_linear_systems_and_the_determinant/</link>
+      <pubDate>Sat, 06 Jul 2019 10:06:16 -0400</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/math/varieties_of_solutions_of_linear_systems_and_the_determinant/</guid>
+      <description>System  Inconsistent - $(0\ 0\ 0\ ..\ 0\ |\ a)\ a \ne 0$ in REF or RREF Infinitely many solutions - $(0\ 0\ 0\ ..\ 0\ |\ 0)$ in REF or RREF  Thearem Let $A\vec x = \vec b$ be any $m \times n$ system of linear equations, $m, n \in \mathbb{Z}$ Then there are only three possible situation for the solution:
+ The system will have No solution!</description>
+    </item>
+    
+    <item>
+      <title>Mathmatical proofs part 1</title>
+      <link>https://seanmoon80.github.io/posts/math/mathmatical_proofs_part_1/</link>
+      <pubDate>Fri, 07 Jun 2019 22:10:37 -0400</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/math/mathmatical_proofs_part_1/</guid>
+      <description>Statements True 또는 False인 선언적 문장
+ 2 is even - True
+ 17 is even - False
+ x is even - Not a statement.
+  일반적으로 대문자 P,Q,R등을 사용해서 표기
+ Tautology - Always True Contradiction - Always False  Conjunction  P and Q - $P \land Q$  Disjunction  P or Q - $P \lor Q$  Truth Tables    P Q $P \land Q$ $P \lor Q$     T T T T   T F F T   F T F T   F F F F    ### Negation * Opposite truth value * ~P</description>
+    </item>
     
     <item>
       <title>The Dot Product</title>
