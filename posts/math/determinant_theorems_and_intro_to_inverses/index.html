@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Determinant theorems and intro to inverses // Playground</title>
+
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="Determinant theorems and intro to inverses" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/determinant_theorems_and_intro_to_inverses/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="https://seanmoon80.github.io/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="https://seanmoon80.github.io/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://seanmoon80.github.io/css/style.css">
+
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    
+    <meta name="generator" content="Hugo 0.52" />
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="https://seanmoon80.github.io/">Playground</a>
+            <nav id="main-nav">
+                
+                <a class="main-nav-link" href="/posts/">Posts</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Determinant theorems and intro to inverses</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/posts/math/determinant_theorems_and_intro_to_inverses/" class="article-date">
+                <time datetime='' itemprop="datePublished"></time>
+            </a>
+            
+            
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<h2 id="triangular-matrices">Triangular Matrices</h2>
+
+<h3 id="upper-triangular">Upper-triangular</h3>
+
+<p>If all entries below the main diagonal are 0<br />
+\begin{pmatrix}1&amp;7&amp;0\\0&amp;2&amp;1\\0&amp;0&amp;7\end{pmatrix}</p>
+
+<h3 id="lower-triangular">Lower-triangular</h3>
+
+<p>If all entries above the main diagonal are 0<br />
+\begin{pmatrix}1&amp;0&amp;0\\-1&amp;2&amp;0\\0&amp;7&amp;9\end{pmatrix}</p>
+
+<h3 id="triangular">Triangular</h3>
+
+<p>Both upper and lower triangular<br />
+\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;7\end{pmatrix}</p>
+
+<h3 id="determinants-of-triangular-matrices">Determinants of triangular matrices</h3>
+
+<p>Let $A_{n\times n}$ be triangular.<br />
+$\det A = a_{11}a_{22}&hellip;a_{nn}$ (product of diagonal entries)<br />
+$\det(I_{n}) = 1$</p>
+
+<h2 id="row-reduction-and-determinants">Row reduction and determinants</h2>
+
+<ul>
+<li>If $A_{n\times n}$ has two identical rows/columns then $\det(A) = 0$<br />
+$$\det\begin{pmatrix}a&amp;b\\a&amp;b\end{pmatrix} = ab - ab = 0$$<br /></li>
+<li>If $A_{n\times n}$ has two proportional rows/columns, then $\det A = 0$<br />
+$$\det\begin{pmatrix}a&amp;b\\ca&amp;cb\end{pmatrix} = abc - abc = 0$$</li>
+<li>Let $A_{n\times n}\, B_{n\times n}\, C_{n\times n}$ be matrices such that all are identical except for one corresponding row, and in this row, the sum of rows in A and B gives the row in C, Then<br />
+$$\det(C) = \det(A) + \det(B)$$<br />
+$$A = \begin{pmatrix}a&amp;b&amp;c\\d&amp;e&amp;f\\g&amp;h&amp;i\end{pmatrix},\
+B = \begin{pmatrix}j&amp;k&amp;l\\d&amp;e&amp;f\\g&amp;h&amp;i\end{pmatrix},\
+C = \begin{pmatrix}a+j&amp;b+k&amp;c+l\\d&amp;e&amp;f\\g&amp;h&amp;i\end{pmatrix}\\$$
+$$\begin{align}\det C &amp;= (a+j)\begin{vmatrix}e&amp;f\\h&amp;i\end{vmatrix} - (b+k)\begin{vmatrix}d&amp;f\\g&amp;i\end{vmatrix} + (c+l)\begin{vmatrix}d&amp;e\\g&amp;h\end{vmatrix}\\<br />
+&amp;= a\begin{vmatrix}e&amp;f\\h&amp;i\end{vmatrix}- b\begin{vmatrix}d&amp;f\\g&amp;i\end{vmatrix} + c\begin{vmatrix}d&amp;e\\g&amp;h\end{vmatrix} + j\begin{vmatrix}e&amp;f\\h&amp;i\end{vmatrix} - k\begin{vmatrix}d&amp;f\\g&amp;i\end{vmatrix} + l\begin{vmatrix}d&amp;e\\g&amp;h\end{vmatrix}\\<br />
+&amp;= \det A + \det B
+\end{align}$$<br /></li>
+<li>$\det(A+B) \ne \det A + \det B$</li>
+</ul>
+
+<h2 id="elementary-row-operations">Elementary row operations</h2>
+
+<ul>
+<li>Row switching $R_{i}\leftrightarrow R_{j}$<br /></li>
+<li>Row Multiplication $kR_{i} \rightarrow R_{i}$ where $k \ne 0$<br /></li>
+<li>Row Addition $R_{i} + kR_{j} \rightarrow R_{i}$ where $i \ne j$</li>
+</ul>
+
+<h2 id="theorem-1">Theorem 1</h2>
+
+<p>Let $A_{n\times n}$ be a matrix.
+Let $B_{n\times n}$ be the matrix obtained by performing a type 3 operation on A, Then<br />
+$$\det B = \det A$$
+Type 3 operations don&rsquo;t affect the Determinant
+$$A = \begin{pmatrix}a&amp;b&amp;c\\d&amp;e&amp;f\\g&amp;h&amp;i\end{pmatrix},\
+B = \begin{pmatrix}a+kd&amp;b+ke&amp;c+kf\\d&amp;e&amp;f\\g&amp;h&amp;i\end{pmatrix}$$
+$$\det B = \det \begin{pmatrix}a&amp;b&amp;c\\d&amp;e&amp;f\\g&amp;h&amp;i\end{pmatrix} + \det \begin{pmatrix}kd&amp;ke&amp;kf\\d&amp;e&amp;f\\g&amp;h&amp;i\end{pmatrix}$$</p>
+
+<h2 id="theorem-2">Theorem 2</h2>
+
+<p>Let $A_{n\times n}$ be a matrix.<br />
+If $B_{n\times n}$ is obtained by multiplying a row of A by k, then
+$$\det(kA) = k\det(A)$$<br />
+Type 2 operations scale your determinant.
+$$A = \begin{pmatrix}a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}\\a_{21}&amp;a_{22}&amp;\ddots&amp;a_{2n}\\a_{n1}&amp;\cdots&amp;\cdots&amp;a_{nn}\end{pmatrix}$$
+$$\det A = a_{i1}C_{i1}+a_{i2}C_{i2} + \cdots + a{in}C{in}\\<br />
+\det B = ka_{i1}C_{i1}+ka_{i2}C_{i2} + \cdots + ka{in}C{in}$$
+$$\det(kA) = k^n\det A$$</p>
+
+<h2 id="theorem-3">Theorem 3</h2>
+
+<p>Len $A_{n\times n}$ be a matrix.<br />
+If B is obtained by swaping two rows, Then
+$$\det(B) = - \det A$$
+A type 1 operation is equivalent to doing several type 3 operations followed by a type 2 with $k = -1$</p>
+
+<h3 id="pivotal-condensation">Pivotal Condensation</h3>
+
+<p>Using row operations to compute a determinant.</p>
+
+<ul>
+<li>Try to use type 3 if possible
+$$\begin{align}&amp;\det\begin{pmatrix}1&amp;-2&amp;3\\2&amp;-1&amp;-1\\-3&amp;1&amp;4\end{pmatrix}\\<br />
+= &amp;\det\begin{pmatrix}1&amp;-2&amp;3\\0&amp;3&amp;-7\\-3&amp;1&amp;4\end{pmatrix}\\<br />
+= &amp;\det\begin{pmatrix}1&amp;-2&amp;3\\0&amp;3&amp;-7\\0&amp;5&amp;13\end{pmatrix}\\<br />
+= &amp;\begin{vmatrix}3&amp;-7\\-5&amp;13\end{vmatrix} = 39 - 35 = 4
+\end{align}$$</li>
+</ul>
+
+<h2 id="theorem-4">Theorem 4</h2>
+
+<p>Let $A_{n\times n},\ B_{n\times n}$ be matrices, Then
+$$\det(AB) = \det(A)\cdot\det(B)$$
+$$\det(A^{k}) = (\det A)^{k}$$</p>
+
+<h2 id="theorem-5">Theorem 5</h2>
+
+<p>Let $A_{n\times n}$ be a matrix.<br />
+$\det(A) = \det(A^T)$</p>
+
+<h2 id="inverse">Inverse</h2>
+
+<p>Let $A_{n\times n}$ be a matrix.<br />
+If there exists a matrix B such that<br />
+$AB = I_{n}$ and $BA = I_{n}$<br />
+Then A is said to be invertible or non-singular<br />
+and we call B the &ldquo;inverse of A&rdquo; or &ldquo;A inverse&rdquo;<br />
+$B = A^{-1}$</p>
+
+<h3 id="elementary-matrices">Elementary Matrices</h3>
+
+<p>A matrix E is called an elementary matrix if it is obtained<br />
+by performing a single row operation on an identity matrix
+$$\begin{align}
+E &amp;= \begin{pmatrix}1&amp;2\\0&amp;1\end{pmatrix}\\<br />
+I &amp;= \begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}\\<br />
+R_{1} + 2R_{2} &amp;= E\\  \\<br />
+A &amp;= \begin{pmatrix}1&amp;2\\3&amp;4\end{pmatrix}\\<br />
+EA &amp;= \begin{pmatrix}1&amp;2\\0&amp;1\end{pmatrix}\cdot\begin{pmatrix}1&amp;2\\3&amp;4\end{pmatrix}\\<br />
+&amp;= \begin{pmatrix}7&amp;10\\3&amp;4\end{pmatrix}
+&amp;= R_{1} + 2R_{2}
+\end{align}$$</p>
+
+        </div>
+
+        
+        
+        <div class="article-toc" >
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#triangular-matrices">Triangular Matrices</a>
+<ul>
+<li><a href="#upper-triangular">Upper-triangular</a></li>
+<li><a href="#lower-triangular">Lower-triangular</a></li>
+<li><a href="#triangular">Triangular</a></li>
+<li><a href="#determinants-of-triangular-matrices">Determinants of triangular matrices</a></li>
+</ul></li>
+<li><a href="#row-reduction-and-determinants">Row reduction and determinants</a></li>
+<li><a href="#elementary-row-operations">Elementary row operations</a></li>
+<li><a href="#theorem-1">Theorem 1</a></li>
+<li><a href="#theorem-2">Theorem 2</a></li>
+<li><a href="#theorem-3">Theorem 3</a>
+<ul>
+<li><a href="#pivotal-condensation">Pivotal Condensation</a></li>
+</ul></li>
+<li><a href="#theorem-4">Theorem 4</a></li>
+<li><a href="#theorem-5">Theorem 5</a></li>
+<li><a href="#inverse">Inverse</a>
+<ul>
+<li><a href="#elementary-matrices">Elementary Matrices</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+
+
+        
+    </div>
+    <nav id="article-nav">
+    
+    
+    <a href="/posts/math/varieties_of_solutions_of_linear_systems_and_the_determinant/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Varieties of solutions of linear systems and the determinant&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2019 Playground&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>

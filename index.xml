@@ -6,10 +6,29 @@
     <description>Recent content on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Jul 2019 10:06:16 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jul 2019 16:26:16 -0400</lastBuildDate>
     
 	<atom:link href="https://seanmoon80.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Determinant theorems and intro to inverses</title>
+      <link>https://seanmoon80.github.io/posts/math/determinant_theorems_and_intro_to_inverses/</link>
+      <pubDate>Sat, 13 Jul 2019 16:26:16 -0400</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/math/determinant_theorems_and_intro_to_inverses/</guid>
+      <description>Triangular Matrices Upper-triangular If all entries below the main diagonal are 0
+\begin{pmatrix}1&amp;amp;7&amp;amp;0\\0&amp;amp;2&amp;amp;1\\0&amp;amp;0&amp;amp;7\end{pmatrix}
+Lower-triangular If all entries above the main diagonal are 0
+\begin{pmatrix}1&amp;amp;0&amp;amp;0\\-1&amp;amp;2&amp;amp;0\\0&amp;amp;7&amp;amp;9\end{pmatrix}
+Triangular Both upper and lower triangular
+\begin{pmatrix}1&amp;amp;0&amp;amp;0&amp;amp;0\\0&amp;amp;0&amp;amp;0&amp;amp;0\\0&amp;amp;0&amp;amp;-1&amp;amp;0\\0&amp;amp;0&amp;amp;0&amp;amp;7\end{pmatrix}
+Determinants of triangular matrices Let $A_{n\times n}$ be triangular.
+$\det A = a_{11}a_{22}&amp;hellip;a_{nn}$ (product of diagonal entries)
+$\det(I_{n}) = 1$
+Row reduction and determinants  If $A_{n\times n}$ has two identical rows/columns then $\det(A) = 0$
+$$\det\begin{pmatrix}a&amp;amp;b\\a&amp;amp;b\end{pmatrix} = ab - ab = 0$$</description>
+    </item>
     
     <item>
       <title>Varieties of solutions of linear systems and the determinant</title>
