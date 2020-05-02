@@ -26,7 +26,7 @@
 
     <link href="http://gmpg.org/xfn/11" rel="profile">
     
-    <meta name="generator" content="Hugo 0.52" />
+    <meta name="generator" content="Hugo 0.58.3" />
 
 
 <script type="text/x-mathjax-config">
@@ -71,12 +71,12 @@
                 
                 
                 <header class="article-header">
-                    <h1 itemprop="name"><a class="article-title" href="/posts/math/determinant_theorems_and_intro_to_inverses/">Determinant theorems and intro to inverses</a></h1>
+                    <h1 itemprop="name"><a class="article-title" href="/posts/math/random_variables/">Random variables</a></h1>
                 </header>
                 
                 <div class="article-meta">
-                    <a href="/posts/math/determinant_theorems_and_intro_to_inverses/" class="article-date">
-                        <time datetime='2019-07-13T16:26:16.000-04:00' itemprop="datePublished">2019-07-13</time>
+                    <a href="/posts/math/random_variables/" class="article-date">
+                        <time datetime='2020-05-01T22:15:21.000-04:00' itemprop="datePublished">2020-05-01</time>
                     </a>
                     
                     
@@ -85,20 +85,19 @@
                 <div class="article-entry" itemprop="articleBody">
                     <p>
                         
-                    Triangular Matrices Upper-triangular If all entries below the main diagonal are 0
-\begin{pmatrix}1&amp;7&amp;0\\0&amp;2&amp;1\\0&amp;0&amp;7\end{pmatrix}
-Lower-triangular If all entries above the main diagonal are 0
-\begin{pmatrix}1&amp;0&amp;0\\-1&amp;2&amp;0\\0&amp;7&amp;9\end{pmatrix}
-Triangular Both upper and lower triangular
-\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;7\end{pmatrix}
-Determinants of triangular matrices Let $A_{n\times n}$ be triangular.
-$\det A = a_{11}a_{22}&hellip;a_{nn}$ (product of diagonal entries)
-$\det(I_{n}) = 1$
-Row reduction and determinants  If $A_{n\times n}$ has two identical rows/columns then $\det(A) = 0$
-$$\det\begin{pmatrix}a&amp;b\\a&amp;b\end{pmatrix} = ab - ab = 0$$
+                    Bernoulli Random Variables Bernoulli with parametr $p \in [0, 1]$
+$X = \begin{cases} 1, p \newline
+0, 1 - p \end{cases} $
+* Either Success or failure
+* Either Heads or Tails
+* Idicator r.v. of an event A: $I_A = 1$ iff A occurs
+* $P_{I_A}(1) = P(I_A = 1) = P(A)$
+Discret uniform random variable Parameters $a, b$
+* Parameters: integers $a, b; a \le b$
+* Experiment: $a, a + 1,&hellip;,b$ randomly pick one; all equally likely
                     </p>
                     <p class="article-more-link">
-                        <a href="/posts/math/determinant_theorems_and_intro_to_inverses/">Read More</a>
+                        <a href="/posts/math/random_variables/">Read More</a>
                     </p>
                 </div>
 
@@ -425,7 +424,7 @@ Plane of the Independent Variables.
     <footer id="footer">
     <div class="outer">
         <div id="footer-info" class="inner">
-            &copy; 2019 Playground&nbsp;
+            &copy; 2020 Playground&nbsp;
             Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
         </div>
     </div>
