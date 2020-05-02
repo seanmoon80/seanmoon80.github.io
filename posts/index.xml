@@ -17,7 +17,7 @@
       <pubDate>Fri, 01 May 2020 22:15:21 -0400</pubDate>
       
       <guid>https://seanmoon80.github.io/posts/math/random_variables/</guid>
-      <description>Bernoulli Random Variables Bernoulli with parametr $p \in [0, 1]$
+      <description>Bernoulli Random Variables Bernoulli with parameter $p \in [0, 1]$
 $X = \begin{cases} 1, p \newline
 0, 1 - p \end{cases} $
  Either Success or failure
