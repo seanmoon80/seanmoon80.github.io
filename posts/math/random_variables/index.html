@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Intro to Multivariable Functions // Playground</title>
+    <title>Random variables // Playground</title>
 
         <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -9,11 +9,11 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-        <meta property="og:title" content="Intro to Multivariable Functions" />
+        <meta property="og:title" content="Random variables" />
     <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/intro_to_multivariable_functions/" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/random_variables/" />
     
 
     <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
@@ -70,11 +70,11 @@
     <div class="article-inner">
         
         <header class="article-header">
-            <h1 class="article-title" itemprop="name">Intro to Multivariable Functions</h1>
+            <h1 class="article-title" itemprop="name">Random variables</h1>
         </header>
         
         <div class="article-meta">
-            <a href="/posts/math/intro_to_multivariable_functions/" class="article-date">
+            <a href="/posts/math/random_variables/" class="article-date">
                 <time datetime='' itemprop="datePublished"></time>
             </a>
             
@@ -84,88 +84,47 @@
         <div class="article-entry" itemprop="articleBody">
             
 
-<ul>
-<li>You must have 1 dimension more than the number of independent variables.(Number of independent variables + 1)<br />
+<h2 id="bernoulli-random-variables">Bernoulli Random Variables</h2>
 
-<ul>
-<li>$f(x) = x + 1 \rightarrow y = x + 1 \rightarrow \text{2-D}$<br /></li>
-<li>$g(x,y) = x^2 + y^2 \rightarrow z = x^2 + y^2 \rightarrow \text{3-D}$<br /></li>
-<li>$h(x,y,z) = \frac{x^2 + y^2}{z - 3} \rightarrow w = \frac{x^2 + y^2}{z - 3}$</li>
-</ul></li>
-<li>You must have the same dimension as number of independent variables.
+<p>Bernoulli with parametr $p \in [0, 1]$<br />
+$X =
+\begin{cases}
+1, p \newline<br />
+0, 1 - p
+\end{cases}
+$<br />
+* Either Success or failure<br />
+* Either Heads or Tails<br />
+* Idicator r.v. of an event A: $I_A = 1$ iff A occurs<br />
+* $P_{I_A}(1) = P(I_A = 1) = P(A)$</p>
 
-<ul>
-<li>$f(x) = x + 1 \rightarrow y = x + 1 \rightarrow \text{1-D}$<br /></li>
-<li>$g(x,y) = x^2 + y^2 \rightarrow z = x^2 + y^2 \rightarrow \text{2-D}$<br /></li>
-<li>$h(x,y,z) = \frac{x^2 + y^2}{z - 3} \rightarrow w = \frac{x^2 + y^2}{z - 3} \rightarrow \text{3-D}$</li>
-</ul></li>
-</ul>
+<h2 id="discret-uniform-random-variable">Discret uniform random variable</h2>
 
-<h3 id="example-1">Example 1</h3>
+<p>Parameters $a, b$<br />
+* Parameters: integers <span style="color:red"><strong>$a, b; a \le b$</strong></span><br />
+* Experiment: $a, a + 1,&hellip;,b$ randomly pick one; all equally likely<br />
+* Sample space: ${a,a+1,&hellip;,b}$ ($b-a+1$ Possible values)<br />
+* Random variable $X: X(w) = w$
+* Special case: $a = b$ (constant/deterministci r.v)</p>
 
-<p>$$\begin{align}
-f(x, y, z) &amp;= \sqrt{x^2 + 2y^2 + 3z^2} \newline
-f(0, 2, -1) &amp;= \sqrt{0^2 + 2\cdot2^2 + 3\cdot(-1)^2} = \sqrt{11} \newline
-f(u, u-1, u+1) &amp;= \sqrt{u^2 + 2(u-1)^2 + 3(u+1)^2} \newline
-&amp;= \sqrt{u^2 + 2u^2 - 4u + 2 + 3u^2 + 6u + 3} \newline
-&amp;= \sqrt{6u^2 + 2u + 5}
-\end{align}$$</p>
+<h2 id="binomial-random-variable">Binomial random variable</h2>
 
-<h3 id="example-2">Example 2</h3>
+<p>Parameters: positive integer $n; p \in [0, 1]$<br />
+* Experiment: $n$ independent tosses of a coin with $P(Heads) = p$<br />
+* Sample space: Set of sequences of H and T, of length $n$<br />
+* Random variable $X$: number of Heads observed<br />
+* Model of: number of successes in a given number of independent trials<br />
+* Binomila Formula: <span style="color:red"><strong>$pX(k) = \binom{n}{k}p^k(1-p)^{n-k}, \text{for }k = 0,1,&hellip;,n$</strong></span></p>
 
-<p>$$\begin{align}
-&amp;f(x,y) = \frac{xy}{x-y} \rightarrow x - y \neq 0 \newline
-&amp;Domain: \{ (x,y)\ |\ x \neq y \} \newline
-&amp;Range: \{ z\ |\ -\infty \lt z \lt \infty \}
-\end{align}$$</p>
+<h2 id="geometric-random-variable">Geometric random variable</h2>
 
-<h3 id="example-3">Example 3</h3>
-
-<p>$$\begin{align}
-&amp;g(x, y) = \sqrt{4 - x^2 - y^2} \newline
-&amp;Domain: \{ (x,y)\ |\ 0 \le x^2 + y^2 \le 4 \} \newline
-&amp;Range: \{ z\ |\ 0 \le z \le 2 \}
-\end{align}$$</p>
-
-<ul>
-<li>To graph domain, You must have an Axis for each Independent variable<br /></li>
-</ul>
-
-<h3 id="example-4">Example 4</h3>
-
-<p>$$\begin{align}
-&amp;f(x, y) = \frac{xy}{x^2 - y^2} \newline
-&amp;Domain: \{ (x, y)\ |\ y \ne \pm x \}
-\end{align}$$</p>
-
-<h3 id="example-5">Example 5</h3>
-
-<p>$$\begin{align}
-&amp;f(x, y, z) = \sqrt{9-x^2-y^2-z^2} \newline
-&amp;Domain: \{ (x,y,z)\ |\ x^2+y^2+z^2 \le 9 \}
-\end{align}$$</p>
-
-<h3 id="example-6">Example 6</h3>
-
-<p>$$\begin{align}
-&amp;f(x,y,z) = \frac{\sqrt{4 - x^2 - y^2}}{z - 3} \newline
-&amp;Domain: \{ (x,y,z)\ |\ x^2 + y^2 \le 4,\ z \ne 3 \}
-\end{align}$$</p>
-
-<h2 id="level-curves">Level Curves</h2>
-
-<p>The shape we get when a plane intersects our surface at different levels along the axis of the dependent variable<br />
-A map of level curves is a contour plot<br />
-To find level curves Set $f = &ldquo;k&rdquo;$</p>
-
-<h3 id="exmaple-1">Exmaple 1</h3>
-
-<p>$$\begin{align}
-f(x,y) &amp;= \sqrt{16 - x^2 - y^2} \newline
-k &amp;= \sqrt{16 - x^2 - y^2} \newline
-k^2 &amp;= 16 - x^2 - y^2 \newline
-x^2 + y^2 &amp;= 16 - k^2 \newline
-\end{align}$$</p>
+<p>Parameter $p: 0 \lt p \le 1$<br />
+* Experiment: infinitely many independent tosses of a coin; $P(Heads) = p$<br />
+* Sample space: Set of infinite sequences of H and T; $\{HTTTT&hellip;\}$<br />
+* Random variable X: number of tosses until the first Heads<br />
+* Model of: waiting times; number of trials until a success<br />
+* First Head observed in the $k$ trial:<br />
+<span style="color:red"><strong>$pX(k) = p(X = k) = p(\underbrace{TTT&hellip;T}_{k-1}H) = (1-p)^{k-1}p,$ $k = 1,2,3&hellip;$</strong></span></p>
 
         </div>
 
@@ -177,19 +136,10 @@ x^2 + y^2 &amp;= 16 - k^2 \newline
 <ul>
 <li>
 <ul>
-<li>
-<ul>
-<li><a href="#example-1">Example 1</a></li>
-<li><a href="#example-2">Example 2</a></li>
-<li><a href="#example-3">Example 3</a></li>
-<li><a href="#example-4">Example 4</a></li>
-<li><a href="#example-5">Example 5</a></li>
-<li><a href="#example-6">Example 6</a></li>
-</ul></li>
-<li><a href="#level-curves">Level Curves</a>
-<ul>
-<li><a href="#exmaple-1">Exmaple 1</a></li>
-</ul></li>
+<li><a href="#bernoulli-random-variables">Bernoulli Random Variables</a></li>
+<li><a href="#discret-uniform-random-variable">Discret uniform random variable</a></li>
+<li><a href="#binomial-random-variable">Binomial random variable</a></li>
+<li><a href="#geometric-random-variable">Geometric random variable</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -204,16 +154,12 @@ x^2 + y^2 &amp;= 16 - k^2 \newline
     </div>
     <nav id="article-nav">
     
-    <a href="/posts/math/velocity_and_acceleration_of_vector_functions/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/posts/math/varieties_of_solutions_of_linear_systems_and_the_determinant/" id="article-nav-newer" class="article-nav-link-wrap">
         <div class="article-nav-title"><span>&lt;</span>&nbsp;
-            Velocity and Acceleration of Vector functions
+            Varieties of solutions of linear systems and the determinant
         </div>
     </a>
     
-    
-    <a href="/posts/math/limits_and_continuity_of_multivariable_functions/" id="article-nav-older" class="article-nav-link-wrap">
-        <div class="article-nav-title">Limits and continuity of multivariable functions&nbsp;<span>&gt;</span></div>
-    </a>
     
 </nav>
 </article>

@@ -6,28 +6,27 @@
     <description>Recent content in Posts on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Jul 2019 16:26:16 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2020 22:15:21 -0400</lastBuildDate>
     
 	<atom:link href="https://seanmoon80.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Determinant theorems and intro to inverses</title>
-      <link>https://seanmoon80.github.io/posts/math/determinant_theorems_and_intro_to_inverses/</link>
-      <pubDate>Sat, 13 Jul 2019 16:26:16 -0400</pubDate>
+      <title>Random variables</title>
+      <link>https://seanmoon80.github.io/posts/math/random_variables/</link>
+      <pubDate>Fri, 01 May 2020 22:15:21 -0400</pubDate>
       
-      <guid>https://seanmoon80.github.io/posts/math/determinant_theorems_and_intro_to_inverses/</guid>
-      <description>Triangular Matrices Upper-triangular If all entries below the main diagonal are 0
-\begin{pmatrix}1&amp;amp;7&amp;amp;0\\0&amp;amp;2&amp;amp;1\\0&amp;amp;0&amp;amp;7\end{pmatrix}
-Lower-triangular If all entries above the main diagonal are 0
-\begin{pmatrix}1&amp;amp;0&amp;amp;0\\-1&amp;amp;2&amp;amp;0\\0&amp;amp;7&amp;amp;9\end{pmatrix}
-Triangular Both upper and lower triangular
-\begin{pmatrix}1&amp;amp;0&amp;amp;0&amp;amp;0\\0&amp;amp;0&amp;amp;0&amp;amp;0\\0&amp;amp;0&amp;amp;-1&amp;amp;0\\0&amp;amp;0&amp;amp;0&amp;amp;7\end{pmatrix}
-Determinants of triangular matrices Let $A_{n\times n}$ be triangular.
-$\det A = a_{11}a_{22}&amp;hellip;a_{nn}$ (product of diagonal entries)
-$\det(I_{n}) = 1$
-Row reduction and determinants  If $A_{n\times n}$ has two identical rows/columns then $\det(A) = 0$
-$$\det\begin{pmatrix}a&amp;amp;b\\a&amp;amp;b\end{pmatrix} = ab - ab = 0$$</description>
+      <guid>https://seanmoon80.github.io/posts/math/random_variables/</guid>
+      <description>Bernoulli Random Variables Bernoulli with parametr $p \in [0, 1]$
+$X = \begin{cases} 1, p \newline
+0, 1 - p \end{cases} $
+* Either Success or failure
+* Either Heads or Tails
+* Idicator r.v. of an event A: $I_A = 1$ iff A occurs
+* $P_{I_A}(1) = P(I_A = 1) = P(A)$
+Discret uniform random variable Parameters $a, b$
+* Parameters: integers $a, b; a \le b$
+* Experiment: $a, a + 1,&amp;hellip;,b$ randomly pick one; all equally likely</description>
     </item>
     
     <item>
