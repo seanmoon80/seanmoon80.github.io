@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Random variables // Playground</title>
+    <title>Probability Questions 1 // Playground</title>
 
         <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -9,11 +9,11 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-        <meta property="og:title" content="Random variables" />
+        <meta property="og:title" content="Probability Questions 1" />
     <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/random_variables/" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/probability-questions-1/" />
     
 
     <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
@@ -70,11 +70,11 @@
     <div class="article-inner">
         
         <header class="article-header">
-            <h1 class="article-title" itemprop="name">Random variables</h1>
+            <h1 class="article-title" itemprop="name">Probability Questions 1</h1>
         </header>
         
         <div class="article-meta">
-            <a href="/posts/math/random_variables/" class="article-date">
+            <a href="/posts/math/probability-questions-1/" class="article-date">
                 <time datetime='' itemprop="datePublished"></time>
             </a>
             
@@ -84,59 +84,39 @@
         <div class="article-entry" itemprop="articleBody">
             
 
-<h2 id="bernoulli-random-variables">Bernoulli Random Variables</h2>
+<h2 id="question-1">Question 1</h2>
 
-<p>Bernoulli with parameter $p \in [0, 1]$<br />
-$X =
-\begin{cases}
-1, p \newline<br />
-0, 1 - p
-\end{cases}
-$</p>
+<p>나는 현재 포커 토너먼트에 진출 해 있습니다. 다음 단계로 진출 하기 위해 서는 이미 정해진 상대 A,B,C와 연속으로 반드시 게임을 해야 합니다. 나는 두 명에게 연속으로 승리하면 다음 토너먼트로 진출 할 수 있습니다.<br />
+* 개별 게임은 전부 독립사건으로 가정<br />
+* 나는 상대와의 승률 데이터를 가지고 있는데 각각 A를 상대로 승률 0.8 B를 상대로 0.5 C를 상대로 0.1 과 같습니다.<br />
+* 포커 게임을 할 상대와의 매치 순서는 내가 임의로 정 할 수 있다.<br />
+위의 조건에서 내가 2연승을 하고 다음단계로 진출 하기 위해 A,B,C와의 매치 순서를 어떻게 매열 하는게 가장 높은 승률을 보장 받을 까요?</p>
 
-<ul>
-<li>Either Success or failure<br /></li>
-<li>Either Heads or Tails<br /></li>
-<li>Idicator r.v. of an event A: $I_A = 1$ iff A occurs<br /></li>
-<li>$P_{I_A}(1) = P(I_A = 1) = P(A)$</li>
-</ul>
+<p>Experiment: Play poker game with A,B and C in any order</p>
 
-<h2 id="discrete-uniform-random-variable">Discrete uniform random variable</h2>
+<p>Event: More than 2 consecutive wins</p>
 
-<p>Parameters $a, b$</p>
+<p>Given Probability: $P(A) = 0.8, P(A^c) = 0.2, P(B) = 0.5, P(B^c) = 0.5, P&copy; = 0.1, P(C^c) = 0.9$</p>
 
-<ul>
-<li>Parameters: integers <span style="color:red"><strong>$a, b; a \le b$</strong></span><br /></li>
-<li>Experiment: $a, a + 1,&hellip;,b$ randomly pick one; all equally likely<br /></li>
-<li>Sample space: ${a,a+1,&hellip;,b}$ ($b-a+1$ Possible values)<br /></li>
-<li>Random variable $X: X(w) = w$<br /></li>
-<li>Special case: $a = b$ (constant/deterministci r.v)</li>
-</ul>
+<p>Sample Space: $\{ABC, ABC^c, AB^cC, AB^cC^c, A^cBC, A^cBC^c, A^cB^cC, A^cB^cC^c,&hellip;, C^cA^cB^c\}$</p>
 
-<h2 id="binomial-random-variable">Binomial random variable</h2>
+<p>More than 2 consecutive wins: $\{ABC, ACB, BAC, BCA, CAB, CBA, ABC^c, BAC^c&hellip;,C^AB\}$</p>
 
-<p>Parameters: positive integer $n; p \in [0, 1]$</p>
+<p>$\{ABC, ACB, BAC, CAB\}$ 의 확률은 동일(독립사건)</p>
 
-<ul>
-<li>Experiment: $n$ independent tosses of a coin with $P(Heads) = p$<br /></li>
-<li>Sample space: Set of sequences of H and T, of length $n$<br /></li>
-<li>Random variable $X$: number of Heads observed<br /></li>
-<li>Model of: number of successes in a given number of independent trials<br /></li>
-<li>Binomila Formula: <span style="color:red"><strong>$pX(k) = \binom{n}{k}p^k(1-p)^{n-k}, \text{for }k = 0,1,&hellip;,n$</strong></span></li>
-</ul>
+<p>$MAX({ABC, ABC^c, ACB^c, BCA^c}) = MAX({0.04, 0.36, 0.04, 0.01}) = ABC^c$</p>
 
-<h2 id="geometric-random-variable">Geometric random variable</h2>
+<p>Answer: ${ABC^c, BAC^c, C^cAB, C^cBA}$</p>
 
-<p>Parameter $p: 0 \lt p \le 1$</p>
+<h2 id="question-2">Question 2</h2>
 
-<ul>
-<li>Experiment: infinitely many independent tosses of a coin; $P(Heads) = p$<br /></li>
-<li>Sample space: Set of infinite sequences of H and T; $\{HTTTT&hellip;\}$<br /></li>
-<li>Random variable X: number of tosses until the first Heads<br /></li>
-<li>Model of: waiting times; number of trials until a success<br /></li>
-<li>First Head observed in the $k$ trial:<br />
-<span style="color:red"><strong>$pX(k) = p(X = k) = p(\underbrace{TTT&hellip;T}_{k-1}H) = (1-p)^{k-1}p,$ $k = 1,2,3&hellip;$</strong></span></li>
-</ul>
+<p>n 명의 참관인, 부정선거목격시 폭로할 확률 $1/n$ 참관인이 한없이 늘어날때 적어도 한명이 고발할 확률이 수렴하는 값</p>
+
+<p>Probability Given: $P({R}) = \frac{1}{n}, P(R^c) = 1 - \frac{1}{n}$</p>
+
+<p>Event: $P(\underbrace{R^cR^c&hellip;}_{n-1}R) = (1-\frac{1}{n})^{n-1}\frac{1}{n}$</p>
+
+<p>$\lim\limits_{n\to\infty}(1-\frac{1}{n})^{n-1}\frac{1}{n} = 0$</p>
 
         </div>
 
@@ -148,10 +128,8 @@ $</p>
 <ul>
 <li>
 <ul>
-<li><a href="#bernoulli-random-variables">Bernoulli Random Variables</a></li>
-<li><a href="#discrete-uniform-random-variable">Discrete uniform random variable</a></li>
-<li><a href="#binomial-random-variable">Binomial random variable</a></li>
-<li><a href="#geometric-random-variable">Geometric random variable</a></li>
+<li><a href="#question-1">Question 1</a></li>
+<li><a href="#question-2">Question 2</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -166,16 +144,12 @@ $</p>
     </div>
     <nav id="article-nav">
     
-    <a href="/posts/math/varieties_of_solutions_of_linear_systems_and_the_determinant/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/posts/math/random_variables/" id="article-nav-newer" class="article-nav-link-wrap">
         <div class="article-nav-title"><span>&lt;</span>&nbsp;
-            Varieties of solutions of linear systems and the determinant
+            Random variables
         </div>
     </a>
     
-    
-    <a href="/posts/math/probability-questions-1/" id="article-nav-older" class="article-nav-link-wrap">
-        <div class="article-nav-title">Probability Questions 1&nbsp;<span>&gt;</span></div>
-    </a>
     
 </nav>
 </article>
