@@ -6,10 +6,24 @@
     <description>Recent content in Posts on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 May 2020 19:18:57 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2020 10:26:21 -0400</lastBuildDate>
     
 	<atom:link href="https://seanmoon80.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Monty Hall Problem</title>
+      <link>https://seanmoon80.github.io/posts/math/monty-hall-problem/</link>
+      <pubDate>Fri, 05 Jun 2020 10:26:21 -0400</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/math/monty-hall-problem/</guid>
+      <description>Monty Hall Problem 한 문 뒤에는 자동차가 있으며, 다른 두 문 뒤에는 염소가 있다.
+당신은 1번문을 고르곶 문 뒤에 무엇이 있는지 아는 사회자는 염소가 있는 2번문을 연다.
+그는 당신에게 &amp;ldquo;3번 문을 고르고 싶습니까?&amp;ldquo;라고 묻는다. 당신의 선택을 바꾸는것은 이득이 되는가?
+Tree Diagram Solution Law of Total Probability W: 바꿔서 성공한 케이스
+$D_i$: i 번째문에 차가 있는 케이스($i = \{1,2,4\}$)
+$$ \begin{align} P(W) &amp;amp;= \frac{1}{3}\cdot P(W|D_1) + \frac{1}{3}\cdot P(W|D_2) + \frac{1}{3}\cdot P(W|D_3)\newline &amp;amp;= 0 + \frac{1}{3} + \frac{1}{3}\newline &amp;amp;=\frac{2}{3}\end{align} $$</description>
+    </item>
     
     <item>
       <title>Probability Questions 1</title>
